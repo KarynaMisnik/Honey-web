@@ -37,7 +37,7 @@ const HexagonItem = styled(Button)(({ theme }) => ({
 }));
 
 
-export default function Shop() {
+export default function ShopCategories() {
   return (
     <>
     <Grid container justifyContent="space-evenly" paddingTop={2}  sx={{ margin: '0 auto', maxWidth: '100%' }}>

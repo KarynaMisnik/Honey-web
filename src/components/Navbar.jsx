@@ -18,7 +18,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
 const pages = ['Home', 'About', 'Shop', 'Contact'];
 
-function Navbar() {
+const  Navbar= ()=> {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
