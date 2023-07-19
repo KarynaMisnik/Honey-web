@@ -6,16 +6,16 @@ import Testimonials from './Testimonials';
 import Contact from './Contact';
 
 
- const HomePage = ()=>{
+  function Home(){
     return(
         <>
-        <Navbar/>
+        
          <Hero/>
           <ShopCategories/>
           <Testimonials/>
-          <Contact/>
+         
           </>
     )
 }
 
-export default HomePage;
+export default Home;

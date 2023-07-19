@@ -15,10 +15,11 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { NavLink } from 'react-router-dom';
 
-const pages = ['Home', 'About', 'Shop', 'Contact'];
+{/*const pages = ['Home', 'About', 'Shop', 'Contact'];*/}
 
-const  Navbar= ()=> {
+const  Navbar= ({pages})=> {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -34,7 +35,7 @@ const  Navbar= ()=> {
     <AppBar position="static"  sx={{backgroundColor: 'var(--dark-brown)', borderBottom: '4px solid var(--brown)'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters >
-            <IconButton sx={{ display: { xs: 'none', md: 'flex' }}}><img src={LogoBee} height="70" /></IconButton>
+           <NavLink to="/home"><IconButton sx={{ display: { xs: 'none', md: 'flex' }}}><img src={LogoBee} height="70" /></IconButton></NavLink> 
 
 
 {/*  hamburger-menu  */}
@@ -70,7 +71,7 @@ const  Navbar= ()=> {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{textAlign:"center", fontFamily:"var(--main-font)", fontWeight:'900'}} >{page}</Typography>
+                 <NavLink to={`/${page.toLowerCase()}`}> <Typography sx={{textAlign:"center", fontFamily:"var(--main-font)", fontWeight:'900'}} >{page}</Typography></NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -89,7 +90,7 @@ const  Navbar= ()=> {
                 onClick={handleCloseNavMenu}
                 sx={{ color: 'var(--light-yellow)', display: 'block', fontFamily:"var(--main-font)", fontWeight:'700' }}
               >
-                {page}
+                <NavLink to={`/${page.toLowerCase()}`}><Typography sx={{color: 'var(--light-yellow)', fontFamily:"var(--main-font)", fontWeight:'900'}} >{page}</Typography> </NavLink>
               </Button>
             ))}
           </Box>

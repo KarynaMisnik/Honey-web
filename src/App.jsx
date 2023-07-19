@@ -1,23 +1,34 @@
 import React from 'react';
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Shop from './components/Shop';
+import About from './components/About/About';
+import Contact from './components/Contact';
+import Error from './components/Error';
 
-import HomePage from './components/HomePage';
+const pages = ['Home', 'About', 'Shop', 'Contact'];
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<HomePage />}>
-    </Route>
-  )
-)
 
-function App() {
+ function App() {
 
   return (
-    <>
-          <HomePage/>
+     <>
+         <Navbar pages={pages} />
+
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/shop" element={<Shop />} />
         
-    </>
+        <Route path="*" element={<Error />} />
+      </Routes>
+
+        <Contact pages={pages} />
+      </>
+   
   )
 }
 
-export default App
+
+export default App;
