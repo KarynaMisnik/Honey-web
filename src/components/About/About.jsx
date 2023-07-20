@@ -1,7 +1,6 @@
 import React from 'react';
 import aboutData from './aboutData.json';
-import Grid from '@mui/material/Grid';
-import { Container, Typography, Box } from '@mui/material';
+import { Typography} from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 
@@ -10,61 +9,12 @@ const Title = styled(Typography)(({ theme }) => ({
   ...theme.typography.body2,
   margin:'20px', 
   fontFamily:'var(--main-font)', 
-  fontSize:'24px', 
+  fontSize:'40px', 
   fontWeight:'900', 
   letterSpacing:'2px',
 
      '@media (max-width: 900px)': {
-    fontSize: '16px',
-  },
-}));
-
-const ParagraphOnRight = styled(Typography)(({ theme }) => ({
-  textAlign: 'justify',
-  ...theme.typography.body2,
-  lineHeight:'30px', 
-  fontFamily:'var(--main-font)', 
-  fontSize:'20px', 
-  width:'100%',
-  padding: '5px 20px 10px 10px',
-
-
-     '@media (max-width: 900px)': {
-    fontSize: '14px',
-    lineHeight:'20px',
-  },
-}));
-
-const ParagraphOnLeft = styled(Typography)(({ theme }) => ({
-  textAlign: 'justify',
-  ...theme.typography.body2,
-  lineHeight:'30px', 
-  fontFamily:'var(--main-font)', 
-  fontSize:'20px', 
-  width:'100%',
-  padding: '10px 20px 10px 30px',
-
-
-     '@media (max-width: 900px)': {
-    fontSize: '14px',
-    lineHeight:'20px',
-  },
-}));
-
-
-const CenteredParagraph = styled(Typography)(({ theme }) => ({
-  textAlign: 'justify',
-  ...theme.typography.body2,
-  lineHeight:'30px', 
-  fontFamily:'var(--main-font)', 
-  fontSize:'20px', 
-  width:'100%',
-  padding: '20px 40px',
-
-
-     '@media (max-width: 900px)': {
-    fontSize: '14px',
-    lineHeight:'20px',
+    fontSize: '20px',
   },
 }));
 
@@ -75,80 +25,77 @@ const CenteredParagraph = styled(Typography)(({ theme }) => ({
         <>
         <Title >Welcome to the enchanting world of the Doe family beekeepers!</Title>
 
-         <Grid container spacing={2} sx={{background:'red' ,direction:'row', '@media (max-width: 600px)': {
-        '& > *': {
-          direction: 'column', 
-        },
-      },}}>
-
- <Grid item xs={12} md={6}>
-          <img src={aboutData[0].src} alt={aboutData[0].alt} style={{
-            width: '100%',
-            borderRadius: '15px',
-            padding: '5px 20px 10px 10px',
     
-          }} />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <ParagraphOnRight>{aboutData[0].text}</ParagraphOnRight>
-        </Grid>
+  {/* First section: Smaller img on the left, text on the right */}
+      <div className="about-section">
+        <div className="img-container">
+        <img
+          src={aboutData[0].src}
+          alt={aboutData[0].alt}
+          className="about-img"
+          
+        />
+        <a className='originalSrc' href={aboutData[0].path}>Link to Freepik</a>
+        </div>
+        <p className="about-text">{aboutData[0].text}</p>
+      </div>
 
-        <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-        <ParagraphOnLeft>{aboutData[1].text}</ParagraphOnLeft>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <img src={aboutData[1].src} alt={aboutData[1].alt} style={{
-           width: '100%',
-            borderRadius: '15px',
-            padding: '5px 20px 10px 10px',
-          }} />
-        </Grid>
-      </Grid>
+      {/* Second section: Text on the left, img on the right */}
+      <div className="about-section">
+        <p className="about-text">{aboutData[1].text}</p>
+        <div className="img-container">
+        <img
+          src={aboutData[1].src}
+          alt={aboutData[1].alt}
+          className="about-img"
+        />
+ <a className='originalSrc' href={aboutData[1].path}>Link to Freepik</a>
+        </div>
+      </div>
 
-<Grid item xs={12} md={6}>
-          <img src={aboutData[2].src} alt={aboutData[2].alt} style={{
-            width: '100%',
-            borderRadius: '15px',
-            padding: '5px 20px 10px 10px',
-    
-          }} />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <ParagraphOnRight>{aboutData[2].text}</ParagraphOnRight>
-        </Grid>
+      {/* Third section: Just text with full width */}
+       <div className="about-section">
+        <div className="img-container">
+        <img
+          src={aboutData[2].src}
+          alt={aboutData[2].alt}
+          className="about-img"
+        />
+ <a className='originalSrc' href={aboutData[2].path}>Link to Freepik</a>
+        </div>
+        <p className="about-text">{aboutData[2].text}</p>
+      </div>
 
-    <Grid container spacing={2}>
-            <CenteredParagraph>{aboutData[3].text}</CenteredParagraph>
+{/* Fourth section: Just text with full width */}
+ <div className="about-section">
+        <p className="about-text">{aboutData[3].text}</p>
+      </div>
 
-        </Grid>
 
-   <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-        <ParagraphOnLeft>{aboutData[4].text}</ParagraphOnLeft>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <img src={aboutData[4].src} alt={aboutData[4].alt} style={{
-           width: '100%',
-            borderRadius: '15px',
-            padding: '5px 20px 10px 10px',
-          }} />
-        </Grid>
-      </Grid>
+ {/* Fifth section: Text on the left, img on the right */}
+      <div className="about-section">
+        <p className="about-text">{aboutData[4].text}</p>
+        <div className="img-container">
+        <img
+          src={aboutData[4].src}
+          alt={aboutData[4].alt}
+          className="about-img"
+        />
+ <a className='originalSrc' href={aboutData[4].path}>Link to Freepik</a>
+        </div>
+      </div>
 
-      <Grid container spacing={2}>
-            <CenteredParagraph>{aboutData[5].text}</CenteredParagraph>
+{/* Sixth section: Just text with full width */}
+ <div className="about-section">
+        <p className="about-text">{aboutData[5].text}</p>
+      </div>
 
-        </Grid>
+{/* Seventh section: Just text with full width */}
+ <div className="about-section">
+        <p className="about-text">{aboutData[6].text}</p>
+      </div>
 
-        <Grid container spacing={2}>
-            <CenteredParagraph>{aboutData[6].text}</CenteredParagraph>
 
-        </Grid>
-
-      </Grid>
-
- 
     </>
     )
 }

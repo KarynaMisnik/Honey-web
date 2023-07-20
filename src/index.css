@@ -8,6 +8,7 @@
   --yellow: #ffe404;
   --white: #fff;
   --gray: #848181;
+  --black: #0c0000e0;
 
   --main-font: "Montserrat", sans-serif;
 }
@@ -20,7 +21,7 @@
 }
 
 a {
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 body {
@@ -56,5 +57,62 @@ p {
 @media only screen and (max-width: 600px) {
   p {
     font-size: 20px;
+  }
+}
+
+/* About component  */
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: var(--black) 0px 8px 6px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 20px;
+}
+
+.originalSrc {
+  position: absolute;
+  padding: 5px;
+  color: var(--dark-brown);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 2rem;
+  font-family: var(--main-font);
+  color: rgba(0, 0, 0, 0.87);
+  margin: 20px;
+  line-height: 70px;
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-img {
+    margin-right: 0; /* Remove spacing between image and text on mobile view */
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .about-text {
+    font-size: 1rem;
+    line-height: 30px;
   }
 }
