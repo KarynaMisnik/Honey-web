@@ -193,7 +193,7 @@ lorem neque eget velit.
                <ListItemIcon>
                  <PhoneIcon sx={{color:'var(--yellow)'}}/>
                </ListItemIcon>
-               <ListItemText primary="+000 00 000 000 00" primaryTypographyProps={{
+               <ListItemText primary="+358-123-456-789" primaryTypographyProps={{
       fontWeight: '700', fontFamily:'var(--main-font)'
     }}                          
                />

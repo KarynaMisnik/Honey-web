@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import ShopCategories from './ShopCategories';
 import Testimonials from './Testimonials';
-import Contact from './Contact';
+import Contact from './Contact/Contact';
 
 
   function Home(){

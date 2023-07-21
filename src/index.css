@@ -108,6 +108,10 @@ p {
   .about-img {
     margin-right: 0; /* Remove spacing between image and text on mobile view */
   }
+  .about-text {
+    font-size: 1rem;
+    line-height: 30px;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
