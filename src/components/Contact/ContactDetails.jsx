@@ -14,9 +14,9 @@ export default function ContactDetails() {
   const isMobile = useMediaQuery('(max-width: 600px)');
 
   const cardsData = [
-    { id: 1, title: 'Work Together', content: 'Are you interested in collaborating with Doe Family Honey? Whether you are a local beekeeper, a distributor looking for unique honey products, or an artisan interested in partnering with us, we would love to explore opportunities to work together. Feel free to contact us with your ideas and proposals.', imageUrl:'src/assets/img/contactImgs/workTogether.jpg' },
-    { id: 2, title: 'Customer Care', content: 'At Doe Family Honey, our customers are at the heart of everything we do. We value your feedback and strive to provide the best possible experience. If you have any suggestions, concerns, or compliments, please don not hesitate to share them with us.', imageUrl:'src/assets/img/contactImgs/customCare.jpg' },
-    { id: 3, title: 'Visit Us', content: 'We extend a warm invitation to everyone, including schoolchildren and small groups, to come and experience the magic of our honey farm in Lehtola. If you are planning an educational field trip or looking for a unique experience for your group book your visit in advance, and let us create unforgettable memories together.', imageUrl:'src/assets/img/contactImgs/visitUs.jpg' },
+    { id: 1, title: 'Work Together', content: 'Are you interested in collaborating with our family Honey Business? Whether you are a local beekeeper, a distributor looking for unique honey products, or an artisan interested in partnering with us, we would love to explore opportunities to work together. Feel free to contact us with your ideas and proposals.', imageUrl:'src/assets/img/contactImgs/workTogether.jpg' },
+    { id: 2, title: 'Customer Care', content: 'At Honey&Products, our customers are at the heart of everything we do. We value your feedback and strive to provide the best possible experience. If you have any suggestions, concerns, or compliments, please do not hesitate to share them with us.', imageUrl:'src/assets/img/contactImgs/customCare.jpg' },
+    { id: 3, title: 'Visit Us', content: 'We extend a warm invitation to everyone, including schoolchildren and small groups of visitors, to come and experience the magic of our honey farm in Lehtola. If you are planning an educational field trip or looking for a unique experience for your group, book your visit in advance, and let us create unforgettable memories together.', imageUrl:'src/assets/img/contactImgs/visitUs.jpg' },
   ];
 
 

@@ -9,6 +9,7 @@
   --white: #fff;
   --gray: #848181;
   --black: #0c0000e0;
+  --red: #ec0606;
 
   --main-font: "Montserrat", sans-serif;
 }
@@ -118,5 +119,42 @@ p {
   .about-text {
     font-size: 1rem;
     line-height: 30px;
+  }
+}
+
+/* Error page */
+
+.workingBee {
+  max-width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+.text-container {
+  padding: 1em;
+  text-align: center;
+}
+
+.text-container p {
+  color: var(--black);
+  font-size: 40px;
+}
+
+.text-container p span {
+  text-align: center;
+  color: var(--red);
+  letter-spacing: 2rem;
+  font-size: 150px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .workingBee {
+    width: 200px;
+  }
+  .text-container p span {
+    font-size: 30px;
+  }
+  .text-container p {
+    font-size: 20px;
   }
 }

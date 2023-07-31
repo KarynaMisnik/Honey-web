@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Shop from './components/Shop';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Error from './components/Error';
+import Error from './components/Error/Error';
 import ContactDetails from './components/Contact/ContactDetails';
 
 const pages = ['Home', 'About', 'Shop', 'Contact'];
