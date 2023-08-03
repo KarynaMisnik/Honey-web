@@ -1,7 +1,6 @@
 
 import * as React from 'react';
-import '../index.css'; /* styles */
-import  LogoBee from '../assets/img/logo.png'; /* logo */
+import  LogoBee from '../../assets/img/logo.png'; /* logo */
 /* mui components */
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';

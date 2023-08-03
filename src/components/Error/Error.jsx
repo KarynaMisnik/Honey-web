@@ -1,5 +1,4 @@
 import React from 'react';
-import './error.css'
 import BeeError from '../../assets/img/bee-error.png';
 
 
