@@ -97,7 +97,7 @@ const  Navbar= ({pages})=> {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip >
             <IconButton>
-                <ShoppingBasketIcon sx= {{color:"var(--light-yellow)", fontSize: '2rem'}}/>
+                <NavLink to="/cart"><ShoppingBasketIcon sx= {{color:"var(--light-yellow)", fontSize: '2rem'}}/></NavLink> 
               </IconButton>
             </Tooltip>
           </Box>

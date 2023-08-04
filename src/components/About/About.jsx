@@ -7,7 +7,7 @@ import { styled } from '@mui/material/styles';
 const Title = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
   ...theme.typography.body2,
-  margin:'20px', 
+   padding: '10px',
   fontFamily:'var(--main-font)', 
   fontSize:'40px', 
   fontWeight:'900', 
@@ -22,7 +22,7 @@ const Title = styled(Typography)(({ theme }) => ({
  function About(){
 
     return(
-        <>
+        <div style={{ background: 'var(--light-yellow)' }}>
         <Title >Welcome to the enchanting world of the Doe family beekeepers!</Title>
 
     
@@ -94,9 +94,7 @@ const Title = styled(Typography)(({ theme }) => ({
  <div className="about-section">
         <p className="about-text">{aboutData[6].text}</p>
       </div>
-
-
-    </>
+    </div>
     )
 }
 

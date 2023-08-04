@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
-import Beekeeper from '../assets/img/Beekeeper.png';
+import Beekeeper from '../../assets/img/Beekeeper.png';
 
 const HexagonItem = styled(Button)(({ theme }) => ({
   width: '200px',

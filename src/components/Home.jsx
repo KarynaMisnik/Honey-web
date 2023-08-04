@@ -1,9 +1,7 @@
 import React from 'react';
-import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
-import ShopCategories from './ShopCategories';
+import ShopCategories from './Shop/ShopCategories';
 import Testimonials from './Testimonials';
-import Contact from './Contact/Contact';
 
 
   function Home(){

@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--white);
+}
+
 body {
   min-width: 320px;
   min-height: 100vh;

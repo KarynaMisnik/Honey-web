@@ -19,6 +19,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { NavLink } from 'react-router-dom';
 
 
 function Item(props) {
@@ -65,6 +66,7 @@ const HexagonWrapper = styled(HexagonIcon)({
 });
 
 
+
 export default function Contact() {
   return (
     <div style={{ width: '100%', background: 'var( --dark-brown)', color:'var(--white)'}}>
@@ -73,7 +75,7 @@ export default function Contact() {
         }, }}>
 
 
-        <Item><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>About Us </Typography>
+        <Item><NavLink to='/about'><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>About Us </Typography>  </NavLink>
         <Divider sx={{height:'2px', width: '50px', backgroundColor: 'yellow', margin:'6px 0 6px 0' }}></Divider>
         <Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)'}}>
         Lorem ipsum dolor sit amet, 
@@ -116,7 +118,8 @@ lorem neque eget velit.
           />
         </Grid>
         <Grid item xs={12}>
-          <Button type="submit" variant="contained"  sx={{ backgroundColor:'var(--yellow)', borderRadius:'5px', color:'var(--dark-brown)', fontWeight:'900' }}>
+          <Button type="submit" variant="contained"  sx={{ backgroundColor:'var(--yellow)', borderRadius:'5px', color:'var(--dark-brown)', fontWeight:'900', ":hover": {
+      bgcolor: "var(--yellow)"} }}>
             Submit
           </Button>
         </Grid>
@@ -124,7 +127,8 @@ lorem neque eget velit.
         
         </Item>
       
-        <Item><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>Honey&Products</Typography>
+      
+        <Item><NavLink to='/home'><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>Honey&Products</Typography></NavLink>
         <Divider sx={{height:'2px', width: '50px', backgroundColor: 'yellow', margin:'6px 0 6px 0' }}></Divider>
 
        
@@ -133,40 +137,40 @@ lorem neque eget velit.
                <ListItemIcon>
                  <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
                </ListItemIcon>
-               <ListItemText  primary="Home"  primaryTypographyProps={{
+               <NavLink to='/home'><ListItemText  primary="Home"  primaryTypographyProps={{
       fontWeight: '700', fontFamily:'var(--main-font)'
     }}           
-               />
+               /></NavLink>
              </ListItem>
 
              <ListItem sx={{ paddingLeft: 0 }}>
                <ListItemIcon>
                  <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
                </ListItemIcon>
-               <ListItemText  primary="About" primaryTypographyProps={{
+               <NavLink to='/about'><ListItemText  primary="About" primaryTypographyProps={{
       fontWeight: '700', fontFamily:'var(--main-font)'
     }}                     
-               />
+               /></NavLink>
              </ListItem>
 
              <ListItem sx={{ paddingLeft: 0 }}>
                <ListItemIcon>
                  <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
                </ListItemIcon>
-               <ListItemText primary="Shop" primaryTypographyProps={{
+               <NavLink to='/shop'><ListItemText primary="Shop" primaryTypographyProps={{
       fontWeight: '700', fontFamily:'var(--main-font)'
     }}                            
-               />
+               /></NavLink>
              </ListItem>
 
              <ListItem sx={{ paddingLeft: 0 }}>
                <ListItemIcon>
                  <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
                </ListItemIcon>
-               <ListItemText primary="Contact" primaryTypographyProps={{
+              <NavLink to='contact'> <ListItemText primary="Contact" primaryTypographyProps={{
       fontWeight: '700', fontFamily:'var(--main-font)'
     }}                         
-               />
+               /></NavLink>
              </ListItem>
          </List>
        
