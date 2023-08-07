@@ -1,0 +1,96 @@
+
+[
+    {
+    "honey": [
+    {
+        "id": 1,
+        "title": "Apple Blossom Honey",
+        "src": "src/assets/img/products/honey/apple-honey.jpg",
+        "alt": "jar with apple honey amber color",
+        "price": "25",
+        "amount": "900g",
+        "info": "Introducing our delightful Apple Blossom Honey - a unique and natural creation crafted by our diligent honeybees. Sourced from the fragrant blossoms of apple orchards, this exquisite honey showcases the essence of a bountiful harvest. With a delicate, fruity flavor and hints of apple, our Apple Blossom Honey is a tantalizing treat for your taste buds. It's the result of our bees' tireless efforts as they diligently collect nectar from apple blossoms, infusing the honey with the essence of nature's own sweetness. Whether drizzled over warm pancakes, mixed into your favorite yogurt, or enjoyed straight from the jar, our Apple Blossom Honey promises a delightful journey of flavors. So savor the taste of orchard bliss and experience the essence of apple in every golden spoonful.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/honey-bowl-with-dipper-fruits-with-copy-space_6073891.htm#&position=17&from_view=undefined"
+    },
+    {
+        "id": 2,
+        "title": "Clover Honey",
+        "src": "src/assets/img/products/honey/clover-honey.jpg",
+        "alt": "jar with clover honey light yellow",
+        "price": "40",
+        "amount": "900g",
+        "info": "Introducing our finest Clover Honey - a pure and natural delight straight from the picturesque clover fields. Crafted by our industrious bees, this honey captures the essence of blooming clover blossoms, offering you a taste of nature's sweetest nectar. With a delicate and smooth flavor profile, our Clover Honey is a delectable addition to your culinary endeavors. Sourced from the pristine pastures, it boasts a light golden hue and a subtle floral aroma that will transport you to sun-kissed meadows. Whether drizzled over warm pancakes, stirred into your morning tea, or used as a wholesome sweetener in your favorite recipes, our Clover Honey promises to elevate your dining experience. Its versatility knows no bounds, making it the perfect complement to both sweet and savory dishes.",
+        "inCart": false,
+          "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/sweet-honey-bee-pollen-seeds-candies-sack-cloth_3434410.htm#&position=18&from_view=undefined"
+    }
+    ],
+
+     "sweets": [
+    {
+        "id": 1,
+        "title": "",
+        "img": "",
+        "price": "",
+        "amount": "",
+        "info": "",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "src": " "
+    }
+  
+    ],
+
+     "cosmetics": [
+    {
+        "id": 1,
+        "title": "",
+        "img": "",
+        "price": "",
+        "amount": "",
+        "info": "",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "src": " "
+    }
+  
+    ],
+     "food": [
+    {
+        "id": 1,
+        "title": "",
+        "img": "",
+        "price": "",
+        "amount": "",
+        "info": "",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "src": " "
+    }
+  
+    ],
+     "other": [
+    {
+        "id": 1,
+        "title": "",
+        "img": "",
+        "price": "",
+        "amount": "",
+        "info": "",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "src": " "
+    }
+  
+    ]
+}
+
+]
