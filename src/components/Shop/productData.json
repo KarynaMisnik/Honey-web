@@ -7,7 +7,7 @@
         "title": "Apple Blossom Honey",
         "src": "src/assets/img/products/honey/apple-honey.jpg",
         "alt": "jar with apple honey amber color",
-        "price": "25",
+        "price": 25,
         "amount": "900g",
         "info": "Introducing our delightful Apple Blossom Honey - a unique and natural creation crafted by our diligent honeybees. Sourced from the fragrant blossoms of apple orchards, this exquisite honey showcases the essence of a bountiful harvest. With a delicate, fruity flavor and hints of apple, our Apple Blossom Honey is a tantalizing treat for your taste buds. It's the result of our bees' tireless efforts as they diligently collect nectar from apple blossoms, infusing the honey with the essence of nature's own sweetness. Whether drizzled over warm pancakes, mixed into your favorite yogurt, or enjoyed straight from the jar, our Apple Blossom Honey promises a delightful journey of flavors. So savor the taste of orchard bliss and experience the essence of apple in every golden spoonful.",
         "inCart": false,
@@ -20,28 +20,81 @@
         "title": "Clover Honey",
         "src": "src/assets/img/products/honey/clover-honey.jpg",
         "alt": "jar with clover honey light yellow",
-        "price": "40",
+        "price": 40,
         "amount": "900g",
         "info": "Introducing our finest Clover Honey - a pure and natural delight straight from the picturesque clover fields. Crafted by our industrious bees, this honey captures the essence of blooming clover blossoms, offering you a taste of nature's sweetest nectar. With a delicate and smooth flavor profile, our Clover Honey is a delectable addition to your culinary endeavors. Sourced from the pristine pastures, it boasts a light golden hue and a subtle floral aroma that will transport you to sun-kissed meadows. Whether drizzled over warm pancakes, stirred into your morning tea, or used as a wholesome sweetener in your favorite recipes, our Clover Honey promises to elevate your dining experience. Its versatility knows no bounds, making it the perfect complement to both sweet and savory dishes.",
         "inCart": false,
           "count": 0,
         "total": 0,
         "img-source": "https://www.freepik.com/free-photo/sweet-honey-bee-pollen-seeds-candies-sack-cloth_3434410.htm#&position=18&from_view=undefined"
+    },
+    {
+        "id": 3,
+        "title": "Forest Honey",
+        "src": "src/assets/img/products/honey/forest-honey.jpg",
+        "alt": "jar with forest honey and bread",
+        "price": 15,
+        "amount": "900g",
+        "info": "Introducing our exquisite Forest Honey - a rich and enchanting blend sourced from the heart of the pristine woodlands. Crafted by our diligent bees, this honey captures the essence of the diverse flora that thrives in the forest, offering you a taste of nature's hidden treasures. With its deep amber color and robust flavor, our Forest Honey is a true delight for the senses. Each spoonful carries the enchanting aroma of woodland blossoms and the earthy notes of nature's bounty. Whether drizzled over freshly baked bread, stirred into warm tea, or used as a natural sweetener in your favorite recipes, our Forest Honey promises to take your culinary experiences to new heights. Its complexity and unique taste profile make it a versatile companion to a wide array of dishes.",
+        "inCart": false,
+        "count":0,
+        "total":0,
+        "img-source": "https://www.freepik.com/free-photo/delicious-bread-honey-wooden-plate_5223256.htm#&position=24&from_view=undefined"
+    },
+        {
+        "id": 4,
+        "title": "Light Wildflower Honey",
+        "src": "src/assets/img/products/honey/wildflower-honey.jpg",
+        "alt": "jar with light wildflower honey on yellow background",
+        "price": 10,
+        "amount": "150g",
+        "info": "Introducing our delightful Wildflower Honey - a pure and natural gem gathered from a tapestry of blooming wildflowers. Crafted by our industrious bees, this honey captures the essence of diverse floral meadows, offering you a taste of nature's bountiful beauty. With its light golden color and delicate flavor, our Wildflower Honey is a true delicacy for your taste buds. Each spoonful carries the enchanting aroma of a sunlit meadow and the subtle sweetness of a floral bouquet. Whether drizzled over warm scones, paired with artisanal cheeses, or used as a wholesome sweetener in your favorite recipes, our Wildflower Honey promises to elevate your culinary experiences. Its versatility and gentle taste make it a perfect addition to your daily rituals.",
+        "inCart": false,
+        "count":0,
+        "total":0,
+        "img-source": "https://www.freepik.com/free-photo/close-up-jar-with-homemade-honey_6265953.htm#&position=28&from_view=undefined"
+    },
+        {
+        "id": 5,
+        "title": "Dark Wildflower Honey",
+        "src": "src/assets/img/products/honey/wildflower-honey-dark.jpg",
+        "alt": "jar with dark wildflower honey on orange background",
+        "price": 20,
+        "amount": "300g",
+        "info": "Introducing our captivating Dark Wildflower Honey - a truly exceptional creation derived from the vibrant blooms of diverse wildflowers. Crafted by our industrious bees, this honey captures the essence of rich and flavorful floral meadows, offering you a taste of nature's untamed beauty. With its deep amber hue and robust flavor, our Dark Wildflower Honey is a genuine delight for the palate. Each spoonful carries the enchanting aroma of wild blossoms and the complex sweetness of a diverse botanical tapestry. Whether drizzled over warm biscuits, infused into herbal teas, or used as a bold sweetener in your culinary masterpieces, our Dark Wildflower Honey promises to add depth and character to your dishes. Its distinct taste profile makes it an exquisite complement to a wide range of culinary creations.",
+        "inCart": false,
+        "count":0,
+        "total":0,
+        "img-source": "https://www.freepik.com/free-photo/high-angle-honey-jar-dipper-with-copy-space_6073861.htm#&position=14&from_view=undefined"
     }
     ],
 
      "sweets": [
     {
         "id": 1,
-        "title": "",
-        "img": "",
-        "price": "",
-        "amount": "",
-        "info": "",
+        "title": "Honey Bear Jelly Candies",
+        "src": "src/assets/img/products/sweets/honey-bear-candy.jpg",
+         "alt": "candy made from honey in form of a bear",
+        "price": 10,
+        "amount": "500g",
+        "info": "Introducing our delightful Honey Bear Jelly Candies - a sweet and playful treat that captures the essence of pure honey in the form of adorable bear-shaped candies. Crafted with the finest honey and natural ingredients, these jelly candies offer a whimsical twist to the classic honey flavor. Each bear-shaped candy is carefully crafted to perfection, making them a joy to behold and a delight to savor. With their soft and chewy texture, they are a delightful indulgence for kids and adults alike.",
         "inCart": false,
         "count": 0,
         "total": 0,
-        "src": " "
+        "img-source": "https://www.freepik.com/free-photo/assortment-delicious-gummy-bears_34136278.htm#&position=10&from_view=undefined"
+    },
+       {
+        "id": 2,
+        "title": "Honey Lollipop",
+        "src": "src/assets/img/products/sweets/honey-lollipop.jpg",
+        "alt": "lollipops are made from honey on brown background",
+        "price": 8,
+        "amount": "150g",
+        "info": "Introducing our delightful Honey Lollipops - a whimsical and naturally sweet treat that brings the goodness of honey to every lick. Crafted with care and using only the finest honey, our lollipops are a true delight for honey enthusiasts of all ages. Made with the highest quality honey, our lollipops offer a delightful burst of natural sweetness. The distinct flavor of honey lingers on your taste buds, evoking memories of sunny meadows and the buzzing of bees.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/delicious-lollipop_8172282.htm#&position=8&from_view=undefined"
     }
   
     ],
@@ -49,15 +102,68 @@
      "cosmetics": [
     {
         "id": 1,
+        "title": "Cleansing Soap",
+        "src": "src/assets/img/products/cosmetics/cleansing-honey-soap.jpg",
+        "alt": "White soap on the table with blue salt around",
+        "price": 10,
+        "amount": "200g",
+        "info": "Introducing our luxurious Cleansing Soap infused with the goodness of honey - a gentle and nourishing cleanser that elevates your skincare routine to a new level of indulgence. Crafted with the purest honey and natural ingredients, our cleansing soap offers a spa-like experience for your skin. The White Cleansing Soap is carefully formulated to cleanse and purify your skin while preserving its natural moisture balance. Enriched with the hydrating and healing properties of honey, this soap provides a soothing and gentle cleansing experience. As you lather the soap, the delicate scent of honey envelops you, creating a calming and rejuvenating ambiance. The rich, creamy lather glides smoothly over your skin, leaving it feeling refreshed, soft, and nourished.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/high-angle-spa-products-concept_5592868.htm#&position=34&from_view=undefined"
+    },
+        {
+        "id": 2,
+        "title": "Clover Soap",
+        "src": "src/assets/img/products/cosmetics/clover-honey-soap.jpg",
+        "alt": "Green soap on the wooden plate with a green branch",
+        "price": 8,
+        "amount": "100g",
+        "info": "Introducing our exquisite Clover Soap - a harmonious blend that brings together the goodness of pure honey and the enchanting fragrance of blooming clover. Crafted with care and natural ingredients, our soap offers a luxurious bathing experience that nourishes and pampers your skin. The Honey and Clover Soap is lovingly made with the finest honey, known for its moisturizing and soothing properties, and infused with the delightful essence of clover. As you lather the soap, the sweet aroma of honey and the refreshing scent of clover blend in perfect harmony, creating a sensory journey that calms the mind and uplifts the spirit. This indulgent soap gently cleanses your skin, leaving it feeling soft, supple, and rejuvenated. The rich lather envelopes your senses, enveloping you in the comforting embrace of honey and clover.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/front-view-soap-made-from-green-plant_11741671.htm#&position=30&from_view=undefined"
+    },
+        {
+        "id": 3,
+        "title": "Dark Honey Soap",
+        "src": "src/assets/img/products/cosmetics/dark-honey-soap.jpg",
+        "alt": "Dark brown soap is on the table with a branch of herbs",
+        "price": 8,
+        "amount": "100g",
+        "info": "Introducing our exquisite Dark Honey Soap - a decadent fusion of rich, dark honey and the enchanting essence of wildflowers. Crafted with the purest honey sourced from the heart of nature's wild blooms, our soap offers a luxurious bathing experience like no other. It boasts a mesmerizing hue that mirrors the deep amber tones of pure honey. Infused with the delicate fragrance of wildflowers, each use transports you to the picturesque meadows where our bees diligently collect nectar from diverse blooms. This indulgent soap is carefully formulated with the moisturizing and nourishing properties of honey. As you lather the soap, the luxurious lather gently cleanses your skin, leaving it feeling silky-smooth and pampered.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/high-angle-homemade-soap-arrangement_13130865.htm#&position=36&from_view=undefined"
+    },
+        {
+        "id": 4,
+        "title": "Honey Lip Balm",
+        "src": "src/assets/img/products/cosmetics/honey-lipbalm.jpg",
+        "alt": "A honey lip balm is on the table with a soap next to it",
+        "price": 30,
+        "amount": "30g",
+        "info": "Introducing our luscious Honey Lip Balm - a soothing and hydrating lip treatment infused with the nourishing essence of pure honey. Crafted with care and natural ingredients, our lip balm offers a delightful way to pamper and protect your lips. The Honey Lip Balm is carefully formulated with the goodness of honey, known for its moisturizing and healing properties. Each swipe of the balm glides smoothly over your lips, enveloping them in a velvety-soft, honey-kissed texture. The subtle yellow hue adds a touch of sunshine to your lips, brightening your smile and enhancing your natural beauty. The honey-infused formula helps to nourish and replenish your lips, leaving them feeling supple and rejuvenated.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/arrangement-with-salt-soap-wooden-table_5566909.htm#&position=20&from_view=undefined"
+    },
+        {
+        "id": 1,
         "title": "",
-        "img": "",
+        "src": "",
+        "alt": "",
         "price": "",
         "amount": "",
         "info": "",
         "inCart": false,
         "count": 0,
         "total": 0,
-        "src": " "
+        "img-source": " "
     }
   
     ],

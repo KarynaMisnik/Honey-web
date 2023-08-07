@@ -4,8 +4,8 @@
     return(
         <>
     <img
-      src={productData[0].honey[0].src}
-          alt={productData[0].honey[0].alt}
+      src={productData[0].honey[1].src}
+          alt={productData[0].honey[1].alt}
           />
         </>
     )
