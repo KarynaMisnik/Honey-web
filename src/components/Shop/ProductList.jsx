@@ -1,12 +1,71 @@
  import productData from "./productData.json";
- 
+ import { Button, Grid, styled } from '@mui/material';
+
+
+const CustomButton = styled(Button)(({ theme }) => ({
+textAlign: 'center',
+fontFamily: 'var(--main-font)',
+fontSize: '24px',
+fontWeight: '700',
+background: 'var(--dark-brown)',
+color: 'var(--white)',
+borderRadius: '8px',
+border: 'none',
+margin: '5px',
+":hover":{
+    background: 'var(--dark-brown)',
+},
+
+     '@media (max-width: 1000px)': {
+    fontSize: '12px',
+    fontWeight: '400',
+  },
+}));
+
+
+const CustomGrid = styled(Grid)(({ theme }) => ({
+justifyContent:"center",
+ alignItems:"center",
+}))
+
+
+
  export default function ProductList(){
-    return(
+    return (
         <>
-    <img
-      src={productData[0].honey[1].src}
-          alt={productData[0].honey[1].alt}
-          />
-        </>
-    )
+    <CustomGrid container  padding='1rem' >
+      <CustomGrid container item xs={6} sm={2}>
+        <CustomButton >
+          Honey
+        </CustomButton>
+      </CustomGrid>
+      <CustomGrid container item xs={6} sm={2}>
+        <CustomButton>
+          Sweets
+        </CustomButton>
+      </CustomGrid>
+      <CustomGrid container item xs={6} sm={2}>
+        <CustomButton>
+          Cosmetics
+        </CustomButton>
+      </CustomGrid>
+      <CustomGrid container item xs={6} sm={2}>
+        <CustomButton>
+          Food
+        </CustomButton>
+      </CustomGrid>
+      <CustomGrid container item xs={6} sm={2}>
+        <CustomButton>
+          Other
+        </CustomButton>
+      </CustomGrid>
+      <CustomGrid container item xs={6} sm={2}>
+        <CustomButton>
+          All
+        </CustomButton>
+      </CustomGrid>
+    </CustomGrid>
+    </>
+  );
+
  }
