@@ -162,3 +162,21 @@ p {
     font-size: 20px;
   }
 }
+
+/* ProductList p--ttile, amount, price */
+
+.product_list {
+  font-family: var(--main-font);
+  font-size: 18px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 5px;
+
+  color: var(--dark-brown);
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .product_list {
+    font-size: 14px;
+  }
+}
