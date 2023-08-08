@@ -1,5 +1,6 @@
+ import React, {useState} from 'react';
  import productData from "./productData.json";
- import { Button, Grid, styled } from '@mui/material';
+ import { Button, Grid, styled, Paper } from '@mui/material';
  import { ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
 
 
@@ -33,6 +34,7 @@ justifyContent:"center",
 
 
  export default function ProductList(){
+    const [data, setData] = useState(productData);
     return (
         <>
     <CustomGrid container  padding='1rem' >
@@ -69,16 +71,29 @@ justifyContent:"center",
     </CustomGrid>
 
 <div  style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-        overflow: 'hidden',
-        '@media (maxWidth: 768px)': {
-          display: 'block',
-        },
+        flexGrow: 1,
+    padding: 2,
       }}>
 
-    
+        <Grid container spacing={2}>
+
+       {data.map((values) => {
+       return(
+          <Grid item xs={12} sm={6} md={4} key={values.id} sx={{textAlign: 'center'}}>
+            <Paper elevation={3}>
+              <img src={values.src} alt={values.title}  sx={{width: '100%',
+    height: 'auto',}}/>
+              <h3>{values.title}</h3>
+              <p>{values.price}</p>
+              <Button variant="contained" color="primary">
+                More
+              </Button>
+            </Paper>
+          </Grid>
+        
+ )})}
+
+      </Grid>
 
 </div>
  
