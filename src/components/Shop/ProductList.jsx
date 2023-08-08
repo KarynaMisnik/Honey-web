@@ -90,7 +90,7 @@ justifyContent:"center",
               <CustomButton >
             Buy 
               </CustomButton>
-               <a className='product_list details'>Details</a>
+               <a href='#' className='product_list details'>Details</a>
               </div>
               </div>
             </Paper>
