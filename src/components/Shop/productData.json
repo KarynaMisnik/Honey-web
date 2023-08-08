@@ -153,47 +153,101 @@
         "img-source": "https://www.freepik.com/free-photo/arrangement-with-salt-soap-wooden-table_5566909.htm#&position=20&from_view=undefined"
     },
         {
-        "id": 1,
-        "title": "",
-        "src": "",
-        "alt": "",
-        "price": "",
-        "amount": "",
-        "info": "",
+        "id": 5,
+        "title": "Amber Honey Soap",
+        "src": "src/assets/img/products/cosmetics/honey-soap.jpg",
+        "alt": "An amber soap is on soap case with a razor and towel next to it",
+        "price": 8,
+        "amount": "100g",
+        "info": "Introducing our luxurious Amber Honey Soap - a golden treasure infused with the rich essence of amber and the goodness of pure honey. Crafted with care and meticulous attention to detail, our soap offers a bathing experience that is both indulgent and rejuvenating. The Amber Honey Soap exudes a warm and inviting fragrance that transports you to a world of elegance and luxury. Infused with the enchanting scent of amber, each use envelops your senses in a captivating aromatic journey. Carefully formulated with the moisturizing and nourishing properties of honey, our soap gently cleanses your skin, leaving it feeling soft and pampered. The rich lather glides effortlessly over your body, providing a moment of tranquility and self-care.",
         "inCart": false,
         "count": 0,
         "total": 0,
-        "img-source": " "
+        "img-source": "https://www.freepik.com/free-photo/top-view-ecological-razor-soap_12977588.htm#&position=38&from_view=undefined"
     }
   
     ],
      "food": [
     {
         "id": 1,
-        "title": "",
-        "img": "",
-        "price": "",
-        "amount": "",
-        "info": "",
+        "title": "Honey Mustard",
+        "src": "src/assets/img/products/food/honey-mustard.jpg",
+        "alt": "A jar of honey mustard is on the table with two spoons next to it",
+        "price": 15,
+        "amount": "1000g",
+        "info": "Introducing our Honey Mustard - a harmonious blend of golden honey and zesty mustard, crafted to perfection. The sweet notes of honey complement the tangy kick of mustard, creating a versatile and delectable condiment that adds flavor to your favorite dishes. Drizzle it over salads, sandwiches, or use it as a dipping sauce for a delightful culinary experience that balances sweet and savory in every bite. Taste the perfect fusion of nature's sweetness and bold flavors with our Honey Mustard.",
         "inCart": false,
         "count": 0,
         "total": 0,
-        "src": " "
+        "img-source": "https://www.freepik.com/free-photo/jar-crunchy-peanut-butter_41285327.htm#&position=0&from_view=undefined"
+    },
+        {
+        "id": 2,
+        "title": "Honey Nougat Bar",
+        "src": "src/assets/img/products/food/honey-nougat.jpg",
+        "alt": "White honey nougat bars and a jar of honey are on the table",
+        "price": 7,
+        "amount": "30g",
+        "info": "Discover pure indulgence with our Honey Nougat Bar. Delicately crafted with the finest ingredients, this bar brings together the sweetness of honey and the crunch of nougat in a delightful harmony. Experience layers of flavor and texture as you savor each bite. Whether for a quick treat or a moment of blissful relaxation, our Honey Nougat Bar is a perfect companion. Elevate your snacking with the natural goodness of honey and the satisfying crunch of nougat.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/top-view-turron-dessert_29305536.htm#&position=4&from_view=undefined"
+    },
+        {
+        "id": 3,
+        "title": "Honey Nut Bar",
+        "src": "src/assets/img/products/food/honey-nuts-bar.jpg",
+        "alt": "Honey nut bars are on the wooden chopping board and a small jar of honey is on the table",
+        "price": 7,
+        "amount": "30g",
+        "info": "Experience the perfect blend of sweetness and crunch with our Honey Nut Bar. Packed with the natural goodness of honey and the satisfying texture of nuts, this bar is a delightful snack for any time of day. Indulge in the rich flavors and nourishing energy that our Honey Nut Bar offers. Elevate your snacking experience with the wholesome combination of honey and nuts in every bite.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/delicious-mexican-sweets-arrangement_38171601.htm#&position=2&from_view=undefined"
+    },
+        {
+        "id": 4,
+        "title": "Honey Waffle",
+        "src": "src/assets/img/products/food/honey-waffle.jpg",
+        "alt": "Honey waffles are on a towel and a jar of honey is next to them, they all are on the marble table",
+        "price": 12,
+        "amount": "80g",
+        "info": "Indulge in the delicious harmony of flavors with our Honey Waffles. Crafted with care, these waffles are infused with the natural sweetness of honey, creating a delightful treat for your taste buds. Crispy on the outside and soft on the inside, our Honey Waffles offer a perfect balance of texture and flavor. Enjoy them as a breakfast delight or a delightful snack. Elevate your waffle experience with the goodness of honey in every bite.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.freepik.com/free-photo/stroopwafels-caramel-dutch-waffles-with-tea-coffee-honey-concrete_5896355.htm#&position=6&from_view=undefined"
     }
   
     ],
      "other": [
     {
         "id": 1,
-        "title": "",
-        "img": "",
-        "price": "",
-        "amount": "",
-        "info": "",
+        "title": "Beeswax Candle",
+        "src": "src/assets/img/products/other/beeswax-candles.jpg",
+        "alt": "Three yellow beswax candles are on blue background",
+        "price": 10,
+        "amount": "1pc",
+        "info": "Illuminate your space with the warm glow of our Beeswax Candle. Handcrafted with care and infused with the essence of nature, this candle is made from pure beeswax, harvested from our diligent bees. Enjoy the subtle honey aroma and the clean, natural burn that our Beeswax Candle offers. Elevate your ambiance and embrace the soothing presence of this eco-friendly and elegant candle, a tribute to the harmony between bees and the environment.",
         "inCart": false,
         "count": 0,
         "total": 0,
-        "src": " "
+        "img-source": "https://www.vecteezy.com/free-photos"
+    },
+       {
+        "id": 2,
+        "title": "Lavender Beeswax Candle",
+        "src": "src/assets/img/products/other/beeswax-candle-scent.jpg",
+        "alt": "A purple beeswax candle is burning",
+        "price": 10,
+        "amount": "1pc",
+        "info": "Experience tranquility with our Lavender-Scented Beeswax Candle. Handcrafted from pure beeswax and infused with the calming aroma of lavender, this candle offers a sensory journey that soothes the mind and uplifts the spirit. Enjoy the gentle flicker of light and the subtle honey undertones as you unwind in its glow. Elevate your relaxation ritual with the harmonious blend of beeswax and lavender, creating an ambiance of serenity and bliss.",
+        "inCart": false,
+        "count": 0,
+        "total": 0,
+        "img-source": "https://www.vecteezy.com/free-photos"
     }
   
     ]
