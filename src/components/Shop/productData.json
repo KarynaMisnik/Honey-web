@@ -1,9 +1,8 @@
 
 [
     {
-    "honey": [
-    {
-        "id": 1,
+    "id": 1,
+        "category": "honey",
         "title": "Apple Blossom Honey",
         "src": "src/assets/img/products/honey/apple-honey.jpg",
         "alt": "jar with apple honey amber color",
@@ -17,6 +16,7 @@
     },
     {
         "id": 2,
+        "category": "honey",
         "title": "Clover Honey",
         "src": "src/assets/img/products/honey/clover-honey.jpg",
         "alt": "jar with clover honey light yellow",
@@ -24,12 +24,13 @@
         "amount": "900g",
         "info": "Introducing our finest Clover Honey - a pure and natural delight straight from the picturesque clover fields. Crafted by our industrious bees, this honey captures the essence of blooming clover blossoms, offering you a taste of nature's sweetest nectar. With a delicate and smooth flavor profile, our Clover Honey is a delectable addition to your culinary endeavors. Sourced from the pristine pastures, it boasts a light golden hue and a subtle floral aroma that will transport you to sun-kissed meadows. Whether drizzled over warm pancakes, stirred into your morning tea, or used as a wholesome sweetener in your favorite recipes, our Clover Honey promises to elevate your dining experience. Its versatility knows no bounds, making it the perfect complement to both sweet and savory dishes.",
         "inCart": false,
-          "count": 0,
+        "count": 0,
         "total": 0,
         "img-source": "https://www.freepik.com/free-photo/sweet-honey-bee-pollen-seeds-candies-sack-cloth_3434410.htm#&position=18&from_view=undefined"
     },
     {
         "id": 3,
+        "category": "honey",
         "title": "Forest Honey",
         "src": "src/assets/img/products/honey/forest-honey.jpg",
         "alt": "jar with forest honey and bread",
@@ -43,6 +44,7 @@
     },
         {
         "id": 4,
+        "category": "honey",
         "title": "Light Wildflower Honey",
         "src": "src/assets/img/products/honey/wildflower-honey.jpg",
         "alt": "jar with light wildflower honey on yellow background",
@@ -56,6 +58,7 @@
     },
         {
         "id": 5,
+        "category": "honey",
         "title": "Dark Wildflower Honey",
         "src": "src/assets/img/products/honey/wildflower-honey-dark.jpg",
         "alt": "jar with dark wildflower honey on orange background",
@@ -66,12 +69,10 @@
         "count":0,
         "total":0,
         "img-source": "https://www.freepik.com/free-photo/high-angle-honey-jar-dipper-with-copy-space_6073861.htm#&position=14&from_view=undefined"
-    }
-    ],
-
-     "sweets": [
+    },
     {
-        "id": 1,
+        "id": 6,
+        "category": "sweets",
         "title": "Honey Bear Jelly Candies",
         "src": "src/assets/img/products/sweets/honey-bear-candy.jpg",
          "alt": "candy made from honey in form of a bear",
@@ -84,7 +85,8 @@
         "img-source": "https://www.freepik.com/free-photo/assortment-delicious-gummy-bears_34136278.htm#&position=10&from_view=undefined"
     },
        {
-        "id": 2,
+        "id": 7,
+        "category": "sweets",
         "title": "Honey Lollipop",
         "src": "src/assets/img/products/sweets/honey-lollipop.jpg",
         "alt": "lollipops are made from honey on brown background",
@@ -95,13 +97,10 @@
         "count": 0,
         "total": 0,
         "img-source": "https://www.freepik.com/free-photo/delicious-lollipop_8172282.htm#&position=8&from_view=undefined"
-    }
-  
-    ],
-
-     "cosmetics": [
+    },
     {
-        "id": 1,
+        "id": 8,
+        "category": "cosmetics",
         "title": "Cleansing Soap",
         "src": "src/assets/img/products/cosmetics/cleansing-honey-soap.jpg",
         "alt": "White soap on the table with blue salt around",
@@ -114,7 +113,8 @@
         "img-source": "https://www.freepik.com/free-photo/high-angle-spa-products-concept_5592868.htm#&position=34&from_view=undefined"
     },
         {
-        "id": 2,
+        "id": 9,
+        "category": "cosmetics",
         "title": "Clover Soap",
         "src": "src/assets/img/products/cosmetics/clover-honey-soap.jpg",
         "alt": "Green soap on the wooden plate with a green branch",
@@ -127,7 +127,8 @@
         "img-source": "https://www.freepik.com/free-photo/front-view-soap-made-from-green-plant_11741671.htm#&position=30&from_view=undefined"
     },
         {
-        "id": 3,
+        "id": 10,
+        "category": "cosmetics",
         "title": "Dark Honey Soap",
         "src": "src/assets/img/products/cosmetics/dark-honey-soap.jpg",
         "alt": "Dark brown soap is on the table with a branch of herbs",
@@ -140,7 +141,8 @@
         "img-source": "https://www.freepik.com/free-photo/high-angle-homemade-soap-arrangement_13130865.htm#&position=36&from_view=undefined"
     },
         {
-        "id": 4,
+        "id": 11,
+        "category": "cosmetics",
         "title": "Honey Lip Balm",
         "src": "src/assets/img/products/cosmetics/honey-lipbalm.jpg",
         "alt": "A honey lip balm is on the table with a soap next to it",
@@ -153,7 +155,8 @@
         "img-source": "https://www.freepik.com/free-photo/arrangement-with-salt-soap-wooden-table_5566909.htm#&position=20&from_view=undefined"
     },
         {
-        "id": 5,
+        "id": 12,
+        "category": "cosmetics",
         "title": "Amber Honey Soap",
         "src": "src/assets/img/products/cosmetics/honey-soap.jpg",
         "alt": "An amber soap is on soap case with a razor and towel next to it",
@@ -164,12 +167,10 @@
         "count": 0,
         "total": 0,
         "img-source": "https://www.freepik.com/free-photo/top-view-ecological-razor-soap_12977588.htm#&position=38&from_view=undefined"
-    }
-  
-    ],
-     "food": [
+    },
     {
-        "id": 1,
+        "id": 13,
+        "category": "food",
         "title": "Honey Mustard",
         "src": "src/assets/img/products/food/honey-mustard.jpg",
         "alt": "A jar of honey mustard is on the table with two spoons next to it",
@@ -182,7 +183,8 @@
         "img-source": "https://www.freepik.com/free-photo/jar-crunchy-peanut-butter_41285327.htm#&position=0&from_view=undefined"
     },
         {
-        "id": 2,
+        "id": 14,
+         "category": "food",
         "title": "Honey Nougat Bar",
         "src": "src/assets/img/products/food/honey-nougat.jpg",
         "alt": "White honey nougat bars and a jar of honey are on the table",
@@ -195,7 +197,8 @@
         "img-source": "https://www.freepik.com/free-photo/top-view-turron-dessert_29305536.htm#&position=4&from_view=undefined"
     },
         {
-        "id": 3,
+        "id": 15,
+         "category": "food",
         "title": "Honey Nut Bar",
         "src": "src/assets/img/products/food/honey-nuts-bar.jpg",
         "alt": "Honey nut bars are on the wooden chopping board and a small jar of honey is on the table",
@@ -208,7 +211,8 @@
         "img-source": "https://www.freepik.com/free-photo/delicious-mexican-sweets-arrangement_38171601.htm#&position=2&from_view=undefined"
     },
         {
-        "id": 4,
+        "id": 16,
+        "category": "food",
         "title": "Honey Waffle",
         "src": "src/assets/img/products/food/honey-waffle.jpg",
         "alt": "Honey waffles are on a towel and a jar of honey is next to them, they all are on the marble table",
@@ -219,12 +223,10 @@
         "count": 0,
         "total": 0,
         "img-source": "https://www.freepik.com/free-photo/stroopwafels-caramel-dutch-waffles-with-tea-coffee-honey-concrete_5896355.htm#&position=6&from_view=undefined"
-    }
-  
-    ],
-     "other": [
+    },
     {
-        "id": 1,
+        "id": 17,
+        "category": "other",
         "title": "Beeswax Candle",
         "src": "src/assets/img/products/other/beeswax-candles.jpg",
         "alt": "Three yellow beswax candles are on blue background",
@@ -237,7 +239,8 @@
         "img-source": "https://www.vecteezy.com/free-photos"
     },
        {
-        "id": 2,
+        "id": 18,
+        "category": "other",
         "title": "Lavender Beeswax Candle",
         "src": "src/assets/img/products/other/beeswax-candle-scent.jpg",
         "alt": "A purple beeswax candle is burning",
@@ -251,6 +254,3 @@
     }
   
     ]
-}
-
-]

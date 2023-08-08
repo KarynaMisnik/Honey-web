@@ -1,5 +1,7 @@
  import productData from "./productData.json";
  import { Button, Grid, styled } from '@mui/material';
+ import { ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
+
 
 
 const CustomButton = styled(Button)(({ theme }) => ({
@@ -65,6 +67,21 @@ justifyContent:"center",
         </CustomButton>
       </CustomGrid>
     </CustomGrid>
+
+<div  style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        overflow: 'hidden',
+        '@media (maxWidth: 768px)': {
+          display: 'block',
+        },
+      }}>
+
+    
+
+</div>
+ 
     </>
   );
 
