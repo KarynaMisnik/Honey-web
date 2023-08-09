@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact';
 import Error from './components/Error/Error';
 import ContactDetails from './components/Contact/ContactDetails';
 import Cart from './components/Shop/Cart';
+import ProductDetails from './components/Shop/ProductDetails';
 
 const pages = ['Home', 'About', 'Shop', 'Contact'];
 
@@ -25,6 +26,7 @@ const pages = ['Home', 'About', 'Shop', 'Contact'];
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<ContactDetails />} />
          <Route path="/cart" element={<Cart/>} />
+        <Route path="/values/:valuesId" element={<ProductDetails />} />
         <Route path="*" element={<Error />} />
       </Routes>
 

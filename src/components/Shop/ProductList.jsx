@@ -1,9 +1,7 @@
  import React, {useState} from 'react';
  import productData from "./productData.json";
  import { Button, Grid, styled, Paper } from '@mui/material';
- import { ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
-
-
+import { NavLink } from 'react-router-dom';
 
 const CustomButton = styled(Button)(({ theme }) => ({
 textAlign: 'center',
@@ -35,36 +33,42 @@ justifyContent:"center",
 
  export default function ProductList(){
     const [data, setData] = useState(productData);
+    const filterResult = (catItem)=>{
+        const result = productData.filter((currentData)=>{
+            return currentData.category === catItem;
+        });
+        setData(result);
+    }
     return (
         <>
     <CustomGrid container  padding='1rem' >
       <CustomGrid container item xs={6} sm={2}>
-        <CustomButton >
+        <CustomButton onClick={()=>filterResult('honey')}>
           Honey
         </CustomButton>
       </CustomGrid>
       <CustomGrid container item xs={6} sm={2}>
-        <CustomButton>
+        <CustomButton onClick={()=>filterResult('sweets')}>
           Sweets
         </CustomButton>
       </CustomGrid>
       <CustomGrid container item xs={6} sm={2}>
-        <CustomButton>
+        <CustomButton onClick={()=>filterResult('cosmetics')}>
           Cosmetics
         </CustomButton>
       </CustomGrid>
       <CustomGrid container item xs={6} sm={2}>
-        <CustomButton>
+        <CustomButton onClick={()=>filterResult('food')}>
           Food
         </CustomButton>
       </CustomGrid>
       <CustomGrid container item xs={6} sm={2}>
-        <CustomButton>
+        <CustomButton onClick={()=>filterResult('other')}>
           Other
         </CustomButton>
       </CustomGrid>
       <CustomGrid container item xs={6} sm={2}>
-        <CustomButton>
+        <CustomButton onClick={()=>setData(productData)}>
           All
         </CustomButton>
       </CustomGrid>
@@ -90,14 +94,15 @@ justifyContent:"center",
               <CustomButton >
             Buy 
               </CustomButton>
-               <a href='#' className='product_list details'>Details</a>
+             
+             <NavLink to={`/values/${values.id}`}><p className='product_list details'>Details</p></NavLink> 
+               
               </div>
               </div>
             </Paper>
           </Grid>
         
  )})}
-
       </Grid>
 
 </div>
