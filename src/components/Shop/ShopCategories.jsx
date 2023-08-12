@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Beekeeper from '../../assets/img/Beekeeper.png';
+import productData from './productData.json'; 
 
 const HexagonItem = styled(Button)(({ theme }) => ({
   width: '200px',
@@ -38,10 +39,12 @@ const HexagonItem = styled(Button)(({ theme }) => ({
 
 
 export default function ShopCategories() {
+
+
   return (
     <>
     <Grid container justifyContent="space-evenly" paddingTop={2}  sx={{ margin: '0 auto', maxWidth: '100%' }}>
-      <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Honey</HexagonItem>
+      <HexagonItem onClick={()=>filterResult('honey')} xs={12} sm={6} md={4} lg={3} xl={2}>Honey</HexagonItem>
       <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Sweets</HexagonItem>
       <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Cosmetics</HexagonItem>
       <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Food</HexagonItem>

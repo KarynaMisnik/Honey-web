@@ -8,13 +8,18 @@ textAlign: 'center',
 fontFamily: 'var(--main-font)',
 fontSize: '18px',
 fontWeight: '700',
-background: 'var(--dark-brown)',
-color: 'var(--white)',
+color: 'var(--dark-brown)',
 borderRadius: '8px',
-border: 'none',
+border: '2px solid var(--dark-brown)',
 margin: '5px',
 ":hover":{
     background: 'var(--dark-brown)',
+    color: 'var(--white)',
+},
+
+":focus":{
+background: 'var(--dark-brown)',
+  color: 'var(--white)',
 },
 
      '@media (max-width: 1000px)': {

@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import productData from './productData.json'; // Import your JSON data
+import productData from './productData.json'; 
 import Grid from '@mui/material/Grid';
 
 
 function ProductDetails() {
   const {valuesId } = useParams();
-  const product  = productData.find((product ) => product .id === parseInt(valuesId));
+  const product  = productData.find((product ) => product.id === parseInt(valuesId));
 
   if (!product ) {
     return <div>Product not found</div>;
