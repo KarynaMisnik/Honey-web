@@ -16,24 +16,46 @@ margin: '5px',
     background: 'var(--dark-brown)',
     color: 'var(--white)',
 },
-
-":focus":{
-background: 'var(--dark-brown)',
-  color: 'var(--white)',
-},
-
-     '@media (max-width: 1000px)': {
+    '@media (max-width: 1000px)': {
     fontSize: '12px',
     fontWeight: '400',
   },
 }));
 
 
-const CustomGrid = styled(Grid)(({ theme }) => ({
-justifyContent:"center",
- alignItems:"center",
-}))
+const HexagonItem = styled(Button)(({ theme }) => ({
+  width: '200px',
+  height: '215px',
+  ...theme.typography.body2,
+  padding: 0,
+  textAlign: 'center',
+  color: 'var(--dark-brown)',
+  textTransform: 'uppercase',
+  fontWeight: '700',
+  fontSize: '24px',
+  position: 'relative',
+  clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: 'var(--dark-yellow)',
 
+  '&:hover': {
+    backgroundColor: 'var(--dark-brown)',
+    color: 'var(--white)',
+  },
+
+  ":focus":{
+background: 'var(--dark-brown)',
+  color: 'var(--white)',
+},
+ 
+    '@media (max-width: 900px)': {
+    width: '100px',
+    height: '115px',
+    fontSize: '14px',
+  },
+}));
 
 
  export default function ProductList(){
@@ -46,38 +68,15 @@ justifyContent:"center",
     }
     return (
         <>
-    <CustomGrid container  padding='1rem' >
-      <CustomGrid container item xs={6} sm={2}>
-        <CustomButton onClick={()=>filterResult('honey')}>
-          Honey
-        </CustomButton>
-      </CustomGrid>
-      <CustomGrid container item xs={6} sm={2}>
-        <CustomButton onClick={()=>filterResult('sweets')}>
-          Sweets
-        </CustomButton>
-      </CustomGrid>
-      <CustomGrid container item xs={6} sm={2}>
-        <CustomButton onClick={()=>filterResult('cosmetics')}>
-          Cosmetics
-        </CustomButton>
-      </CustomGrid>
-      <CustomGrid container item xs={6} sm={2}>
-        <CustomButton onClick={()=>filterResult('food')}>
-          Food
-        </CustomButton>
-      </CustomGrid>
-      <CustomGrid container item xs={6} sm={2}>
-        <CustomButton onClick={()=>filterResult('other')}>
-          Other
-        </CustomButton>
-      </CustomGrid>
-      <CustomGrid container item xs={6} sm={2}>
-        <CustomButton onClick={()=>setData(productData)}>
-          All
-        </CustomButton>
-      </CustomGrid>
-    </CustomGrid>
+
+        <Grid container justifyContent="space-evenly" paddingTop={2}  sx={{ margin: '0 auto', maxWidth: '100%' }}>
+      <HexagonItem onClick={()=>filterResult('honey')} xs={12} sm={6} md={4} lg={3} xl={2}>Honey</HexagonItem>
+      <HexagonItem onClick={()=>filterResult('sweets')} xs={12} sm={6} md={4} lg={3} xl={2}>Sweets</HexagonItem>
+      <HexagonItem onClick={()=>filterResult('cosmetics')} xs={12} sm={6} md={4} lg={3} xl={2}>Cosmetics</HexagonItem>
+      <HexagonItem onClick={()=>filterResult('food')} xs={12} sm={6} md={4} lg={3} xl={2}>Food</HexagonItem>
+      <HexagonItem onClick={()=>filterResult('other')} xs={12} sm={6} md={4} lg={3} xl={2}>Other</HexagonItem>
+      <HexagonItem onClick={()=>setData(productData)} xs={12} sm={6} md={4} lg={3} xl={2}>All</HexagonItem>
+    </Grid>
 
 <div  style={{
         flexGrow: 1,
