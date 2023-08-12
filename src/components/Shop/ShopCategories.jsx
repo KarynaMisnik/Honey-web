@@ -9,46 +9,14 @@ import Container from '@mui/material/Container';
 import Beekeeper from '../../assets/img/Beekeeper.png';
 
 
-const HexagonItem = styled(Button)(({ theme }) => ({
-  width: '200px',
-  height: '215px',
-  ...theme.typography.body2,
-  padding: 0,
-  textAlign: 'center',
-  color: 'var(--dark-brown)',
-  textTransform: 'uppercase',
-  fontWeight: '700',
-  fontSize: '24px',
-  position: 'relative',
-  clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  backgroundColor: 'var(--dark-yellow)',
-
-  '&:hover': {
-    backgroundColor: 'var(--dark-yellow)',
-  },
- 
-    '@media (max-width: 900px)': {
-    width: '100px',
-    height: '115px',
-    fontSize: '14px',
-  },
-}));
 
 
 export default function ShopCategories() {
 
   return (
     <>
-    <Grid container justifyContent="space-evenly" paddingTop={2}  sx={{ margin: '0 auto', maxWidth: '100%' }}>
-      <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Honey</HexagonItem>
-      <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Sweets</HexagonItem>
-      <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Cosmetics</HexagonItem>
-      <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Food</HexagonItem>
-      <HexagonItem xs={12} sm={6} md={4} lg={3} xl={2}>Other</HexagonItem>
-    </Grid>
+ <h1>LETS DO SHOPPING</h1>
+ {/* ADD SOME IMG OR OTHER TO POINT TO SHOP PAGE  */}
 
     < Stack direction='row' justifyContent={'space-between'}  sx={{ display: { xs: 'none', sm: 'flex' }}}>
     <Box

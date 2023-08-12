@@ -24,8 +24,8 @@ margin: '5px',
 
 
 const HexagonItem = styled(Button)(({ theme }) => ({
-  width: '200px',
-  height: '215px',
+  width: '180px',
+  height: '195px',
   ...theme.typography.body2,
   padding: 0,
   textAlign: 'center',
@@ -50,10 +50,15 @@ background: 'var(--dark-brown)',
   color: 'var(--white)',
 },
  
-    '@media (max-width: 900px)': {
+    '@media (max-width: 1000px)': {
     width: '100px',
     height: '115px',
     fontSize: '14px',
+  },
+      '@media (max-width: 600px)': {
+    width: '80px',
+    height: '95px',
+    fontSize: '12px',
   },
 }));
 
@@ -90,11 +95,13 @@ background: 'var(--dark-brown)',
           <Grid item xs={12} sm={6} md={4} key={values.id} sx={{textAlign: 'center'}}>
             <Paper elevation={6}  style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: '8px' }}>
               <img src={values.src} alt={values.title} loading='lazy' style={{width: '100%', height: '500px', borderTopLeftRadius: '8px', borderTopRightRadius: '8px'}}/>
-              <div style={{display:'flex', justifyContent: 'center', alignItems:'center', padding: '0.5rem'}}>
+              <div className='card-info-wrpper' style={{display:'flex', flexDirection:'column'}}>
+              
               <p className='product_list title'>{values.title}</p>
               <p className='product_list amount'>{values.amount}</p>
               <p className='product_list price'>{values.price}&#x20AC;</p>
-              <div style={{display:'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', padding: '0.5rem'}}>
+               
+              <div style={{display:'flex', justifyContent: 'flex-start', alignItems:'center', paddingBottom: '0.5rem',  marginLeft: '15px'}}>
               <CustomButton >
             Buy 
               </CustomButton>
@@ -102,6 +109,7 @@ background: 'var(--dark-brown)',
              <NavLink to={`/values/${values.id}`}><p className='product_list details'>Details</p></NavLink> 
                
               </div>
+             
               </div>
             </Paper>
           </Grid>
