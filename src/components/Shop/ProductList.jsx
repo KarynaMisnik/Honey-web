@@ -2,6 +2,8 @@
  import productData from "./productData.json";
  import { Button, Grid, styled, Paper } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import Rating from '@mui/material/Rating';
+
 
 const CustomButton = styled(Button)(({ theme }) => ({
 textAlign: 'center',
@@ -95,8 +97,12 @@ background: 'var(--dark-brown)',
           <Grid item xs={12} sm={6} md={4} key={values.id} sx={{textAlign: 'center'}}>
             <Paper elevation={6}  style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: '8px' }}>
               <img src={values.src} alt={values.title} loading='lazy' style={{width: '100%', height: '500px', borderTopLeftRadius: '8px', borderTopRightRadius: '8px'}}/>
+             
               <div className='card-info-wrpper' style={{display:'flex', flexDirection:'column'}}>
-              
+              <div style={{display:'flex', justifyContent: 'flex-start', alignItems:'center', paddingBottom: '0.5rem',  marginLeft: '15px'}}>
+      <Rating name="product-rating" value={values.value} precision={0.5} readOnly />
+              </div>
+
               <p className='product_list title'>{values.title}</p>
               <p className='product_list amount'>{values.amount}</p>
               <p className='product_list price'>{values.price}&#x20AC;</p>
