@@ -1,11 +1,14 @@
-
+import { Divider } from "@mui/material";
 
 const Hero = () =>{
     return(
 <div className='banner-wrapper'>
     <div className='bg-text'>
-        <p>     We understand the vital role of bees in our ecosystem, especially in food production. Bees are essential pollinators, ensuring the reproduction of many fruits, vegetables, and nuts we rely on for nourishment.
+     <p> HONEY & <br/>HONEY PRODUCTS
 </p>
+    <Divider sx={{margin:'0 1rem', maxWidth:'100%', height: '3px',  backgroundColor: 'var(--light-gray)' }}></Divider>
+
+<p className="hero-text">Get fresh honey and organic honey products with just a one click</p>
     </div>
 </div>
        

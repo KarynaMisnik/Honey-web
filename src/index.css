@@ -7,8 +7,9 @@
   --dark-yellow: #ffc404;
   --yellow: #ffe404;
   --white: #fff;
-  --gray: #848181;
-  --black: #0c0000e0;
+  --gray: #525151;
+  --light-gray: #acadb2;
+  --black: #000;
   --red: #ec0606;
 
   --main-font: "Montserrat", sans-serif;
@@ -58,16 +59,27 @@ body {
 
 .bg-text {
   position: absolute;
-  background-color: var(--yellow);
+  background-image: linear-gradient(
+    to left bottom,
+    #090f20,
+    #151d30,
+    #212a42,
+    #2d3854,
+    #3a4667
+  );
   margin: 5% 5%;
   border-radius: 20px;
 }
 
-p {
-  color: var(--dark-brown);
+.bg-text p {
+  color: var(--yellow);
   font-size: 32px;
   font-weight: 700;
   margin: 5% 5%;
+}
+
+.bg-text .hero-text {
+  color: var(--light-gray);
 }
 
 @media only screen and (max-width: 600px) {

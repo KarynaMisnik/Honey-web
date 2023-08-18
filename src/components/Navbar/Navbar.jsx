@@ -31,7 +31,7 @@ const  Navbar= ({pages})=> {
 
 
   return (
-    <AppBar position="static"  sx={{backgroundColor: 'var(--dark-brown)', borderBottom: '4px solid var(--brown)'}}>
+    <AppBar position="static"  sx={{backgroundColor: 'var(--black)', borderBottom: '4px solid var(--gray)'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters >
            <NavLink to="/home"><IconButton sx={{ display: { xs: 'none', md: 'flex' }}}><img src={LogoBee} height="70" /></IconButton></NavLink> 
@@ -47,7 +47,7 @@ const  Navbar= ({pages})=> {
               onClick={handleOpenNavMenu}
               color="var(--light-yellow)"
             >
-              <MenuIcon sx= {{color:"var(--light-yellow)", fontSize: '2rem'}} />
+              <MenuIcon sx= {{color:"var(--yellow)", fontSize: '2rem'}} />
             </IconButton>
             {/*  hamburger-menu content */}
             <Menu
@@ -87,9 +87,9 @@ const  Navbar= ({pages})=> {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ color: 'var(--light-yellow)', display: 'block', fontFamily:"var(--main-font)", fontWeight:'700' }}
+                sx={{ color: 'var(--light-yellow)', display: 'block', fontWeight:'700' }}
               >
-                <NavLink to={`/${page.toLowerCase()}`}><Typography sx={{color: 'var(--light-yellow)', fontFamily:"var(--main-font)", fontWeight:'900'}} >{page}</Typography> </NavLink>
+                <NavLink to={`/${page.toLowerCase()}`}><Typography sx={{color: 'var(--yellow)', fontFamily:"var(--main-font)", fontWeight:'900'}} >{page}</Typography> </NavLink>
               </Button>
             ))}
           </Box>
@@ -97,7 +97,7 @@ const  Navbar= ({pages})=> {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip >
             <IconButton>
-                <NavLink to="/cart"><ShoppingBasketIcon sx= {{color:"var(--light-yellow)", fontSize: '2rem'}}/></NavLink> 
+                <NavLink to="/cart"><ShoppingBasketIcon sx= {{color:"var(--yellow)", fontSize: '2rem'}}/></NavLink> 
               </IconButton>
             </Tooltip>
           </Box>

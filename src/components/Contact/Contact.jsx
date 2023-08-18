@@ -69,7 +69,7 @@ const HexagonWrapper = styled(HexagonIcon)({
 
 export default function Contact() {
   return (
-    <div style={{ width: '100%', background: 'var( --dark-brown)', color:'var(--white)'}}>
+    <div style={{ width: '100%', background: 'var( --black)', color:'var(--white)', borderTop:'4px solid var(--gray)'}}>
       <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',  '@media (max-width: 960px)': {
           gridTemplateColumns: '1fr',
         }, }}>
