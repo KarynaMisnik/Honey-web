@@ -33,6 +33,17 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: var(--main-font);
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .banner-wrapper {
