@@ -45,11 +45,12 @@ export default function ShopCategories() {
     color: 'var(--dark-brown)',
     fontSize: { xs: '18px', sm: '16px', md: '20px', lg: '24px', xl: '24px'},
     fontWeight: 700,
+    fontFamily: 'var(--main-font)',
     }} 
     >
         
-     We understand the vital role of bees in our ecosystem, especially in food production. Bees are essential pollinators, ensuring the reproduction of many fruits, vegetables, and nuts we rely on for nourishment.
-</Typography>
+ We offer a range of pure and flavorful honey sourced from our own bee farms and trusted local beekeepers.
+          Explore our selection of honey and honey-based delights, including beeswax candles, honey-infused skincare, and delectable spreads.</Typography>
 </Container>
 </Stack>
    </> 

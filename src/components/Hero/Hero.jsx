@@ -4,8 +4,8 @@ const Hero = () =>{
     return(
 <div className='banner-wrapper'>
     <div className='bg-text'>
-        <p> We offer a range of pure and flavorful honey sourced from our own bee farms and trusted local beekeepers.
-          Explore our selection of honey and honey-based delights, including beeswax candles, honey-infused skincare, and delectable spreads.</p>
+        <p>     We understand the vital role of bees in our ecosystem, especially in food production. Bees are essential pollinators, ensuring the reproduction of many fruits, vegetables, and nuts we rely on for nourishment.
+</p>
     </div>
 </div>
        
