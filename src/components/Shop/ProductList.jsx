@@ -11,9 +11,9 @@ fontFamily: 'var(--main-font)',
 fontSize: '18px',
 fontWeight: '700',
 color: 'var(--dark-brown)',
-borderRadius: '8px',
-border: '2px solid var(--dark-brown)',
-margin: '5px',
+backgroundColor: 'var(--yellow)',
+border: 'none',
+
 ":hover":{
     background: 'var(--dark-brown)',
     color: 'var(--white)',
@@ -108,14 +108,14 @@ background: 'var(--dark-brown)',
               <p className='product_list price'>{values.price}&#x20AC;</p>
                
               <div style={{display:'flex', justifyContent: 'flex-start', alignItems:'center', paddingBottom: '0.5rem',  marginLeft: '15px'}}>
-              <CustomButton >
-            Buy 
-              </CustomButton>
+          
              
              <NavLink to={`/values/${values.id}`}><p className='product_list details'>Details</p></NavLink> 
                
               </div>
-             
+                 <CustomButton >
+            ADD TO CART 
+              </CustomButton>
               </div>
             </Paper>
           </Grid>
