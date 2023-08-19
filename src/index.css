@@ -11,8 +11,12 @@
   --light-gray: #acadb2;
   --black: #000;
   --red: #ec0606;
+  --anthracite: #292c33;
+  --rich-gray: #1f2022;
 
   --main-font: "Montserrat", sans-serif;
+  --mosaic-font: "Palette Mosaic", cursive;
+  --abrilFatface-font: "Abril Fatface", cursive;
 }
 
 * {
@@ -59,32 +63,46 @@ body {
 
 .bg-text {
   position: absolute;
-  background-image: linear-gradient(
-    to left bottom,
-    #090f20,
-    #151d30,
-    #212a42,
-    #2d3854,
-    #3a4667
-  );
   margin: 5% 5%;
-  border-radius: 20px;
 }
 
 .bg-text p {
-  color: var(--yellow);
-  font-size: 32px;
-  font-weight: 700;
-  margin: 5% 5%;
+  color: var(--anthracite);
+  font-size: 5rem;
+  text-align: center;
+  font-family: var(--mosaic-font);
 }
 
 .bg-text .hero-text {
-  color: var(--light-gray);
+  color: var(--light-yellow);
+  font-family: var(--abrilFatface-font);
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 600px) {
-  p {
-    font-size: 20px;
+@media only screen and (min-width: 100px) and (max-width: 399px) {
+  .bg-text > p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .bg-text > p {
+    font-size: 2rem;
+  }
+}
+
+/* Media query for screens between 600px and 1000px */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .bg-text > p {
+    font-size: 3rem;
+  }
+}
+
+/* Media query for screens between 1000px and 1500px */
+@media only screen and (min-width: 1001px) and (max-width: 1500px) {
+  .bg-text > p {
+    font-size: 4rem;
   }
 }
 
