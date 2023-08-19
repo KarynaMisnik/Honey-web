@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './Hero/Hero';
-import ShopCategories from './Shop/ShopCategories';
+import AboutSection from './About/AboutSection';
 import Testimonials from './Testimonials/Testimonials';
 
 
@@ -9,8 +9,8 @@ import Testimonials from './Testimonials/Testimonials';
         <>
         
          <Hero/>
-          <ShopCategories/>
-          <Testimonials/>
+          <AboutSection/>
+         {/* <Testimonials/> */}
          
           </>
     )
