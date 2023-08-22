@@ -1,6 +1,11 @@
 import * as React from 'react';
-import { Button, Grid } from '@mui/material';
+import { Button, Grid, List, ListItem } from '@mui/material';
+import { styled } from '@mui/system';
+import HexagonIcon from '@mui/icons-material/Hexagon';
+
+import Flower from '../../assets/img/aboutSection/flower.png';
 import Beekeepers from '../../assets/img/aboutSection/beekeepers-family.jpg';
+
 
 export default function AboutSection() {
 
@@ -25,11 +30,25 @@ export default function AboutSection() {
           <p style={{color: 'var(--yellow)', textAlign:'center', fontFamily:'var(--abrilFatface-font)', fontSize:'2.8rem'}}>Bees: Nature's tiny heroes, vital for pollination, essential for our food.</p>
         </div>
       </Grid>
-      <Grid item>
-        <div  style={{ padding: '20px' }}>
-          Element 3
-        </div>
-      </Grid>
+      
+       <div class="hex-container">
+    <div class="hexagon">
+      <div class="hexagon-inner">
+        <img src={Flower} alt="Hexagon 1"/>
+      </div>
+    </div>
+    <div class="hexagon">
+      <div class="hexagon-inner">
+        <img src={Flower} alt="Hexagon 2"/>
+      </div>
+    </div>
+    <div class="hexagon">
+      <div class="hexagon-inner">
+        <img src={Flower} alt="Hexagon 3"/>
+      </div>
+    </div>
+  </div>
+    
       <Grid item>
         <div  style={{ display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center' }}>
           <p style={{fontFamily:'var(--abrilFatface-font)' , fontSize:'2rem'}}>Explore our selection of honey and honey-based delights</p>
