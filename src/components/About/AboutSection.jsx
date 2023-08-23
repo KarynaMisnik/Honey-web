@@ -32,21 +32,25 @@ export default function AboutSection() {
       </Grid>
       
        <div class="hex-container">
+
     <div class="hexagon">
       <div class="hexagon-inner">
         <img src={Flower} alt="Hexagon 1"/>
       </div>
     </div>
+
     <div class="hexagon">
       <div class="hexagon-inner">
         <img src={Flower} alt="Hexagon 2"/>
       </div>
     </div>
+    
     <div class="hexagon">
       <div class="hexagon-inner">
         <img src={Flower} alt="Hexagon 3"/>
       </div>
     </div>
+
   </div>
     
       <Grid item>
