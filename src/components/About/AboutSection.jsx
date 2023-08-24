@@ -4,6 +4,9 @@ import { styled } from '@mui/system';
 import HexagonIcon from '@mui/icons-material/Hexagon';
 
 import Flower from '../../assets/img/aboutSection/flower.png';
+import Hive from '../../assets/img/aboutSection/hive.png';
+import HoneyJar from '../../assets/img/aboutSection/honey-jar.png';
+
 import Beekeepers from '../../assets/img/aboutSection/beekeepers-family.jpg';
 
 
@@ -31,23 +34,23 @@ export default function AboutSection() {
         </div>
       </Grid>
       
-       <div class="hex-container">
+       <div className="hex-container">
 
-    <div class="hexagon">
-      <div class="hexagon-inner">
+    <div className="hexagon">
+      <div className="hexagon-inner">
         <img src={Flower} alt="Hexagon 1"/>
       </div>
     </div>
 
-    <div class="hexagon">
-      <div class="hexagon-inner">
-        <img src={Flower} alt="Hexagon 2"/>
+    <div className="hexagon">
+      <div className="hexagon-inner">
+        <img src={Hive} alt="Hexagon 2"/>
       </div>
     </div>
-    
-    <div class="hexagon">
-      <div class="hexagon-inner">
-        <img src={Flower} alt="Hexagon 3"/>
+
+    <div className="hexagon">
+      <div className="hexagon-inner">
+        <img src={HoneyJar} alt="Hexagon 3"/>
       </div>
     </div>
 
