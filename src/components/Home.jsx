@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './Hero/Hero';
 import AboutSection from './About/AboutSection';
 import Testimonials from './Testimonials/Testimonials';
+import ShopSection from './Shop/ShopSection';
 
 
   function Home(){
@@ -10,6 +11,7 @@ import Testimonials from './Testimonials/Testimonials';
         
          <Hero/>
           <AboutSection/>
+          <ShopSection/>
          {/* <Testimonials/> */}
          
           </>
