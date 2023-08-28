@@ -1,29 +1,22 @@
 import * as React from 'react';
+import shopSectionData from './shopSectionData.json'
+import {BsArrowLeftCircleFill,BsArrowRightCircleFill} from "react-icons/bs"
 
 
-const images = [
-  {
-    imgPath:
-      '../../assets/img/ShopStepper/cosmetics-category.jpg',
-  },
-  {
-    imgPath:
-      '../../assets/img/ShopStepper/food-category.jpg',
-  },
-  {
-    imgPath:
-      '../../assets/img/ShopStepper/honey-category.jpg',
-  },
-  {
-    imgPath:
-      '../../assets/img/ShopStepper/other-category.jpg',
-  },
-];
-
-export default function ShopSection() {
+export default function ShopSection({data}) {
   return (
-<>
-</>
+<div className='carousel-container'>
+<div className='carousel'>
+{data.map((item, id)=>{
+  return <img className='img-slider' src={item.src} alt={item.alt} key={id} />
+})}
+
+</div>
+<div className='arrow-container'>
+  <div className='left-arrow'><BsArrowLeftCircleFill style={{color:"white"}}/></div>
+  <div className='right-arrow'><BsArrowRightCircleFill style={{color:"white"}}/></div>
+</div>
+</div>
   );
 }
 
