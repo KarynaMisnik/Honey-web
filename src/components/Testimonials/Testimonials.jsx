@@ -7,7 +7,7 @@ import { Divider } from '@mui/material';
 import productData from '../Shop/productData.json'; 
 import { useState } from 'react';
 
-/* Back and forward are missing */
+
 
 const Testimonials = () =>{
    const [data, setData] = useState(productData);
