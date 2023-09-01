@@ -13,7 +13,7 @@ import shopSectionData from './Shop/shopSectionData.json'
          <Hero/>
           <AboutSection/>
           <ShopSection data={shopSectionData}/>
-         {/* <Testimonials/> */}
+         <Testimonials/> 
          
           </>
     )
