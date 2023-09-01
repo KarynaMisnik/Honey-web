@@ -1,22 +1,56 @@
 import * as React from 'react';
 import shopSectionData from './shopSectionData.json'
-import {BsArrowLeftCircleFill,BsArrowRightCircleFill} from "react-icons/bs"
+import {MdArrowBackIosNew,MdArrowForwardIos} from "react-icons/md"
+import { useState } from 'react';
 
 
 export default function ShopSection({data}) {
-  return (
-<div className='carousel-container'>
-<div className='carousel'>
-{data.map((item, id)=>{
-  return <img className='img-slider' src={item.src} alt={item.alt} key={id} />
-})}
 
-</div>
-<div className='arrow-container'>
-  <div className='left-arrow'><BsArrowLeftCircleFill style={{color:"white"}}/></div>
-  <div className='right-arrow'><BsArrowRightCircleFill style={{color:"white"}}/></div>
-</div>
-</div>
+ const [slide, setSlide] = useState(0);
+
+  const nextSlide = () => {
+    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+  };
+
+  const prevSlide = () => {
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+  };
+
+
+  return (
+ <div className="carousel">
+      <MdArrowBackIosNew onClick={prevSlide} className="arrow arrow-left" />
+      {data.map((item, id) => {
+        return (
+          <>
+          <img
+            src={item.src}
+            alt={item.alt}
+            key={id}
+            className={slide === id ? "slide" : "slide slide-hidden"}
+          />
+          <div className='bg' key={item.id} style={{background:'var(--black)', zIndex: '99999', position:'absolute', padding:'2rem', bottom:'0', width:'100%'}}></div></>
+          
+        );
+      })}
+      <MdArrowForwardIos
+        onClick={nextSlide}
+        className="arrow arrow-right"
+      />
+      <span className="indicators">
+        {data.map((_, id) => {
+          return (
+            <button
+              key={id}
+              className={
+                slide === id ? "indicator" : "indicator indicator-inactive"
+              }
+              onClick={() => setSlide(id)}
+            ></button>
+          );
+        })}
+      </span>
+    </div>
   );
 }
 
