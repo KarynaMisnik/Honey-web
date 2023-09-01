@@ -16,6 +16,7 @@
     "@mui/material": "^5.14.1",
     "@mui/styled-engine-sc": "^5.12.0",
     "@types/react-swipeable-views": "^0.13.2",
+    "lazyload": "^2.0.0-rc.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
