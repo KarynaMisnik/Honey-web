@@ -24,7 +24,7 @@ export default function Testimonials(){
             component="img"
             alt="Image"
             height="140"
-            image={Item} // Replace with the actual image URL
+            image={Item} 
           />
         </Grid>
         <Grid item xs={12} sm={8}>
