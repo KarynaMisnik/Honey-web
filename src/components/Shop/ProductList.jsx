@@ -90,12 +90,18 @@ background: 'var(--dark-brown)',
     padding: 2,
       }}>
 
-        <Grid container spacing={2} sx={{padding: '1rem'}}>
+        <Grid container spacing={2} sx={{padding: '1.5rem'}}>
 
        {data.map((values) => {
        return(
-          <Grid item xs={12} sm={6} md={4} key={values.id} sx={{textAlign: 'center'}}>
-            <Paper elevation={6}  style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: '8px' }}>
+          <Grid item  xs={12}
+          sm={6} // 2 cards on a tablet
+          md={4} // 3 cards on a smaller tablet
+          lg={3} // 4 cards on a computer
+           key={values.id} sx={{textAlign: 'center'}}>
+            <Paper elevation={6}  style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderRadius: '8px',background: 'linear-gradient(to top, var(--white), #ffeca4)',
+  boxShadow:
+  '1px 0px rgb(13,13,13), 1px 1px rgb(18,18,18), 2px 1px rgb(12,12,12), 2px 2px rgb(17,17,17), 3px 2px rgb(11,11,11), 3px 3px rgb(16,16,16), 4px 3px rgb(10,10,10), 4px 4px rgb(15,15,15), 5px 4px rgb(9,9,9), 5px 5px rgb(14,14,14), 6px 5px rgb(8,8,8), 6px 6px rgb(13,13,13), 7px 6px rgb(7,7,7), 7px 7px rgb(12,12,12), 8px 7px rgb(6,6,6), 8px 8px rgb(11,11,11)' }}>
               <img src={values.src} alt={values.title} loading='lazy' style={{width: '100%', height: '500px', borderTopLeftRadius: '8px', borderTopRightRadius: '8px'}}/>
              
               <div className='card-info-wrpper' style={{display:'flex', flexDirection:'column'}}>

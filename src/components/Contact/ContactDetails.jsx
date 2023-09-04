@@ -21,7 +21,7 @@ export default function ContactDetails() {
 
 
   return (
-<div style={{ background: 'var(--light-yellow)' }}>
+<div style={{ backgroundImage: 'linear-gradient(to bottom, #fbe386, #fce58c, #fde792, #fde897, #feea9d, #ffe7aa, #ffe6b8, #ffe5c5, #ffe7dc, #ffeef2, #fff7fe, #ffffff)' }}>
      <div style={{display:'flex', flexDirection:'column',justifyContent:'center', alignItems:"center"}}>
         <h2 style={{textAlign:'center', lineHeight:'50px', marginTop:'25px', fontFamily:'var(--main-font)', letterSpacing:'2px'}}>Contact Us<br/>We love hearing from our customers. </h2>
          
@@ -30,7 +30,7 @@ export default function ContactDetails() {
     
       {cardsData.map((card) => (
         <Grid key={card.id} item xs={12} md={4}>
-          <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', boxShadow:'var(--black) 0px 6px 8px'}}>
+          <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column',  boxShadow: ' -11px 11px 0px 1px var(--black)'}}>
             <CardActionArea>
                    <CardMedia
                 component="img"
