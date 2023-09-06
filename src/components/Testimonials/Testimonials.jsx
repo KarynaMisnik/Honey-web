@@ -30,7 +30,7 @@ export default function Testimonials(){
         <Grid item xs={12} sm={8}>
           <CardContent>
             <Box display="flex" alignItems="center" mt={1}>
-              <Typography variant="body2" color="textSecondary">
+              <Typography color="var(--black)">
                 Author: John Doe
               </Typography>
             </Box>
