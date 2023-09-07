@@ -12,10 +12,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/thompson.png",
         "review": "Absolutely love this honey! The rich flavor and smooth texture make it perfect for drizzling over yogurt and desserts. A natural sweetness that I can't get enough of.",
         "reviewer": "Sophia Thompson",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "21/01/2021",
         "img-source": "https://www.freepik.com/free-photo/honey-bowl-with-dipper-fruits-with-copy-space_6073891.htm#&position=17&from_view=undefined"
     },
     {

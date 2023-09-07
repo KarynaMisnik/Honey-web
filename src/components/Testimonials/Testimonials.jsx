@@ -10,47 +10,55 @@ import Rating from '@mui/material/Rating';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
+function shuffleArray(array) {
+  const shuffledArray = [...array];
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
 
+// Shuffle the productData array and take the first three items
+const shuffledProductData = shuffleArray(productData);
 
 export default function Testimonials(){
     return(
         <>
        <h1 style={{textAlign:'center', padding:'1rem 0', fontFamily:'var(--main-font)', fontWeight:'bolder'}}>What our customers say</h1>
- 
-     <Card sx={{background:'green'}}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={4}>
-          <CardMedia
-            component="img"
-            alt="Image"
-            height="140"
-            image={Item} 
-          />
-        </Grid>
-        <Grid item xs={12} sm={8}>
-          <CardContent>
+  {shuffledProductData.slice(0, 3).map((cardItem) => (
+        <Grid container spacing={2} sx={{background:'green'}}>
+        <Grid item key={cardItem.id} xs={12} sm={4}>
+
+          <CardContent sx={{ width:'300px', display: 'flex', flexDirection: 'column'}}>
+            <img src={cardItem.reviewerImg} style={{borderRadius:'50%', border:'2px solid var(--dark-yellow)', width: '150px', height:'150px'}}></img>
             <Box display="flex" alignItems="center" mt={1}>
+              
               <Typography color="var(--black)">
-                Author: John Doe
+                {cardItem.reviewer}
               </Typography>
             </Box>
              <Box display="flex" alignItems="center" mt={1}>
-              <Rating name="read-only" value={4} readOnly />
+              <Rating name="read-only" value={cardItem.value} readOnly />
             </Box>
-            <Typography variant="body2" color="textSecondary">Apple Blossom Honey</Typography>
+            <Typography variant="body2" color="textSecondary">{cardItem.title}</Typography>
 
-            <Typography variant="body2" color="textSecondary">Absolutely love this honey! The rich flavor and smooth texture make it perfect for drizzling over yogurt and desserts. A natural sweetness that I can't get enough of.</Typography>
+            <Typography variant="body2" color="textSecondary">{cardItem.review}</Typography>
             <Box display="flex" alignItems="center" mt={1}>
               <Typography variant="body2" color="textSecondary">
-                Date: January 1, 2023
+                {cardItem.dateReview}
               </Typography>
             </Box>
             
           
           </CardContent>
-        </Grid>
-      </Grid>
-    </Card>
+        
+     
+    
+    </Grid>
+     </Grid>
+    
+))}
         </>
     )
 }
