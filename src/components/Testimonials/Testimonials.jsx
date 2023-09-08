@@ -41,9 +41,9 @@ export default function Testimonials(){
              <Box display="flex" alignItems="center" mt={1}>
               <Rating name="read-only" value={cardItem.value} readOnly />
             </Box>
-            <Typography variant="body2" color="textSecondary">{cardItem.title}</Typography>
+            <Typography  color="var(--black)">{cardItem.title}</Typography>
 
-            <Typography variant="body2" color="textSecondary">{cardItem.review}</Typography>
+            <Typography  color="var(--black)">{cardItem.review}</Typography>
             <Box display="flex" alignItems="center" mt={1}>
               <Typography variant="body2" color="textSecondary">
                 {cardItem.dateReview}
