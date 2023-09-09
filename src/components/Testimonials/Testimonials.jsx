@@ -19,7 +19,7 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 
-// Shuffle the productData array and take the first three items
+// Shuffle the productData array and take the first three random items
 const shuffledProductData = shuffleArray(productData);
 
 export default function Testimonials(){
