@@ -19,7 +19,7 @@ export default function ShopSection({data}) {
 
 
   return (
-    <div className='carousel-wrapper' style={{background:'red', display:'flex', justifyContent:'center', alignItems:'center'}}>
+    <div className='carousel-wrapper' style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
  <div className="carousel">
       <MdArrowBackIosNew onClick={prevSlide} className="arrow arrow-left" />
       {data.map((item, id) => {

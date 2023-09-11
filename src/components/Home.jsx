@@ -12,9 +12,10 @@ import shopSectionData from './Shop/shopSectionData.json'
         
          <Hero/>
           <AboutSection/>
+          <div style={{backgroundImage: 'linear-gradient(to bottom, #FFFFFF, #FFECA4, #FBE386)'}}>
           <ShopSection data={shopSectionData}/>
          <Testimonials/> 
-         
+         </div>
           </>
     )
 }

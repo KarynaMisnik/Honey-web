@@ -10,6 +10,7 @@ import Rating from '@mui/material/Rating';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
+
 function shuffleArray(array) {
   const shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -27,41 +28,23 @@ export default function Testimonials(){
         <>
        <h1 style={{textAlign:'center', padding:'1rem 0', fontFamily:'var(--main-font)', fontWeight:'bolder'}}>
         What our customers say</h1>
+<div className='card-container'  style={{display:'flex', flexDirection: 'row', justifyContent:'space-around', alignItems:'center', }}>
 
-   <Box sx={{ background:'green', flexGrow:1}}>
-      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
- 
-  {shuffledProductData.slice(0, 3).map((cardItem) => (
-        
-          
-        <Grid item key={cardItem.id} xs={2} sm={4} md={4} sx={{display:'flex', justifyContent:'center', background:'pink', width:'300px'}} >
+{shuffledProductData.slice(0, 3).map((cardItem) => (
 
-          <CardContent sx={{ width:'300px',  display: 'flex', flexDirection: 'column', margin:'0'}}>
-            <img src={cardItem.reviewerImg} style={{borderRadius:'50%', border:'2px solid var(--dark-yellow)', width: '150px', height:'150px'}}></img>
-            <Box display="flex" alignItems="center" mt={1}>
-              
-              <Typography color="var(--black)">
-                {cardItem.reviewer}
-              </Typography>
-            </Box>
-             <Box display="flex" alignItems="center" mt={1}>
-              <Rating name="read-only" value={cardItem.value} readOnly />
-            </Box>
-            <Typography  color="var(--black)">{cardItem.title}</Typography>
 
-            <Typography  color="var(--black)">{cardItem.review}</Typography>
-            <Box display="flex" alignItems="center" mt={1}>
-              <Typography  color="var(--black)">
-                {cardItem.dateReview}
-              </Typography>
-            </Box>
-          </CardContent>
-    </Grid>
-   
+<div key={cardItem.id} className='card-content'  style={{display:'flex', flexDirection:'column', width:'400px', height:'500px', padding: '1.5em', background:'green'}} >
+   <img src={cardItem.reviewerImg} style={{borderRadius:'50%', border:'2px solid var(--dark-yellow)', width: '150px', height:'150px'}}></img>
+ <Rating name="read-only" value={cardItem.value} readOnly />
+<h3>{cardItem.title}</h3>
+<p>{cardItem.review}</p>
+<h4>{cardItem.dateReview}</h4>
+</div>
+
+
+
 ))}
-
-   </Grid>
-    </Box>
+</div>
         </>
     )
 }
