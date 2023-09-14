@@ -15,12 +15,12 @@ export default function AboutSection() {
   return (
    <Grid container direction="column" spacing={2} sx={{backgroundImage: 'linear-gradient(to bottom, #fbe386, #fce58c, #fde792, #fde897, #feea9d, #ffe7aa, #ffe6b8, #ffe5c5, #ffe7dc, #ffeef2, #fff7fe, #ffffff)'}}>
       <Grid item>
-        <div  className='imgText-wrapper' style={{ display:'flex', alignItems: 'center'}}>
-          <div className='img-container' style={{flex:'1', padding:'1rem ', padding:'2rem'}}>
-          <img src={Beekeepers} style={{  boxShadow: '-35px -35px 0px -3px #000000', borderRadius:'20px',  maxWidth: '100%', height: 'auto'}}/>
+        <div  className='imgText-wrapper' style={{ display:'flex', alignItems: 'center', justifyContent:'center', padding:'2em'}}>
+          <div className='img-container' style={{flex:'1',  maxWidth: '50%'}}>
+          <img src={Beekeepers} style={{  boxShadow: '-35px -35px 0px -3px #000000', borderRadius:'20px',  }}/>
           </div>
 
-          <div className='welcoming-text' style={{flex:'1', display:'flex', flexDirection:'column', textAlign:'center', padding:'2rem'}}>
+          <div className='welcoming-text' style={{flex:'1', display:'flex', flexDirection:'column', textAlign:'center', maxWidth: '50%', height: 'auto'}}>
 <p style={{fontFamily:'var(--abrilFatface-font)', fontSize:'3rem', marginBottom:'2rem'}}>Welcome to the sweet world of the Doe Family Honey!</p>
 <p style={{fontFamily:'var(--main-font)', fontSize:'2rem', marginBottom:'1.5rem', textAlign:'justify', marginBottom:'5rem'}}>We're a close-knit family passionate about sharing the natural goodness of our handcrafted honey products. From our family to yours, we invite you to savor the sweetness of nature's finest gift – pure, golden honey.</p>
                   <Button sx={{padding:'2rem', background: 'var(--dark-yellow)', color:'var(--black)', fontFamily:'var(--abrilFatface-font)', fontSize:'1.5rem', textTransform:'none', '&:hover': {background: 'var(--dark-yellow)'}}}>Learn More About Us</Button>
