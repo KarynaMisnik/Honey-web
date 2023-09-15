@@ -23,7 +23,9 @@ export default function AboutSection() {
           <div className='welcoming-text' style={{maxWidth: '80%', height:'auto'}}>
 <p style={{fontFamily:'var(--abrilFatface-font)', fontSize:'3rem', marginBottom:'2rem'}}>Welcome to the sweet world of the Doe Family Honey!</p>
 <p style={{fontFamily:'var(--main-font)', fontSize:'2rem', marginBottom:'1.5rem', textAlign:'justify', marginBottom:'5rem'}}>We're a close-knit family passionate about sharing the natural goodness of our handcrafted honey products. From our family to yours, we invite you to savor the sweetness of nature's finest gift – pure, golden honey.</p>
-                  <Button className='button learnMore' sx={{padding:'2rem', background: 'var(--dark-yellow)', color:'var(--black)', fontFamily:'var(--abrilFatface-font)', fontSize:'1.5rem', textTransform:'none', '&:hover': {background: 'var(--dark-yellow)'}}}>Learn More About Us</Button>
+                  <Button className='button learnMore' sx={{padding:'2rem', background: 'var(--dark-yellow)', color:'var(--black)', fontFamily:'var(--abrilFatface-font)', fontSize:'1.5rem', textTransform:'none', '&:hover': {background: 'var(--dark-yellow)',
+          
+                }}}>Learn More About Us</Button>
 
           </div>
         </div>
