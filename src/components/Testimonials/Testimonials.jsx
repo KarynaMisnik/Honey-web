@@ -22,7 +22,8 @@ export default function Testimonials(){
         What our customers say</h1>
 <div className='card-container'  style={{display:'flex', flexDirection: 'row', justifyContent:'space-around', alignItems:'center', padding:'4em 1.5em'}}>
 
-{shuffledProductData.slice(0, 3).map((cardItem) => (
+
+{shuffledProductData.slice(0, window.innerWidth >= 800 ? 3 : 1).map((cardItem) => (
 
 
 <div key={cardItem.id} className='card-content'  style={{display:'flex', flexDirection:'column', width:'400px', height:'500px', padding: '1.5em', borderRadius:'15px', background:'var(--white)', boxShadow: '-22px -22px 0px 0px var(--black)'}} >

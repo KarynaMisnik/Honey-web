@@ -118,10 +118,49 @@ body {
   }
 }
 
+.grid-container__aboutSection {
+  background-image: linear-gradient(
+    to bottom,
+    #fbe386,
+    #fce58c,
+    #fde792,
+    #fde897,
+    #feea9d,
+    #ffe7aa,
+    #ffe6b8,
+    #ffe5c5,
+    #ffe7dc,
+    #ffeef2,
+    #fff7fe,
+    #ffffff
+  );
+}
+
+.motto-container {
+  padding: 20px;
+  background: var(--black);
+  margin: 0 1.5em;
+  border-radius: 10px;
+}
+
+.motto-text {
+  color: var(--yellow);
+  text-align: center;
+  font-family: var(--abrilFatface-font);
+  font-size: 2.8rem;
+}
+
+@media (max-width: 600px) {
+  .motto-text {
+    font-size: 1.5rem;
+  }
+}
+
 .hex-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 1em;
 }
 
 .hexagon {
@@ -142,15 +181,15 @@ body {
 }
 
 .hexagon img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 50%;
+  max-height: 50%;
   transform: rotate(-90deg);
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
   .hexagon {
-    width: 100px;
-    height: 130px;
+    width: 80px;
+    height: 100px;
   }
 }
 
@@ -168,14 +207,44 @@ body {
   }
 }
 
+/* Text for shopping section in Home page */
+
+.shopping-section_textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.shopping-section_textContainer > p {
+  font-family: var(--abrilFatface-font);
+  font-size: 2rem;
+}
+
+.shopping-section_textContainer > h1 {
+  font-family: var(--abrilFatface-font);
+  font-size: 5rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 400px) {
+  .shopping-section_textContainer > p {
+    font-size: 1rem;
+  }
+  .shopping-section_textContainer > h1 {
+    font-size: 2rem;
+  }
+}
+
 /* ShopSection Component: image-carousel */
 .carousel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
   margin-bottom: 2rem;
 }
 
@@ -232,7 +301,31 @@ body {
   background-color: var(--dark-yellow);
 }
 
-/* Testimonials section in home page */
+/* About section in home page */
+
+.welcoming-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 50%;
+  height: auto;
+  padding: 2em;
+}
+
+@media (max-width: 300px) {
+  .welcoming-text {
+    padding: 1em;
+  }
+
+  .welcoming-text > p {
+    font-size: 1em;
+  }
+
+  .learnMore {
+    font-size: 0.2em;
+  }
+}
 
 .card-content > h2,
 h3,
