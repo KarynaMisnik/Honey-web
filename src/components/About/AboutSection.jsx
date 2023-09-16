@@ -37,6 +37,7 @@ export default function AboutSection() {
         </div>
       </div>
       
+      
        <div className="hex-container">
 
     <div className="hexagon">
@@ -56,9 +57,8 @@ export default function AboutSection() {
         <img src={HoneyJar} alt="Hexagon 3"/>
       </div>
     </div>
-
-  </div>
-    
+</div> 
+  
      
         <div className='shopping-section_textContainer'>
           <p >Explore our selection of honey and honey-based delights</p>
