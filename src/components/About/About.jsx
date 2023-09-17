@@ -7,8 +7,8 @@ import { styled } from '@mui/material/styles';
 const Title = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
   ...theme.typography.body2,
-   padding: '10px',
-  fontFamily:'var(--main-font)', 
+   padding: '1em',
+  fontFamily:'var(--abrilFatface-font)', 
   fontSize:'40px', 
   fontWeight:'900', 
   letterSpacing:'2px',
@@ -22,7 +22,7 @@ const Title = styled(Typography)(({ theme }) => ({
  function About(){
 
     return(
-        <div style={{ backgroundImage: 'linear-gradient(to bottom, #fbe386, #fce58c, #fde792, #fde897, #feea9d, #ffe7aa, #ffe6b8, #ffe5c5, #ffe7dc, #ffeef2, #fff7fe, #ffffff)' }}>
+        <div style={{ backgroundImage: 'linear-gradient(to bottom, #Fdeab0, #Fbe6a6, #Ffe69b, #Fde290, #Fbde8a, #ffe7aa, #ffe6b8, #ffe5c5, #ffe7dc, #ffeef2, #fff7fe, #ffffff)' }}>
         <Title >Welcome to the enchanting world of the Doe family beekeepers!</Title>
 
     

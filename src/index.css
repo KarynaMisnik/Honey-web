@@ -341,7 +341,7 @@ p {
 .about-img {
   border-radius: 8px;
   max-width: 400px;
-  box-shadow: var(--black) 0px 8px 6px;
+  box-shadow: var(--dark-brown) 0px 8px 6px;
 }
 
 .img-container {
