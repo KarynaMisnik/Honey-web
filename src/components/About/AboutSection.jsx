@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { Button, Grid, List, ListItem } from '@mui/material';
-import { styled } from '@mui/system';
-import HexagonIcon from '@mui/icons-material/Hexagon';
 
 import Flower from '../../assets/img/aboutSection/flower.png';
 import Hive from '../../assets/img/aboutSection/hive.png';
