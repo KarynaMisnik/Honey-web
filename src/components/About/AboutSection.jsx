@@ -40,19 +40,19 @@ export default function AboutSection() {
 
     <div className="hexagon">
       <div className="hexagon-inner">
-        <img src={Flower} alt="Hexagon 1"/>
+        <img src={Flower} alt="A flower in black color"/>
       </div>
     </div>
 
     <div className="hexagon">
       <div className="hexagon-inner">
-        <img src={Hive} alt="Hexagon 2"/>
+        <img src={Hive} alt="A hive and bees around it"/>
       </div>
     </div>
 
     <div className="hexagon">
       <div className="hexagon-inner">
-        <img src={HoneyJar} alt="Hexagon 3"/>
+        <img src={HoneyJar} alt="A jar with honey"/>
       </div>
     </div>
 </div> 
