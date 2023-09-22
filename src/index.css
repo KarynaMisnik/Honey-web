@@ -243,8 +243,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 800px;
-  height: 600px;
+  width: 1500px;
+  height: auto;
   margin-bottom: 2rem;
 }
 
