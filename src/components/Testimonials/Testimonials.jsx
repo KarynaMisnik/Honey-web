@@ -22,6 +22,7 @@ export default function Testimonials(){
         What our customers say</h1>
 <div className='card-container'  style={{display:'flex', flexDirection: 'row', justifyContent:'space-around', alignItems:'center', padding:'4em 1.5em'}}>
 
+{/* it causes a bug, remove and thake first 3 reviews or... */}
 
 {shuffledProductData.slice(0, window.innerWidth >= 800 ? 3 : 1).map((cardItem) => (
 
