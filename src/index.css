@@ -52,6 +52,8 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+/***  Hero component starts here  ***/
+
 .banner-wrapper {
   display: flex;
   justify-content: center;
@@ -106,6 +108,8 @@ body {
     font-size: 4rem;
   }
 }
+
+/***  Hero component ends here  ***/
 
 @media only screen and (max-width: 900px) {
   /* Adjust layout for screens with a minimum width of 768px */
