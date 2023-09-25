@@ -111,6 +111,8 @@ body {
 
 /***  Hero component ends here  ***/
 
+/***  Section with banner, motivational text and hexagon schemes starts here  ***/
+
 @media only screen and (max-width: 900px) {
   /* Adjust layout for screens with a minimum width of 768px */
   .imgText-wrapper {
@@ -240,6 +242,8 @@ body {
     font-size: 2rem;
   }
 }
+
+/***  Section with banner, motivational text and hexagon schemes ends here  ***/
 
 /* ShopSection Component: image-carousel */
 .carousel {
