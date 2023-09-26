@@ -1,5 +1,4 @@
 import React from 'react';
-import BeeError from '../../assets/img/bee-error.png';
 
 
 export default function Error(){
