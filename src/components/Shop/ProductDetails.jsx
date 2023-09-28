@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import productData from './productData.json'; 
 import Grid from '@mui/material/Grid';
+import Rating from '@mui/material/Rating';
 
 
 function ProductDetails() {
@@ -21,6 +22,7 @@ function ProductDetails() {
       
       <Grid item xs={12} sm={6}>
         <div className='product_details_container'>
+           <Rating name="product-rating" value={product.value} precision={0.5} readOnly />
           <p className='product_details title'>{product.title}</p>
           <p className='product_details info'>{product.info}</p>
           <p className='product_details price'><span>Price:</span> {product.price}&#x20AC;</p>
