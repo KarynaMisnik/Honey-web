@@ -35,10 +35,8 @@ export default function Testimonials(){
 <p>{cardItem.review}</p>
 <h4>{cardItem.dateReview}</h4>
 </div>
-
-
-
 ))}
+
 </div>
         </>
     )
