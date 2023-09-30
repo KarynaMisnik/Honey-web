@@ -4,7 +4,6 @@ import {MdArrowBackIosNew,MdArrowForwardIos} from "react-icons/md"
 import { useState } from 'react';
 
 
-
 export default function ShopSection({data}) {
 
  const [slide, setSlide] = useState(0);
