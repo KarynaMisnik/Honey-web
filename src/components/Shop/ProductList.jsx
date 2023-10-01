@@ -123,7 +123,6 @@ background: 'var(--dark-brown)',
                
               <div style={{display:'flex', justifyContent: 'flex-start', alignItems:'center', paddingBottom: '0.5rem',  marginLeft: '15px'}}>
           
-             
              <NavLink to={`/values/${values.id}`}><p className='product_list details'>Details</p></NavLink> 
                
               </div>
