@@ -1,3 +1,4 @@
+// A cart will be added
 
 export default function Cart(){
     return(
