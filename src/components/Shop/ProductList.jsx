@@ -126,9 +126,11 @@ background: 'var(--dark-brown)',
              <NavLink to={`/values/${values.id}`}><p className='product_list details'>Details</p></NavLink> 
                
               </div>
+
                  <CustomButton >
             ADD TO CART 
               </CustomButton>
+              
               </div>
             </Paper>
           </Grid>
