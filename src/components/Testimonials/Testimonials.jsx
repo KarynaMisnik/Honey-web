@@ -28,7 +28,7 @@ export default function Testimonials(){
 
 
 <div key={cardItem.id} className='card-content'  style={{display:'flex', flexDirection:'column', width:'400px', height:'500px', padding: '1.5em', borderRadius:'15px', background:'var(--white)', boxShadow: '-22px -22px 0px 0px var(--black)', }} >
-   <img src={cardItem.reviewerImg} style={{borderRadius:'50%', border:'2px solid var(--dark-yellow)', width: '150px', height:'150px'}}></img>
+   <img src={cardItem.reviewerImg} style={{borderRadius:'50%', border:'2px solid var(--dark-yellow)', width: '150px', height:'150px'}}/>
 <h2>{cardItem.reviewer}</h2>
  <Rating name="read-only" value={cardItem.value} readOnly />
 <h3>{cardItem.title}</h3>
