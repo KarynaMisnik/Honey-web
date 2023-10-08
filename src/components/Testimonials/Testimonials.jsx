@@ -43,4 +43,4 @@ export default function Testimonials(){
     )
 }
 
-//
+//add more photos of reviewers 
