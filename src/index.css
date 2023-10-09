@@ -1,3 +1,5 @@
+/**! write seperate rules for paragraph, h1, h2, h3, h4 and rules for their media queries  **/
+
 /*custom properties */
 :root {
   --dark-brown: #502414;
