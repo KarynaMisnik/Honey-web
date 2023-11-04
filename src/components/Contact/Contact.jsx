@@ -12,8 +12,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
-import HexagonIcon from '@mui/icons-material/Hexagon';
-import { styled } from '@mui/system';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -39,37 +37,10 @@ function Item(props) {
   );
 }
 
-const CombinedIcon = styled('div')({
-    position: 'relative',
-  display: 'inline-block',
-  width: '30px',
-  height: '30px',
-   '@media (min-width: 600px)': {
-            width: '50px',
-  height: '50px',},
-  '@media (min-width: 960px)': {
-            margin: '22px'},
-});
-
-
-const HexagonWrapper = styled(HexagonIcon)({
-  
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  zIndex: 1,
-  fontSize: '60px', // Adjust the font size to resize the Hexagon icon
-  color: 'var(--yellow)',
-     '@media (min-width: 600px)': {
-             fontSize: '100px'},
-});
-
-
 
 export default function Contact() {
   return (
-    <div style={{ width: '100%', background: 'var( --black)', color:'var(--white)', borderTop:'4px solid var(--gray)'}}>
+    <div style={{ maxWidth: '100%', background: 'var( --black)', color:'var(--white)', borderTop:'4px solid var(--gray)'}}>
       <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',  '@media (max-width: 960px)': {
           gridTemplateColumns: '1fr',
         }, }}>
@@ -83,48 +54,6 @@ consectetur adipiscing elit.Quisque laoreet, velit at pretium feugiat, erat metu
 lorem neque eget velit.
           </Typography>
 
-          <Grid container spacing={2}>
-        <Grid item xs={12} sm={6} >
-          <TextField
-            required
-            fullWidth
-            label="Your Name"
-            name="name"
-            autoComplete="name"
-            sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            required
-            fullWidth
-            type="email"
-            label="E-mail"
-            name="email"
-            autoComplete="email"
-             sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
-            
-          />
-        </Grid>
-        <Grid item xs={12} sm={12}>
-          <TextField
-            required
-            fullWidth
-            multiline
-            rows={4}
-            label="Message..."
-            name="message"
-             sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <Button type="submit" variant="contained"  sx={{ backgroundColor:'var(--yellow)', borderRadius:'5px', color:'var(--dark-brown)', fontWeight:'900', ":hover": {
-      bgcolor: "var(--yellow)"} }}>
-            Submit
-          </Button>
-        </Grid>
-      </Grid>
-        
         </Item>
       
       
@@ -230,73 +159,70 @@ lorem neque eget velit.
         <Item>
             
 <div>
-        <List sx={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between' }}>
+        <List sx={{ display: 'flex', flexDirection: 'row', color:'var(--yellow)'}}>
          <ListItem>
-               <CombinedIcon>
-      <HexagonWrapper />
-      <TwitterIcon sx={{position: 'absolute',
-  top: 0,
-  left: 0,
-  zIndex: 2, color:'var(--brown)', fontSize:'30px',
-  '@media (min-width: 600px)': {
-             fontSize: '50px'},
-  }}/>
-    </CombinedIcon>
+      <TwitterIcon />
              </ListItem>
 
              <ListItem>
-               <CombinedIcon>
-      <HexagonWrapper />
-      <YouTubeIcon sx={{position: 'absolute',
-  top: 0,
-  left: 0,
-  zIndex: 2, color:'var(--brown)', fontSize:'30px',
-    '@media (min-width: 600px)': {
-             fontSize: '50px'},
-  }}/>
-    </CombinedIcon>
+      <YouTubeIcon />
              </ListItem>
 
              <ListItem>
-               <CombinedIcon>
-      <HexagonWrapper />
-      <LinkedInIcon sx={{position: 'absolute',
-  top: 0,
-  left: 0,
-  zIndex: 2, color:'var(--brown)', fontSize:'30px',
-    '@media (min-width: 600px)': {
-             fontSize: '50px'},
-  }}/>
-    </CombinedIcon>
+      <LinkedInIcon/>
              </ListItem>
 
 <ListItem>
-               <CombinedIcon>
-      <HexagonWrapper />
-      <InstagramIcon sx={{position: 'absolute',
-  top: 0,
-  left: 0,
-  zIndex: 2, color:'var(--brown)', fontSize:'30px',
-    '@media (min-width: 600px)': {
-             fontSize: '50px'},
-  }}/>
-    </CombinedIcon>
+      <InstagramIcon/>
              </ListItem>
 
              <ListItem>
-               <CombinedIcon>
-      <HexagonWrapper />
-      <FacebookIcon sx={{position: 'absolute',
-  top: 0,
-  left: 0,
-  zIndex: 2, color:'var(--brown)', fontSize:'30px',
-    '@media (min-width: 600px)': {
-             fontSize: '50px'},
-  }}/>
-    </CombinedIcon>
+      <FacebookIcon/>
              </ListItem>
 
          </List>
+
+            <Grid container spacing={2} sx={{paddingTop:'1.5rem'}}>
+        <Grid item xs={12} sm={6} >
+          <TextField
+            required
+            fullWidth
+            label="Your Name"
+            name="name"
+            autoComplete="name"
+            sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <TextField
+            required
+            fullWidth
+            type="email"
+            label="E-mail"
+            name="email"
+            autoComplete="email"
+             sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
+            
+          />
+        </Grid>
+        <Grid item xs={12} sm={12}>
+          <TextField
+            required
+            fullWidth
+            multiline
+            rows={4}
+            label="Message..."
+            name="message"
+             sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <Button type="submit" variant="contained"  sx={{ backgroundColor:'var(--yellow)', borderRadius:'5px', color:'var(--dark-brown)', fontWeight:'900', ":hover": {
+      bgcolor: "var(--yellow)"} }}>
+            Submit
+          </Button>
+        </Grid>
+      </Grid>
 
 </div>
         </Item>
