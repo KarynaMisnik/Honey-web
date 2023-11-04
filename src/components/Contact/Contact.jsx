@@ -19,6 +19,32 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { NavLink } from 'react-router-dom';
 
+const icons = [
+  <TwitterIcon />,
+  <YouTubeIcon />,
+  <LinkedInIcon />,
+  <InstagramIcon />,
+  <FacebookIcon />
+];
+
+const contactInfo = [
+  {
+    icon: <LocationOnIcon sx={{ color: 'var(--yellow)' }} />,
+    text: 'Our Address',
+  },
+  {
+    icon: <PhoneIcon sx={{ color: 'var(--yellow)' }} />,
+    text: '+358-123-456-789',
+  },
+  {
+    icon: <EmailIcon sx={{ color: 'var(--yellow)' }} />,
+    text: 'beehoney@email.com',
+  },
+  {
+    icon: <WatchLaterIcon sx={{ color: 'var(--yellow)' }} />,
+    text: 'Mon - Fri, 9-AM - 6PM',
+  },
+];
 
 function Item(props) {
   const { sx, ...other } = props;
@@ -111,47 +137,21 @@ lorem neque eget velit.
         <Item><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>Get In Touch </Typography>
         <Divider sx={{height:'2px', width: '50px', backgroundColor: 'yellow', margin:'6px 0 6px 0' }}></Divider>
 
-        <List >
-         <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <LocationOnIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-               <ListItemText primary="Our Address" primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}                           
-               />
-             </ListItem>
-
-             <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <PhoneIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-               <ListItemText primary="+358-123-456-789" primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}                          
-               />
-             </ListItem>
-
-             <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <EmailIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-               <ListItemText primary="beehoney@email.com" primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}                           
-               />
-             </ListItem>
-
-             <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <WatchLaterIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-               <ListItemText primary="Mon - Fri, 9-AM - 6PM" primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}                         
-               />
-             </ListItem>
-         </List>
+{/* Contact icons and info */}
+       <List>
+  {contactInfo.map((item, index) => (
+    <ListItem key={index} sx={{ paddingLeft: 0 }}>
+      <ListItemIcon>{item.icon}</ListItemIcon>
+      <ListItemText
+        primary={item.text}
+        primaryTypographyProps={{
+          fontWeight: '700',
+          fontFamily: 'var(--main-font)',
+        }}
+      />
+    </ListItem>
+  ))}
+</List>
 
         </Item>
 
@@ -159,28 +159,12 @@ lorem neque eget velit.
         <Item>
             
 <div>
-        <List sx={{ display: 'flex', flexDirection: 'row', color:'var(--yellow)'}}>
-         <ListItem>
-      <TwitterIcon />
-             </ListItem>
-
-             <ListItem>
-      <YouTubeIcon />
-             </ListItem>
-
-             <ListItem>
-      <LinkedInIcon/>
-             </ListItem>
-
-<ListItem>
-      <InstagramIcon/>
-             </ListItem>
-
-             <ListItem>
-      <FacebookIcon/>
-             </ListItem>
-
-         </List>
+  {/* social icons */}
+        <List sx={{ display: 'flex', flexDirection: 'row', color: 'var(--yellow)' }}>
+  {icons.map((icon, index) => (
+    <ListItem key={index}>{icon}</ListItem>
+  ))}
+</List>
 
             <Grid container spacing={2} sx={{paddingTop:'1.5rem'}}>
         <Grid item xs={12} sm={6} >
