@@ -230,8 +230,7 @@ lorem neque eget velit.
         <Item>
             
 <div>
-        <List sx={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between','@media (min-width: 960px)': {
-            flexDirection: 'column'}, }}>
+        <List sx={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between' }}>
          <ListItem>
                <CombinedIcon>
       <HexagonWrapper />
