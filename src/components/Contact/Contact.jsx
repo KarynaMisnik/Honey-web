@@ -19,6 +19,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { NavLink } from 'react-router-dom';
 
+/* array of social media icons */
 const icons = [
   <TwitterIcon />,
   <YouTubeIcon />,
@@ -152,12 +153,10 @@ lorem neque eget velit.
     </ListItem>
   ))}
 </List>
+ </Item>
 
-        </Item>
 
-
-        <Item>
-            
+<Item>      
 <div>
   {/* social icons */}
         <List sx={{ display: 'flex', flexDirection: 'row', color: 'var(--yellow)' }}>
