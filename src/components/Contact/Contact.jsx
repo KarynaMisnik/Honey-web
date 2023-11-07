@@ -18,34 +18,77 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { NavLink } from 'react-router-dom';
+import { styled } from '@mui/material/styles';
 
-/* array of social media icons */
+/* Text */
+const StyledTypography = styled(Typography)(({ theme }) => ({
+  color: 'var(--white)',
+  marginBottom: '8px',
+  fontFamily: 'var(--main-font)',
+  fontWeight: 700,
+  letterSpacing: '1px',
+}));
+
+/* Underline */
+const StyledDivider = styled(Divider)(({ theme }) => ({
+height:'2px', 
+width: '50px',
+ backgroundColor: 'yellow', 
+ margin:'6px 0 6px 0'
+}));
+
+/* Array of social media icons */
 const icons = [
-  <TwitterIcon />,
-  <YouTubeIcon />,
-  <LinkedInIcon />,
-  <InstagramIcon />,
-  <FacebookIcon />
+  <a href="https://twitter.com"><TwitterIcon sx={{color: 'var(--yellow)', fontSize: { xs: '2rem', lg: '2.5rem' }}}/></a>,
+  <a href="https://youtube.com"><YouTubeIcon sx={{color: 'var(--yellow)', fontSize: { xs: '2rem', lg: '2.5rem' }  }}/></a>,
+  <a href="https://linkedin.com"><LinkedInIcon sx={{color: 'var(--yellow)', fontSize: { xs: '2rem', lg: '2.5rem' }  }}/></a>,
+  <a href="https://instagram.com"><InstagramIcon sx={{color: 'var(--yellow)', fontSize: { xs: '2rem', lg: '2.5rem' }  }}/></a>,
+  <a href="https://facebook.com"><FacebookIcon sx={{color: 'var(--yellow)', fontSize: { xs: '2rem', lg: '2.5rem' }  }}/></a>
 ];
 
+/* Array of contact icons */
 const contactInfo = [
   {
-    icon: <LocationOnIcon sx={{ color: 'var(--yellow)' }} />,
-    text: 'Our Address',
+    icon: <LocationOnIcon/>,
+    text: '1 Tie, Lehtola Finland 00000',
   },
   {
-    icon: <PhoneIcon sx={{ color: 'var(--yellow)' }} />,
+    icon: <PhoneIcon/>,
     text: '+358-123-456-789',
   },
   {
-    icon: <EmailIcon sx={{ color: 'var(--yellow)' }} />,
+    icon: <EmailIcon/>,
     text: 'beehoney@email.com',
   },
   {
-    icon: <WatchLaterIcon sx={{ color: 'var(--yellow)' }} />,
+    icon: <WatchLaterIcon/>,
     text: 'Mon - Fri, 9-AM - 6PM',
   },
 ];
+
+const listItemTextStyle = {
+  fontWeight: '700',
+  fontFamily: 'var(--main-font)',
+};
+
+/* Submit button */
+const StyledButton = styled(Button)(({ theme }) => ({
+  backgroundColor: 'var(--yellow)',
+  borderRadius: '5px',
+  color: 'var(--black)',
+  fontWeight: 900,
+  ':hover': {
+    backgroundColor: 'var(--yellow)',
+  },
+}));
+
+/* Message form */
+const CustomTextField = styled(TextField)(({ theme }) => ({
+    width: '100%',
+    backgroundColor: 'var(--light-yellow)',
+    borderRadius: '5px',
+}));
+
 
 function Item(props) {
   const { sx, ...other } = props;
@@ -67,150 +110,125 @@ function Item(props) {
 
 export default function Contact() {
   return (
-    <div style={{ maxWidth: '100%', background: 'var( --black)', color:'var(--white)', borderTop:'4px solid var(--gray)'}}>
-      <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',  '@media (max-width: 960px)': {
+ <div style={{ maxWidth: '100%', background: 'var( --black)', color:'var(--white)', borderTop:'4px solid var(--gray)', overflow: 'auto'}}>
+     <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',  '@media (max-width: 960px)': {
           gridTemplateColumns: '1fr',
         }, }}>
 
-
-        <Item><NavLink to='/about'><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>About Us </Typography>  </NavLink>
-        <Divider sx={{height:'2px', width: '50px', backgroundColor: 'yellow', margin:'6px 0 6px 0' }}></Divider>
-        <Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)'}}>
-        Lorem ipsum dolor sit amet, 
-consectetur adipiscing elit.Quisque laoreet, velit at pretium feugiat, erat metus pretium nunc, eget ornare 
-lorem neque eget velit.
-          </Typography>
-
+        <Item>
+          <NavLink to='/about'><StyledTypography >About Us </StyledTypography></NavLink>
+         <StyledDivider></StyledDivider> 
+          <StyledTypography sx={{fontWeight:'500'}}>
+             We are a family-owned business dedicated to producing high-quality honey and honey-related products. 
+             We organize educational events at our cozy farm where you can learn about hardworking creatures, their importance, 
+             and how you can play your part in saving them.
+           </StyledTypography>
         </Item>
       
-      
-        <Item><NavLink to='/home'><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>Honey&Products</Typography></NavLink>
-        <Divider sx={{height:'2px', width: '50px', backgroundColor: 'yellow', margin:'6px 0 6px 0' }}></Divider>
+        <Item>
+          <NavLink to='/home'><StyledTypography>Honey&Products</StyledTypography></NavLink>
+          <StyledDivider></StyledDivider> 
 
-       
-         <List >
-         <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-               <NavLink to='/home'><ListItemText  primary="Home"  primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}           
-               /></NavLink>
+          <List >
+              <ListItem sx={{ paddingLeft: 0 }}>
+                <ListItemIcon><ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/></ListItemIcon>
+                 <NavLink to='/home'><ListItemText  primary="Home"  primaryTypographyProps={listItemTextStyle}/></NavLink>
+              </ListItem>
+
+              <ListItem sx={{ paddingLeft: 0 }}>
+                <ListItemIcon><ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/></ListItemIcon>
+                 <NavLink to='/about'><ListItemText  primary="About" primaryTypographyProps={listItemTextStyle}/></NavLink>
+              </ListItem>
+
+             <ListItem sx={{ paddingLeft: 0 }}>
+               <ListItemIcon><ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/></ListItemIcon>
+                 <NavLink to='/shop'><ListItemText primary="Shop" primaryTypographyProps={listItemTextStyle}/></NavLink>
              </ListItem>
 
              <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-               <NavLink to='/about'><ListItemText  primary="About" primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}                     
-               /></NavLink>
+               <ListItemIcon><ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/></ListItemIcon>
+                <NavLink to='contact'> <ListItemText primary="Contact" primaryTypographyProps={listItemTextStyle}/></NavLink>
              </ListItem>
+           </List>
+        </Item>
 
-             <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-               <NavLink to='/shop'><ListItemText primary="Shop" primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}                            
-               /></NavLink>
-             </ListItem>
+     <Item>
+          <StyledTypography>Get In Touch </StyledTypography>
+        <StyledDivider></StyledDivider> 
 
-             <ListItem sx={{ paddingLeft: 0 }}>
-               <ListItemIcon>
-                 <ArrowForwardIosIcon sx={{color:'var(--yellow)'}}/>
-               </ListItemIcon>
-              <NavLink to='contact'> <ListItemText primary="Contact" primaryTypographyProps={{
-      fontWeight: '700', fontFamily:'var(--main-font)'
-    }}                         
-               /></NavLink>
-             </ListItem>
+         {/* Contact icons and info */}
+           <List>
+        {contactInfo.map((item, index) => (
+         <ListItem key={index} sx={{ paddingLeft: 0}}>
+           <ListItemIcon sx={{color: 'var(--yellow)'}}>{item.icon}</ListItemIcon>
+           <ListItemText primary={item.text} primaryTypographyProps={listItemTextStyle}/>
+         </ListItem>
+             ))}
+        </List>
+     </Item>
+
+     <Item>      
+        <div>
+          {/* social icons */}
+         <List sx={{ display: 'flex', flexDirection: 'row', color: 'var(--yellow)' }}>
+         {icons.map((icon, index) => (
+         <ListItem key={index} sx={{cursor:'pointer'}}>{icon}</ListItem> 
+         ))}
          </List>
-       
- 
+       </div>
 
-        </Item>
-
-
-        <Item><Typography sx={{color:'var(--white)', marginBottom:'8px', fontFamily:'var(--main-font)',fontWeight:'700', letterSpacing:'1px'}}>Get In Touch </Typography>
-        <Divider sx={{height:'2px', width: '50px', backgroundColor: 'yellow', margin:'6px 0 6px 0' }}></Divider>
-
-{/* Contact icons and info */}
-       <List>
-  {contactInfo.map((item, index) => (
-    <ListItem key={index} sx={{ paddingLeft: 0 }}>
-      <ListItemIcon>{item.icon}</ListItemIcon>
-      <ListItemText
-        primary={item.text}
-        primaryTypographyProps={{
-          fontWeight: '700',
-          fontFamily: 'var(--main-font)',
-        }}
-      />
-    </ListItem>
-  ))}
-</List>
- </Item>
-
-
-<Item>      
-<div>
-  {/* social icons */}
-        <List sx={{ display: 'flex', flexDirection: 'row', color: 'var(--yellow)' }}>
-  {icons.map((icon, index) => (
-    <ListItem key={index}>{icon}</ListItem>
-  ))}
-</List>
-
-            <Grid container spacing={2} sx={{paddingTop:'1.5rem'}}>
+      <Grid container spacing={2} sx={{paddingTop:'1.5rem'}}>
         <Grid item xs={12} sm={6} >
-          <TextField
+          <CustomTextField
             required
             fullWidth
             label="Your Name"
             name="name"
             autoComplete="name"
-            sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
+            InputLabelProps={{ shrink: false }}
           />
         </Grid>
+
         <Grid item xs={12} sm={6}>
-          <TextField
+          <CustomTextField
             required
             fullWidth
             type="email"
             label="E-mail"
             name="email"
             autoComplete="email"
-             sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
-            
+            InputLabelProps={{ shrink: false }}
           />
         </Grid>
+
         <Grid item xs={12} sm={12}>
-          <TextField
+          <CustomTextField
             required
             fullWidth
             multiline
             rows={4}
             label="Message..."
             name="message"
-             sx={{ backgroundColor:'var(--light-yellow)', borderRadius:'5px' }}
+            InputLabelProps={{ shrink: false }}
           />
         </Grid>
-        <Grid item xs={12}>
-          <Button type="submit" variant="contained"  sx={{ backgroundColor:'var(--yellow)', borderRadius:'5px', color:'var(--dark-brown)', fontWeight:'900', ":hover": {
-      bgcolor: "var(--yellow)"} }}>
-            Submit
-          </Button>
-        </Grid>
-      </Grid>
 
-</div>
-        </Item>
+        <Grid item xs={12}>
+          <StyledButton type="submit" variant="contained">
+            Submit
+          </StyledButton>
+        </Grid>
+
+      </Grid>
+    </Item>
       </Box>
-    </div>
+
+        <div className='copyright' style={{display:'flex', justifyContent:'center'}}>
+          <StyledTypography>&copy; Honey&Products  {new Date().getFullYear()}</StyledTypography>
+        </div>
+     
+  </div>
+
   );
 }
 
