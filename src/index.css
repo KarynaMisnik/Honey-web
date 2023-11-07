@@ -330,13 +330,6 @@ body {
   }
 }
 
-.card-content > h2,
-h3,
-h4,
-p {
-  margin: 0.5em 0;
-}
-
 /* About component  */
 
 .about-section {
