@@ -12,7 +12,7 @@
         "inCart": false,
         "count": 0,
         "total": 0,
-        "reviewerImg": "/src/assets/img/reviewersImg/thompson.png",
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer1.png",
         "review": "Absolutely love this honey! The rich flavor and smooth texture make it perfect for drizzling over yogurt and desserts. A natural sweetness that I can't get enough of.",
         "reviewer": "Sophia Thompson",
         "value": 5,
@@ -31,10 +31,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer1.png",
         "review": "Deliciously golden and aromatic! This honey adds a unique touch to my morning tea. Its distinct floral notes truly set it apart from other honeys.",
         "reviewer": "Noah Patel",
         "value": 4,
-        "dateReview": "",
+        "dateReview": "1/04/2023",
         "img-source": "https://www.freepik.com/free-photo/sweet-honey-bee-pollen-seeds-candies-sack-cloth_3434410.htm#&position=18&from_view=undefined"
     },
     {
@@ -49,10 +50,11 @@
         "inCart": false,
         "count":0,
         "total":0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer2.png",
         "review": "Pure goodness in a jar! This honey has become a staple in my kitchen. From spreading it on toast to using it in recipes, its versatility shines through",
-        "reviewer": "Olivia Martinez",
+        "reviewer": "Anna Martinez",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "11/02/2022",
         "img-source": "https://www.freepik.com/free-photo/delicious-bread-honey-wooden-plate_5223256.htm#&position=24&from_view=undefined"
     },
         {
@@ -67,10 +69,11 @@
         "inCart": false,
         "count":0,
         "total":0,
+        "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer2.png",
         "review": "A taste of nature's sweetness. This honey's authenticity is evident with every spoonful. The way it enhances the flavor of my morning toast is pure bliss.",
         "reviewer": "Liam Anderson",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "2/10/2023",
         "img-source": "https://www.freepik.com/free-photo/close-up-jar-with-homemade-honey_6265953.htm#&position=28&from_view=undefined"
     },
         {
@@ -85,10 +88,11 @@
         "inCart": false,
         "count":0,
         "total":0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer3.png",
         "review": "Savoring this honey is like indulging in a jar of sunshine. The way it harmonizes with a variety of foods is simply magical. A must-try for any honey enthusiast",
-        "reviewer": "Emma Williams",
+        "reviewer": "Emma Pattinson",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "19/06/2021",
         "img-source": "https://www.freepik.com/free-photo/high-angle-honey-jar-dipper-with-copy-space_6073861.htm#&position=14&from_view=undefined"
     },
     {
@@ -103,10 +107,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer1.png",
        "review": "These honey gummy bears are a true delight for the taste buds. The way they melt in your mouth, releasing a burst of honey goodness, is simply wonderful. A fantastic choice for a sweet snack that's both satisfying and flavorful.",
         "reviewer": "Emily Johnson",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "14/05/2021",
         "img-source": "https://www.freepik.com/free-photo/assortment-delicious-gummy-bears_34136278.htm#&position=10&from_view=undefined"
     },
        {
@@ -121,10 +126,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer2.png",
         "review": "These honey lollipops are a delightful treat! The perfect balance of sweetness and a subtle hint of honey make them irresistible. I find myself reaching for one whenever I need a little pick-me-up during the day.",
         "reviewer": "Olivia Miller",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "8/08/2023",
         "img-source": "https://www.freepik.com/free-photo/delicious-lollipop_8172282.htm#&position=8&from_view=undefined"
     },
     {
@@ -139,10 +145,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer6.png",
         "review": "The Cleansing Honey Soap is a game-changer for my daily routine. Its deep-cleansing formula, coupled with the purity of honey, effectively removes impurities without stripping my skin's moisture. I love how refreshed and rejuvenated my skin feels after every use.",
         "reviewer": "Ava Johnson",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "21/11/2022",
         "img-source": "https://www.freepik.com/free-photo/high-angle-spa-products-concept_5592868.htm#&position=34&from_view=undefined"
     },
         {
@@ -157,10 +164,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer5.png",
         "review": "The soap is a gentle delight for my skin. Its subtle, soothing fragrance combined with the moisturizing benefits of honey make every wash feel like a spa treatment. My skin feels soft and nourished after each use.",
-        "reviewer": "Noah Williams",
+        "reviewer": "Robert Williams",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "3/12/2022",
         "img-source": "https://www.freepik.com/free-photo/front-view-soap-made-from-green-plant_11741671.htm#&position=30&from_view=undefined"
     },
         {
@@ -175,10 +183,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer6.png",
         "review": "It has quickly become a favorite in my skincare routine. Its rich, earthy scent and the natural properties of honey create a luxurious lather that leaves my skin feeling cleansed and hydrated. A true indulgence for my senses.",
         "reviewer": "Sophia Anderson",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "20/03/2023",
         "img-source": "https://www.freepik.com/free-photo/high-angle-homemade-soap-arrangement_13130865.htm#&position=36&from_view=undefined"
     },
         {
@@ -193,10 +202,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer4.png",
         "review": " Its smooth texture and the natural touch of honey provide instant hydration and comfort. I love how it leaves my lips feeling soft and nourished, making it an essential addition to my daily routine.",
-        "reviewer": " Ava Johnson",
+        "reviewer": "Beth Johnson",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "13/10/2023",
         "img-source": "https://www.freepik.com/free-photo/arrangement-with-salt-soap-wooden-table_5566909.htm#&position=20&from_view=undefined"
     },
         {
@@ -211,10 +221,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer5.png",
         "review": " Its warm and inviting aroma, reminiscent of amber, instantly soothes my senses. The honey-infused formula leaves my skin feeling pampered and soft. Using this soap is a luxurious treat I look forward to.",
-        "reviewer": "Liam Martinez",
+        "reviewer": "Markus Roberts",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "11/09/2022",
         "img-source": "https://www.freepik.com/free-photo/top-view-ecological-razor-soap_12977588.htm#&position=38&from_view=undefined"
     },
     {
@@ -229,10 +240,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer4.png",
         "review": "The Honey Mustard is a culinary delight that adds a unique twist to my dishes. Its perfect balance of sweet and tangy flavors elevates sandwiches and salads to a whole new level. A must-have condiment in my kitchen!",
-        "reviewer": "Olivia Turner",
+        "reviewer": "Martha Turner",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "15/10/2023",
         "img-source": "https://www.freepik.com/free-photo/jar-crunchy-peanut-butter_41285327.htm#&position=0&from_view=undefined"
     },
         {
@@ -247,10 +259,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer4.png",
         "review": "These Honey Nougat Bars are a heavenly treat! The combination of sweet honey and chewy nougat creates a delightful texture and flavor. Whether as an indulgent snack or a special dessert, they never fail to satisfy my sweet cravings.",
         "reviewer": "Ethan Mitchell",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "21/01/2021",
         "img-source": "https://www.freepik.com/free-photo/top-view-turron-dessert_29305536.htm#&position=4&from_view=undefined"
     },
         {
@@ -265,10 +278,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer5.png",
         "review": "The Honey Nut Bars are my go-to energy boosters. Packed with the goodness of nuts and the natural sweetness of honey, they provide a satisfying and nutritious snack. These bars have become a staple in my on-the-go routine.",
         "reviewer": "Ava Bennett",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "25/07/2022",
         "img-source": "https://www.freepik.com/free-photo/delicious-mexican-sweets-arrangement_38171601.htm#&position=2&from_view=undefined"
     },
         {
@@ -283,10 +297,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer4.png",
         "review": "Starting my day with Honey Waffles is a morning ritual I cherish. The warm, crispy waffles drizzled with honey offer a delightful blend of textures and flavors. It's the perfect way to add a touch of sweetness to my breakfast.",
-        "reviewer": "Liam Parker",
+        "reviewer": "Erick Parker",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "23/03/2023",
         "img-source": "https://www.freepik.com/free-photo/stroopwafels-caramel-dutch-waffles-with-tea-coffee-honey-concrete_5896355.htm#&position=6&from_view=undefined"
     },
     {
@@ -301,10 +316,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer5.png",
         "review": "The Beeswax Candle is a natural wonder that fills my space with a warm, comforting glow. Its subtle honey aroma and clean, slow burn create a serene ambiance. I appreciate the eco-friendly choice of beeswax, making it a guilt-free indulgence.",
         "reviewer": "Sophia Reynolds",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "7/08/2023",
         "img-source": "https://www.vecteezy.com/free-photos"
     },
        {
@@ -319,10 +335,11 @@
         "inCart": false,
         "count": 0,
         "total": 0,
+        "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer5.png",
         "review": "The Lavender Beeswax Candle is pure relaxation in a flickering flame. The soothing blend of lavender and natural beeswax brings tranquility to any room. The delicate scent transports me to a calming oasis, making it a must-have for winding down.",
-        "reviewer": "Noah Walker",
+        "reviewer": "David Walker",
         "value": 5,
-        "dateReview": "",
+        "dateReview": "22/05/2022",
         "img-source": "https://www.vecteezy.com/free-photos"
     }
   
