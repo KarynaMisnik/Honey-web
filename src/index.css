@@ -19,6 +19,10 @@
   --main-font: "Montserrat", sans-serif;
   --mosaic-font: "Palette Mosaic", cursive;
   --abrilFatface-font: "Abril Fatface", cursive;
+
+  --bold: 600;
+  --bolder: 700;
+  --boldest: 900;
 }
 /*custom properties */
 
@@ -245,14 +249,31 @@ body {
 /***  Section with banner, motivational text and hexagon schemes ends here  ***/
 
 /* ShopSection Component: image-carousel */
+.bg {
+  background: var(--black);
+  z-index: 99999;
+  position: absolute;
+  padding: 2rem;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .bg {
+    padding: 1rem;
+  }
+}
+
 .carousel {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1500px;
+  width: 1000px;
   height: auto;
-  margin-bottom: 2rem;
+  margin: 1rem;
 }
 
 .slide {
@@ -270,9 +291,6 @@ body {
   width: 2rem;
   height: 2rem;
   color: var(--dark-yellow);
-}
-
-.arrow:hover {
   cursor: pointer;
 }
 
@@ -306,6 +324,20 @@ body {
 
 .indicator-inactive {
   background-color: var(--dark-yellow);
+}
+
+@media screen and (max-width: 500px) {
+  .indicators,
+  .arrow-left,
+  .arrow-right {
+    bottom: 0.8rem;
+  }
+
+  .indicator,
+  .arrow {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 /* About section in home page */
