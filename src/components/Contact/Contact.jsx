@@ -1,12 +1,11 @@
 import * as React from "react";
-import Divider from "@mui/material/Divider";
-import Typography from "@mui/material/Typography";
-import { Button, Grid, TextField } from "@mui/material";
-import Box from "@mui/material/Box";
+import { NavLink } from "react-router-dom";
+/* List MUI */
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+/* Icons MUI */
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -17,7 +16,11 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import { NavLink } from "react-router-dom";
+/* Other MUI imports */
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import { Button, Grid, TextField } from "@mui/material";
+import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 
 /* Text */

@@ -1,9 +1,12 @@
 import * as React from "react";
-import productData from "../Shop/productData.json";
+/* data import */
+import productData from "../pages/productData.json";
+/* MUI import */
 import Rating from "@mui/material/Rating";
+/* CSS */
 import "./testimonials.css";
 
-/* Shuffles reviews, new reviwes appear every time the page refreshed */
+/* Shuffles reviews, new reviews appear every time the page refreshed */
 function shuffleArray(array) {
   const shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -13,7 +16,7 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 
-// Shuffle the productData array and take the first three random items
+// Shuffle the productData array and take the first three random reviews
 const shuffledProductData = shuffleArray(productData);
 
 export default function Testimonials() {

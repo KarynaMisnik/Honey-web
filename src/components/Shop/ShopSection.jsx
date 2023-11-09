@@ -1,5 +1,4 @@
 import * as React from "react";
-import shopSectionData from "./shopSectionData.json";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { useState } from "react";
 
