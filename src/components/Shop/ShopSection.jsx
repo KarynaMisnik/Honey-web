@@ -1,6 +1,7 @@
 import * as React from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { useState } from "react";
+import "./shop-section.css";
 
 export default function ShopSection({ data }) {
   const [slide, setSlide] = useState(0);
@@ -14,14 +15,7 @@ export default function ShopSection({ data }) {
   };
 
   return (
-    <div
-      className="carousel-wrapper"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="carousel-wrapper">
       <div className="carousel">
         <MdArrowBackIosNew onClick={prevSlide} className="arrow arrow-left" />
         {data.map((item, id) => {

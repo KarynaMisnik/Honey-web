@@ -1,0 +1,99 @@
+/* ShopSection Component: image-carousel */
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.bg {
+  background: var(--black);
+  z-index: 99999;
+  position: absolute;
+  padding: 2rem;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .bg {
+    padding: 1rem;
+  }
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: auto;
+  margin: 1rem;
+}
+
+.slide {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  color: var(--dark-yellow);
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators,
+.arrow-left,
+.arrow-right {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  z-index: 100000;
+}
+
+.indicator {
+  background-color: var(--light-gray);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.indicator-inactive {
+  background-color: var(--dark-yellow);
+}
+
+@media screen and (max-width: 500px) {
+  .indicators,
+  .arrow-left,
+  .arrow-right {
+    bottom: 0.8rem;
+  }
+
+  .indicator,
+  .arrow {
+    width: 10px;
+    height: 10px;
+  }
+}

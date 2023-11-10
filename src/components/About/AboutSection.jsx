@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Button, Grid, List, ListItem } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 import Flower from "../../assets/img/aboutSection/flower.png";
 import Hive from "../../assets/img/aboutSection/hive.png";
@@ -8,73 +9,50 @@ import HoneyJar from "../../assets/img/aboutSection/honey-jar.png";
 import Beekeepers from "../../assets/img/aboutSection/beekeepers-family.jpg";
 
 import "./about-section.css";
+import { styled } from "@mui/material/styles";
+
+const CustomButton = styled(Button)(({ theme }) => ({
+  padding: "1.5rem",
+  background: "var(--dark-yellow)",
+  color: "var(--black)",
+  fontFamily: "var(--abrilFatface-font)",
+  fontSize: "1.5rem",
+  textTransform: "none",
+  cursor: "pointer",
+  "&:hover": { background: "var(--dark-yellow)" },
+  [theme.breakpoints.down("sm")]: {
+    maxWidth: "600px",
+    padding: "1rem",
+    fontSize: "1rem",
+  },
+}));
 
 export default function AboutSection() {
   return (
-    <div className="grid-container__aboutSection" container direction="column">
-      <div
-        className="imgText-wrapper"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "2em",
-        }}
-      >
-        <div
-          className="img-container"
-          style={{ flex: "1", maxWidth: "80%", height: "auto" }}
-        >
-          <img
-            src={Beekeepers}
-            style={{
-              boxShadow: "-35px -35px 0px -3px #000000",
-              borderRadius: "20px",
-            }}
-          />
+    <div className="grid-container-aboutSection">
+      <div className="imgText-wrapper">
+        <div className="img-container">
+          <div>
+            <img src={Beekeepers} />
+          </div>
         </div>
 
         <div
           className="welcoming-text"
-          style={{ maxWidth: "80%", height: "auto" }}
+          style={{
+            padding: 0,
+          }}
         >
-          <p
-            style={{
-              fontFamily: "var(--abrilFatface-font)",
-              fontSize: "3rem",
-              marginBottom: "2rem",
-            }}
-          >
-            Welcome to the sweet world of the Doe Family Honey!
-          </p>
-          <p
-            style={{
-              fontFamily: "var(--main-font)",
-              fontSize: "2rem",
-              marginBottom: "1.5rem",
-              textAlign: "justify",
-              marginBottom: "5rem",
-            }}
-          >
+          <p className="welcome-title">Welcome to the Doe Family!</p>
+          <p className="welcome-text">
             We're a close-knit family passionate about sharing the natural
             goodness of our handcrafted honey products. From our family to
             yours, we invite you to savor the sweetness of nature's finest gift
             – pure, golden honey.
           </p>
-          <Button
-            className="button learnMore"
-            sx={{
-              padding: "2rem",
-              background: "var(--dark-yellow)",
-              color: "var(--black)",
-              fontFamily: "var(--abrilFatface-font)",
-              fontSize: "1.5rem",
-              textTransform: "none",
-              "&:hover": { background: "var(--dark-yellow)" },
-            }}
-          >
-            Learn More About Us
-          </Button>
+          <NavLink to={`/about`}>
+            <CustomButton>Learn More</CustomButton>
+          </NavLink>
         </div>
       </div>
 
@@ -109,9 +87,11 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="shopping-section_textContainer">
+      <div className="shopping-section-textContainer">
         <p>Explore our selection of honey and honey-based delights</p>
-        <h1>GO SHOPPING</h1>
+        <NavLink to={`/shop`}>
+          <CustomButton sx={{ margin: ".5rem 0" }}>GO SHOPPING</CustomButton>
+        </NavLink>
       </div>
     </div>
   );

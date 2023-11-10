@@ -1,4 +1,4 @@
-.grid-container__aboutSection {
+.grid-container-aboutSection {
   background-image: linear-gradient(
     to bottom,
     #fbe386,
@@ -14,6 +14,70 @@
     #fff7fe,
     #ffffff
   );
+  display: flex;
+  flex-direction: column;
+}
+
+/* common */
+.imgText-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .imgText-wrapper {
+    width: 90%;
+  }
+}
+
+/* img only container */
+.img-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* img & button */
+.welcoming-text {
+  flex: 1;
+}
+
+.welcome-title {
+  padding-bottom: 1rem;
+  margin: 0;
+  font-family: var(--abrilFatface-font);
+  font-size: 3rem;
+}
+
+.welcome-text {
+  font-family: var(--main-font);
+  margin: 0;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+  .welcome-text {
+    font-size: 1rem;
+  }
+  .imgText-wrapper {
+    flex-direction: column;
+  }
+}
+
+.img-container > div > img {
+  box-shadow: -22px -22px 0px -3px var(--black);
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
 }
 
 .motto-container {
@@ -87,9 +151,9 @@
   }
 }
 
-/* Text for shopping section in Home page */
+/* Text for shopping section */
 
-.shopping-section_textContainer {
+.shopping-section-textContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,22 +161,22 @@
   text-align: center;
 }
 
-.shopping-section_textContainer > p {
+.shopping-section-textContainer > p {
   font-family: var(--abrilFatface-font);
   font-size: 2rem;
 }
 
-.shopping-section_textContainer > h1 {
+.shopping-section-textContainer > h1 {
   font-family: var(--abrilFatface-font);
   font-size: 5rem;
   padding-bottom: 3rem;
 }
 
 @media (max-width: 400px) {
-  .shopping-section_textContainer > p {
+  .shopping-section-textContainer > p {
     font-size: 1rem;
   }
-  .shopping-section_textContainer > h1 {
+  .shopping-section-textContainer > h1 {
     font-size: 2rem;
   }
 }

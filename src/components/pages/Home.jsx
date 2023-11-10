@@ -9,7 +9,9 @@ function Home() {
   return (
     <>
       <Hero />
+
       <AboutSection />
+
       <div
         style={{
           backgroundImage:
