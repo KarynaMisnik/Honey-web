@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Button, Grid, List, ListItem } from "@mui/material";
+/* import from MUI lib */
+import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
-
+/* import imgs */
 import Flower from "../../assets/img/aboutSection/flower.png";
 import Hive from "../../assets/img/aboutSection/hive.png";
 import HoneyJar from "../../assets/img/aboutSection/honey-jar.png";
-
 import Beekeepers from "../../assets/img/aboutSection/beekeepers-family.jpg";
 
 import "./about-section.css";
