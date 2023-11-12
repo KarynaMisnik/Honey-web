@@ -62,7 +62,7 @@ export default function AboutSection() {
         <div className="motto-container">
           <p className="motto-text">
             Bees: Nature's tiny heroes, vital for pollination, essential for our
-            food.
+            food
           </p>
         </div>
       </div>
