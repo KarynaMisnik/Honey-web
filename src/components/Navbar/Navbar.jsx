@@ -1,19 +1,23 @@
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 import LogoBee from "../../assets/img/logo.png"; /* logo */
 /* mui components */
 import AppBar from "@mui/material/AppBar";
+/* MUI box & container */
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+/* Menu from MUI */
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import { NavLink } from "react-router-dom";
+/* MUI buttons */
+import IconButton from "@mui/material/IconButton";
+import Button from "@mui/material/Button";
+/* Other MUI components */
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Tooltip from "@mui/material/Tooltip";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 {
   /*const pages = ['Home', 'About', 'Shop', 'Contact'];*/
@@ -38,7 +42,7 @@ const Navbar = ({ pages }) => {
         borderBottom: "4px solid var(--gray)",
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="xxl">
         <Toolbar disableGutters>
           <NavLink to="/home">
             <IconButton sx={{ display: { xs: "none", md: "flex" } }}>
@@ -47,7 +51,12 @@ const Navbar = ({ pages }) => {
           </NavLink>
 
           {/*  hamburger-menu  */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -103,7 +112,6 @@ const Navbar = ({ pages }) => {
           <IconButton
             sx={{
               display: { xs: "flex", flexDirection: "center", md: "none" },
-              mr: 6,
               flexGrow: 6,
             }}
           >
@@ -140,7 +148,7 @@ const Navbar = ({ pages }) => {
             <Tooltip>
               <IconButton>
                 <NavLink to="/cart">
-                  <ShoppingBasketIcon
+                  <ShoppingCartIcon
                     sx={{ color: "var(--yellow)", fontSize: "2rem" }}
                   />
                 </NavLink>
