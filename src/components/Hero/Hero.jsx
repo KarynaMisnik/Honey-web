@@ -17,10 +17,6 @@ const Hero = () => {
             borderRadius: "50%",
           }}
         ></Divider>
-
-        <p className="hero-text">
-          Get fresh honey and organic honey products with just a one click
-        </p>
       </div>
     </div>
   );

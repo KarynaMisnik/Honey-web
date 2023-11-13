@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 60vh;
   background: url("./sunflowers.png");
   background-size: cover;
   background-position: center;
@@ -15,8 +15,10 @@
 }
 
 .bg-text {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  margin: 5% 5%;
+  padding: 0% 3%;
 }
 
 .bg-text p {
@@ -24,26 +26,18 @@
   font-size: 5rem;
   text-align: center;
   font-family: var(--mosaic-font);
-}
-
-.bg-text .hero-text {
-  color: var(--light-yellow);
-  font-family: var(--abrilFatface-font);
-  font-weight: 700;
-  letter-spacing: 3px;
-  -webkit-text-stroke: 0.1px var(--rich-gray);
-  text-stroke: 0.1px var(--rich-gray);
+  margin: 0.5rem 0;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 399px) {
   .bg-text > p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
   .bg-text > p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
