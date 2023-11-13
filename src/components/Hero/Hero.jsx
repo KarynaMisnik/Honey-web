@@ -6,7 +6,6 @@ const Hero = () => {
     <div className="banner-wrapper">
       <div className="bg-text">
         <p>
-          {" "}
           HONEY & <br />
           HONEY PRODUCTS
         </p>

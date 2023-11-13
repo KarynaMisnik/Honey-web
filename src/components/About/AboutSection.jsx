@@ -56,15 +56,11 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
-      >
-        <div className="motto-container">
-          <p className="motto-text">
-            Bees: Nature's tiny heroes, vital for pollination, essential for our
-            food
-          </p>
-        </div>
+      <div className="motto-container">
+        <p className="motto-text">
+          Bees: Nature's tiny heroes, vital for pollination, essential for our
+          food
+        </p>
       </div>
 
       <div className="hex-container">

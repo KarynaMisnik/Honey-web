@@ -5,15 +5,16 @@
     #fdeba2,
     #feeeab,
     #fff2bd,
-    #feedaa,
-    #f6d0da,
-    #f9d1dc,
-    #fdcfda,
-    #f7c6d1,
-    #f8d3dc,
-    #fbdbf6,
-    #fbd9d9,
-    #fce0e0,
+    #fff3c1,
+    #fff4c9,
+    #fcdae3,
+    #ffe3ea,
+    #fedee6,
+    #fcdae2,
+    #fcd9e1,
+    #fee2fa,
+    #fadddd,
+    #fbe2e2,
     #fff
   );
   display: flex;
@@ -25,7 +26,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin: 1.5rem 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1000px) {
