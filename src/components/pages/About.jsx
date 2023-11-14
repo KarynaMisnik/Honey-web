@@ -1,12 +1,13 @@
 import React from "react";
+/* import from data file */
 import aboutData from "../pages/aboutData.json";
+/* MUI */
 import { Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const Title = styled(Typography)(({ theme }) => ({
   textAlign: "center",
-  ...theme.typography.body2,
-  padding: "1em",
+  padding: "1.5rem",
   fontFamily: "var(--abrilFatface-font)",
   fontSize: "40px",
   fontWeight: "900",
@@ -29,67 +30,58 @@ function About() {
         Welcome to the enchanting world of the Doe family beekeepers!
       </Title>
 
-      {/* First section: Smaller img on the left, text on the right */}
+      {/* First section */}
       <div className="about-section">
         <div className="img-container">
-          <img
-            src={aboutData[0].src}
-            alt={aboutData[0].alt}
-            className="about-img"
-          />
+          <img src={aboutData[0].src} alt={aboutData[0].alt} />
         </div>
-        <p className="about-text">{aboutData[0].text}</p>
-      </div>
-
-      {/* Second section: Text on the left, img on the right */}
-      <div className="about-section">
-        <p className="about-text">{aboutData[1].text}</p>
-        <div className="img-container">
-          <img
-            src={aboutData[1].src}
-            alt={aboutData[1].alt}
-            className="about-img"
-          />
+        <div className="text-container ">
+          <p className="about-text">{aboutData[0].text}</p>
         </div>
       </div>
 
-      {/* Third section: Just text with full width */}
+      {/* Second section*/}
       <div className="about-section">
-        <div className="img-container">
-          <img
-            src={aboutData[2].src}
-            alt={aboutData[2].alt}
-            className="about-img"
-          />
+        <div className="text-container ">
+          <p className="about-text">{aboutData[1].text}</p>
         </div>
-        <p className="about-text">{aboutData[2].text}</p>
-      </div>
-
-      {/* Fourth section: Just text with full width */}
-      <div className="about-section">
-        <p className="about-text">{aboutData[3].text}</p>
-      </div>
-
-      {/* Fifth section: Text on the left, img on the right */}
-      <div className="about-section">
-        <p className="about-text">{aboutData[4].text}</p>
         <div className="img-container">
-          <img
-            src={aboutData[4].src}
-            alt={aboutData[4].alt}
-            className="about-img"
-          />
+          <img src={aboutData[1].src} alt={aboutData[1].alt} />
         </div>
       </div>
 
-      {/* Sixth section: Just text with full width */}
+      {/* Third section */}
       <div className="about-section">
-        <p className="about-text">{aboutData[5].text}</p>
+        <div className="img-container">
+          <img src={aboutData[2].src} alt={aboutData[2].alt} />
+        </div>
+        <div className="text-container ">
+          <p className="about-text">{aboutData[2].text}</p>
+        </div>
       </div>
 
-      {/* Seventh section: Just text with full width */}
+      {/* Fourth section*/}
       <div className="about-section">
-        <p className="about-text">{aboutData[6].text}</p>
+        <div className="text-container">
+          <p className="about-text">{aboutData[3].text}</p>
+        </div>
+        <div className="img-container ">
+          <img src={aboutData[4].src} alt={aboutData[4].alt} />
+        </div>
+      </div>
+
+      {/* Fifth section */}
+      <div className="about-section text-only">
+        <div className="text-container">
+          <p className="about-text">{aboutData[4].text}</p>
+        </div>
+        <div className="text-container">
+          <p className="about-text">{aboutData[5].text}</p>
+        </div>
+
+        <div className="text-container">
+          <p className="about-text">{aboutData[6].text}</p>
+        </div>
       </div>
     </div>
   );

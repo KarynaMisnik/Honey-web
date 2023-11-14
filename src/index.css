@@ -55,66 +55,78 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-/* About component  */
+/* ====  PAGE ABOUT === */
 
 .about-section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.about-img {
-  border-radius: 8px;
-  max-width: 400px;
-  box-shadow: var(--dark-brown) 0px 8px 6px;
+.img-container > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 1px 0px rgb(10, 10, 10), 1px 1px rgb(10, 10, 10),
+    2px 1px rgb(9, 9, 9), 2px 2px rgb(9, 9, 9), 3px 2px rgb(8, 8, 8),
+    3px 3px rgb(8, 8, 8), 4px 3px rgb(7, 7, 7), 4px 4px rgb(7, 7, 7),
+    5px 4px rgb(6, 6, 6), 5px 5px rgb(6, 6, 6), 6px 5px rgb(5, 5, 5),
+    6px 6px rgb(5, 5, 5), 7px 6px rgb(4, 4, 4), 7px 7px rgb(4, 4, 4),
+    8px 7px rgb(3, 3, 3), 8px 8px rgb(3, 3, 3), 9px 8px rgb(2, 2, 2),
+    9px 9px rgb(2, 2, 2), 10px 9px rgb(1, 1, 1), 10px 10px rgb(1, 1, 1);
 }
 
 .img-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: auto;
-  height: auto;
-  margin: 20px;
+  flex: 1;
+  padding: 1rem 1.5rem;
 }
 
-.originalSrc {
-  position: absolute;
-  padding: 5px;
-  color: var(--dark-brown);
-  font-size: 14px;
-  font-weight: 700;
+.text-container {
+  flex: 1;
 }
 
 .about-text {
   text-align: justify;
   font-size: 2rem;
   font-family: var(--main-font);
-  color: rgba(0, 0, 0, 0.87);
-  margin: 20px;
-  line-height: 70px;
+  color: var(--black);
+  padding: 0 1.5rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.text-only {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 1.5rem;
 }
 
 @media (max-width: 600px) {
   .about-section {
     flex-direction: column;
   }
+}
 
-  .about-img {
-    margin-right: 0; /* Remove spacing between image and text on mobile view */
-  }
-  .about-text {
+@media screen and (min-width: 699px) and (max-width: 800px) {
+  .text-container .about-text {
     font-size: 1rem;
-    line-height: 30px;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
-  .about-text {
-    font-size: 1rem;
-    line-height: 30px;
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+  .text-container .about-text {
+    font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .text-container .about-text {
+    font-size: 1.8rem;
+  }
+}
+
+/* ====  PAGE ABOUT ENDS === */
 
 /* Error page */
 
