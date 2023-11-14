@@ -22,7 +22,7 @@ function About() {
     <div
       style={{
         backgroundImage:
-          "linear-gradient(to bottom, #Fdeab0, #Fbe6a6, #Ffe69b, #Fde290, #Fbde8a, #ffe7aa, #ffe6b8, #ffe5c5, #ffe7dc, #ffeef2, #fff7fe, #ffffff)",
+          "linear-gradient(to bottom,  #FFD700 1%, #FFEC89, #FFEC89, #FFF0A3, #FFF1AA, #FFDAF5, #FDE2F6, #FFFFF0 )",
       }}
     >
       <Title>
@@ -37,9 +37,6 @@ function About() {
             alt={aboutData[0].alt}
             className="about-img"
           />
-          <a className="originalSrc" href={aboutData[0].path}>
-            Link to Freepik
-          </a>
         </div>
         <p className="about-text">{aboutData[0].text}</p>
       </div>
@@ -53,9 +50,6 @@ function About() {
             alt={aboutData[1].alt}
             className="about-img"
           />
-          <a className="originalSrc" href={aboutData[1].path}>
-            Link to Freepik
-          </a>
         </div>
       </div>
 
@@ -67,9 +61,6 @@ function About() {
             alt={aboutData[2].alt}
             className="about-img"
           />
-          <a className="originalSrc" href={aboutData[2].path}>
-            Link to Freepik
-          </a>
         </div>
         <p className="about-text">{aboutData[2].text}</p>
       </div>
@@ -88,9 +79,6 @@ function About() {
             alt={aboutData[4].alt}
             className="about-img"
           />
-          <a className="originalSrc" href={aboutData[4].path}>
-            Link to Freepik
-          </a>
         </div>
       </div>
 

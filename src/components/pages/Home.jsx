@@ -15,7 +15,7 @@ function Home() {
       <div
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, #FFFFFF, #FFECA4, #FBE386)",
+            "linear-gradient(to bottom,  #FFFFF0 , #FFDAF5, #FDE2F6, #FFFFF0 )",
         }}
       >
         <ShopSection data={shopSectionData} />

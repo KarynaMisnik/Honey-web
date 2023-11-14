@@ -1,21 +1,11 @@
 .grid-container-aboutSection {
   background-image: linear-gradient(
     to bottom,
-    #fbe58d,
-    #fdeba2,
-    #feeeab,
-    #fff2bd,
-    #fff3c1,
-    #fff4c9,
-    #fcdae3,
-    #ffe3ea,
-    #fedee6,
-    #fcdae2,
-    #fcd9e1,
-    #fee2fa,
-    #fadddd,
-    #fbe2e2,
-    #fff
+    #ffec89,
+    #ffec89,
+    #fff0a3,
+    #fff1aa,
+    #fffff0
   );
   display: flex;
   flex-direction: column;
