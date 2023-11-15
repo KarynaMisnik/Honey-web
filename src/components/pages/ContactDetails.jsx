@@ -1,7 +1,9 @@
 import * as React from "react";
+/* MUI Card */
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+/* Other MUI components */
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { useMediaQuery, Grid } from "@mui/material";
@@ -37,32 +39,14 @@ export default function ContactDetails() {
     <div
       style={{
         backgroundImage:
-          "linear-gradient(to bottom, #fbe386, #fce58c, #fde792, #fde897, #feea9d, #ffe7aa, #ffe6b8, #ffe5c5, #ffe7dc, #ffeef2, #fff7fe, #ffffff)",
+          "linear-gradient(to bottom, #FFD700 1%, #FFEC89, #FFEC89, #FFF0A3, #FFF1AA, #FFDAF5, #FDE2F6, #FFFFF0)",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h2
-          style={{
-            textAlign: "center",
-            lineHeight: "50px",
-            marginTop: "25px",
-            fontFamily: "var(--main-font)",
-            letterSpacing: "2px",
-          }}
-        >
-          Contact Us
-          <br />
-          We love hearing from our customers.{" "}
-        </h2>
+      <div className="contact-details-text contact-details-textOnTop">
+        <h2>Contact Us</h2>
+        <h2>We love hearing from our customers.</h2>
       </div>
-      <Grid container spacing={4} sx={{ marginTop: "0", padding: "20px" }}>
+      <Grid container spacing={4} sx={{ marginTop: "0", padding: "1rem" }}>
         {cardsData.map((card) => (
           <Grid key={card.id} item xs={12} md={4}>
             <Card
@@ -91,25 +75,9 @@ export default function ContactDetails() {
           </Grid>
         ))}
       </Grid>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h2
-          style={{
-            marginTop: "25px",
-            marginBottom: "25px",
-            textAlign: "center",
-            lineHeight: "50px",
-            fontFamily: "var(--main-font)",
-            letterSpacing: "2px",
-          }}
-        >
-          Stay connected with us on social media!
-          <br />
+      <div className="contact-details-text contact-details-textOnBottom">
+        <h2>Stay connected with us on social media!</h2>
+        <h2>
           Follow our beekeeping journey, get updates on new products, and join
           our growing community.
         </h2>

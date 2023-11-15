@@ -164,6 +164,25 @@ body {
 
 /* PAGE PRODUCT LIST */
 
+.product-img {
+  max-width: 100%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-info-wrpper {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
 .product_list {
   font-family: var(--main-font);
   font-size: 1.5rem;
@@ -190,25 +209,28 @@ span,
   padding-left: 0.5rem;
   font-size: 1.3rem;
 }
+/* PAGE PRODUCT LIST ENDS */
 
-.product-img {
-  max-width: 100%;
-  height: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.card-info-wrpper {
+/* PAGE CONTACTDETAILS */
+.contact-details-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-family: var(--main-font);
+  letter-spacing: 2px;
+}
+/*! removes extra space between cards and top text */
+.contact-details-textOnTop {
+  padding-bottom: 0;
 }
 
-.rating {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0.5rem 1rem;
+.contact-details-text > h2 {
+  padding-bottom: 1rem;
 }
+/* PAGE CONTACTDETAILS ENDS */
 
 /* ProductDetails p--ttile, amount, price */
 
