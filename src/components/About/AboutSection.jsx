@@ -62,7 +62,6 @@ export default function AboutSection() {
           food
         </p>
       </div>
-
       <div className="hex-container">
         <div className="hexagon">
           <div className="hexagon-inner">

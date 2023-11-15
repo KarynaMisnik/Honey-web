@@ -21,7 +21,7 @@ const shuffledProductData = shuffleArray(productData);
 
 export default function Testimonials() {
   return (
-    <>
+    <div className="testimonials-container">
       <h1>What our customers say</h1>
       <div className="card-wrapper">
         {shuffledProductData.slice(0, 3).map((cardItem) => (
@@ -39,6 +39,6 @@ export default function Testimonials() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

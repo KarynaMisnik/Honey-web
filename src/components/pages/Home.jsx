@@ -7,21 +7,17 @@ import shopSectionData from "../Shop/shopSectionData.json";
 
 function Home() {
   return (
-    <>
+    <div
+      style={{
+        backgroundImage:
+          "linear-gradient(to bottom, #FFD700 2%, #ffec89, #ffec89, #fff0a3, #fff1aa, #fbeda8, #fffff0, #fbc6ed, #fccbef, #fffff0)",
+      }}
+    >
       <Hero />
-
       <AboutSection />
-
-      <div
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom,  #FFFFF0 , #FFDAF5, #FDE2F6, #FFFFF0 )",
-        }}
-      >
-        <ShopSection data={shopSectionData} />
-        <Testimonials />
-      </div>
-    </>
+      <ShopSection data={shopSectionData} />
+      <Testimonials />
+    </div>
   );
 }
 
