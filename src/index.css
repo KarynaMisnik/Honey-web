@@ -253,3 +253,32 @@ span,
     padding: 1rem 0.5rem;
   }
 }
+
+/* === PAGE ERROR === */
+
+.error-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.text-container {
+  background: green;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.error-img-container {
+  background: pink;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === PAGE ERROR ENDS === */
