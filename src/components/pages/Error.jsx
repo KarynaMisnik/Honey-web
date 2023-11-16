@@ -5,11 +5,14 @@ export default function Error() {
     <div className="error-container">
       <div className="text-container">
         <span>404</span>
-        <p>Oh, bzzz.</p>
+        <p>Oh, bzzz!</p>
         <p> You are totally lost.</p>
       </div>
       <div className="error-img-container">
-        <h1>Here must be smth</h1>
+        <img
+          src="./src/assets/img/errorPage/bee-error.png"
+          alt="a cute bee sitting in armchair and drinking tea"
+        />
       </div>
     </div>
   );
