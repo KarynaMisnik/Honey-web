@@ -35,14 +35,14 @@ function About() {
         <div className="img-container">
           <img src={aboutData[0].src} alt={aboutData[0].alt} />
         </div>
-        <div className="text-container ">
+        <div className="about-text-container ">
           <p className="about-text">{aboutData[0].text}</p>
         </div>
       </div>
 
       {/* Second section*/}
       <div className="about-section">
-        <div className="text-container ">
+        <div className="about-text-container">
           <p className="about-text">{aboutData[1].text}</p>
         </div>
         <div className="img-container">
@@ -55,14 +55,14 @@ function About() {
         <div className="img-container">
           <img src={aboutData[2].src} alt={aboutData[2].alt} />
         </div>
-        <div className="text-container ">
+        <div className="about-text-container">
           <p className="about-text">{aboutData[2].text}</p>
         </div>
       </div>
 
       {/* Fourth section*/}
       <div className="about-section">
-        <div className="text-container">
+        <div className="about-text-container">
           <p className="about-text">{aboutData[3].text}</p>
         </div>
         <div className="img-container ">
@@ -72,14 +72,14 @@ function About() {
 
       {/* Fifth section */}
       <div className="about-section text-only">
-        <div className="text-container">
+        <div className="about-text-container">
           <p className="about-text">{aboutData[4].text}</p>
         </div>
-        <div className="text-container">
+        <div className="about-text-container">
           <p className="about-text">{aboutData[5].text}</p>
         </div>
 
-        <div className="text-container">
+        <div className="about-text-container">
           <p className="about-text">{aboutData[6].text}</p>
         </div>
       </div>
