@@ -65,7 +65,6 @@ body {
 }
 
 /* ====  PAGE ABOUT === */
-
 .about-section {
   display: flex;
   flex-direction: row;
@@ -117,11 +116,9 @@ body {
     font-size: 1rem;
   }
 }
-
 /* ====  PAGE ABOUT ENDS === */
 
 /* === PAGE ERROR === */
-
 .error-text-container {
   padding: 1em;
   text-align: center;
@@ -150,9 +147,9 @@ body {
     font-size: 20px;
   }
 }
+/* === PAGE ERROR ENDS === */
 
-/* PAGE PRODUCT LIST */
-
+/* === PAGE PRODUCT LIST === */
 .product-img {
   max-width: 100%;
   height: 100%;
@@ -198,9 +195,9 @@ span,
   padding-left: 0.5rem;
   font-size: 1.3rem;
 }
-/* PAGE PRODUCT LIST ENDS */
+/* === PAGE PRODUCT LIST ENDS === */
 
-/* PAGE CONTACTDETAILS */
+/*  === PAGE CONTACTDETAILS === */
 .contact-details-text {
   display: flex;
   flex-direction: column;
@@ -278,7 +275,7 @@ span,
     font-size: 1.5rem;
   }
 }
-/* === PAGE PRODUCT DETAILS  ENDS=== */
+/* === PAGE PRODUCT DETAILS ENDS === */
 
 /* === PAGE ERROR === */
 .error-container {
