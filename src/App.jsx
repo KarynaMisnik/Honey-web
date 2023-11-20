@@ -14,6 +14,7 @@ const pages = ["Home", "About", "Shop", "Contact"];
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [warning, setWarning] = useState([]);
 
   const handleClick = (item) => {
     let inCart = false;
@@ -23,10 +24,17 @@ function App() {
       if (item.id === product.id) inCart = true;
     });
 
-    if (inCart) return;
+    if (inCart) {
+      setWarning(true);
+
+      setTimeout(() => {
+        setWarning(false);
+      }, 2000);
+      return;
+    }
 
     // Update the cart state using the functional form of setCart
-    setCart((prevCart) => [...prevCart, item]);
+    setCart([...cart, item]);
   };
 
   return (
@@ -37,7 +45,10 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/shop" element={<Shop handleClick={handleClick} />} />
+        <Route
+          path="/shop"
+          element={<Shop handleClick={handleClick} warning={warning} />}
+        />
         <Route path="/contact" element={<ContactDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/values/:valuesId" element={<ProductDetails />} />

@@ -195,6 +195,19 @@ span,
   padding-left: 0.5rem;
   font-size: 1.3rem;
 }
+
+.warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--light-yellow);
+  color: var(--black);
+  padding: 2rem;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
 /* === PAGE PRODUCT LIST ENDS === */
 
 /*  === PAGE CONTACTDETAILS === */
