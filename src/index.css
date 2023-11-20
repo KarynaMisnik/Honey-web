@@ -32,6 +32,12 @@
     6px 6px rgb(5, 5, 5), 7px 6px rgb(4, 4, 4), 7px 7px rgb(4, 4, 4),
     8px 7px rgb(3, 3, 3), 8px 8px rgb(3, 3, 3), 9px 8px rgb(2, 2, 2),
     9px 9px rgb(2, 2, 2), 10px 9px rgb(1, 1, 1), 10px 10px rgb(1, 1, 1);
+
+  /* warning box shadow */
+  --warning-box: -15px -15px 2px -5px rgb(248, 179, 191, 0.5),
+    -15px 15px 2px -5px rgb(146, 7, 146, 0.5),
+    15px -15px 2px -5px rgba(255, 0, 0, 0.5),
+    15px 15px 2px -5px rgba(198, 70, 2, 0.5);
 }
 /*custom properties */
 
@@ -197,17 +203,31 @@ span,
 }
 
 .warning {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 10000;
   text-align: center;
   background: var(--light-yellow);
   color: var(--black);
   padding: 2rem;
+  border-radius: 0 0 5px 5px;
   font-family: var(--main-font);
   font-size: 1.5rem;
   font-weight: 900;
+  box-shadow: var(--warning-box);
 }
+
+@media screen and (max-width: 600px) {
+  .warning {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
 /* === PAGE PRODUCT LIST ENDS === */
 
 /*  === PAGE CONTACTDETAILS === */
