@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -13,15 +13,31 @@ import ProductDetails from "./components/pages/ProductDetails";
 const pages = ["Home", "About", "Shop", "Contact"];
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const handleClick = (item) => {
+    let inCart = false;
+
+    // Check if the item is already in the cart
+    cart.forEach((product) => {
+      if (item.id === product.id) inCart = true;
+    });
+
+    if (inCart) return;
+
+    // Update the cart state using the functional form of setCart
+    setCart((prevCart) => [...prevCart, item]);
+  };
+
   return (
     <>
-      <Navbar pages={pages} />
+      <Navbar pages={pages} size={cart.length} />
 
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop" element={<Shop handleClick={handleClick} />} />
         <Route path="/contact" element={<ContactDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/values/:valuesId" element={<ProductDetails />} />

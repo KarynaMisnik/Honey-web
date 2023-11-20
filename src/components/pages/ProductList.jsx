@@ -77,7 +77,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-export default function ProductList() {
+const ProductList = ({ index, handleClick }) => {
   const [data, setData] = useState(productData);
 
   /* If hexagon "All" is clicked shows all items, otherwise selected category items are shown */
@@ -100,9 +100,10 @@ export default function ProductList() {
       }}
     >
       <Grid container justifyContent="space-evenly" padding={2}>
-        {hexagonItems.map((item, index) => (
+        {hexagonItems.map((item) => (
           <HexagonItem
-            key={index}
+            item
+            key={item.id || index}
             onClick={() => filterResult(item.category)}
             xs={12}
             sm={6}
@@ -180,7 +181,9 @@ export default function ProductList() {
                       </NavLink>
                     </div>
 
-                    <CustomButton>ADD TO CART</CustomButton>
+                    <CustomButton onClick={() => handleClick(values)}>
+                      ADD TO CART
+                    </CustomButton>
                   </div>
                 </Paper>
               </Grid>
@@ -190,4 +193,6 @@ export default function ProductList() {
       </div>
     </div>
   );
-}
+};
+
+export default ProductList;

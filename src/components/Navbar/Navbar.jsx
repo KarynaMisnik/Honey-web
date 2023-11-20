@@ -19,11 +19,7 @@ import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-{
-  /*const pages = ['Home', 'About', 'Shop', 'Contact'];*/
-}
-
-const Navbar = ({ pages }) => {
+const Navbar = ({ pages, size }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -152,6 +148,7 @@ const Navbar = ({ pages }) => {
                     sx={{ color: "var(--yellow)", fontSize: "2rem" }}
                   />
                 </NavLink>
+                <span style={{ color: "white" }}>{size}</span>
               </IconButton>
             </Tooltip>
           </Box>
