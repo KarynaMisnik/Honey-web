@@ -1,41 +1,62 @@
-import React, { useState } from "react";
-import productData from "./productData.json";
+import React, { useState, useEffect } from "react";
 
-const Cart = () => {
-  const [cartItems, setCartItems] = useState([]);
-  const [totalSum, setTotalSum] = useState(0);
+const Cart = ({ cart, setCart, handleChange }) => {
+  const [price, setPrice] = useState(0);
 
-  const addToCart = (product) => {
-    const existingItem = cartItems.find((item) => item.id === product.id);
-
-    if (existingItem) {
-      // If item already exists, increase its amount
-      setCartItems(
-        cartItems.map((item) =>
-          item.id === product.id ? { ...item, amount: item.amount + 1 } : item
-        )
-      );
-    } else {
-      // If item is not in the cart, add it
-      setCartItems([...cartItems, { ...product, amount: 1 }]);
-    }
-
-    // Update total sum
-    setTotalSum(totalSum + product.price);
+  const handlePrice = () => {
+    let i = 0;
+    cart.map((item) => (i += item.count * item.price));
+    setPrice(i);
   };
+
+  const handleRemove = (id) => {
+    const arr = cart.filter((item) => item.id != id);
+    setCart(arr);
+  };
+
+  useEffect(() => {
+    handlePrice();
+  });
 
   return (
     <div>
-      <h2>Shopping Cart</h2>
-      {cartItems.map((item) => (
+      {cart?.map((item) => (
         <div key={item.id}>
-          <img src={item.img} alt={item.name} />
-          <p>{item.name}</p>
-          <p>Amount: {item.amount}</p>
-          <p>Price: ${item.price}</p>
+          <div className="img">
+            <img src={item.src} alt={item.alt} />
+            <p>{item.title}</p>
+          </div>
+
+          <div className="btn-container">
+            <button
+              style={{ padding: ".5rem", background: "#c2f98e" }}
+              onClick={() => handleChange(item, +1)}
+            >
+              +
+            </button>
+            <button>{item.count}</button>
+            <button
+              style={{ padding: ".5rem", background: "#fbbfb5" }}
+              onClick={() => handleChange(item, -1)}
+            >
+              -
+            </button>
+          </div>
+          <div>
+            <span>{item.price}</span>
+            <button
+              style={{ color: "white", background: "red", padding: ".5rem" }}
+              onClick={() => handleRemove(item.id)}
+            >
+              Remove
+            </button>
+          </div>
         </div>
       ))}
-      <p>Total: ${totalSum}</p>
+      <div>
+        <span>Total: </span>
+        <span>&#8364; - {price}</span>
+      </div>
     </div>
   );
 };

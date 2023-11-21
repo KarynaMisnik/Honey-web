@@ -14,7 +14,7 @@ const pages = ["Home", "About", "Shop", "Contact"];
 
 function App() {
   const [cart, setCart] = useState([]);
-  const [warning, setWarning] = useState([]);
+  const [warning, setWarning] = useState(false);
 
   const handleClick = (item) => {
     let inCart = false;
@@ -37,6 +37,17 @@ function App() {
     setCart([...cart, item]);
   };
 
+  const handleChange = (item, j) => {
+    let k = -1;
+    cart.forEach((data, index) => {
+      if (data.id === item.id) k = index;
+    });
+    const tempArr = cart;
+    tempArr[k].count += j;
+    if (tempArr[k].count === 0) tempArr[k].count = 1;
+    setCart([...tempArr]);
+  };
+
   return (
     <>
       <Navbar pages={pages} size={cart.length} />
@@ -45,16 +56,19 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route
-          path="/shop"
-          element={<Shop handleClick={handleClick} warning={warning} />}
-        />
+        <Route path="/shop" element={<Shop handleClick={handleClick} />} />
+
         <Route path="/contact" element={<ContactDetails />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/cart"
+          element={
+            <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+          }
+        />
         <Route path="/values/:valuesId" element={<ProductDetails />} />
         <Route path="*" element={<Error />} />
       </Routes>
-
+      {warning && <div className="warning">Item has already been added</div>}
       <Contact pages={pages} />
     </>
   );
