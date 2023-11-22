@@ -18,6 +18,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Badge from "@mui/material/Badge";
 
 const Navbar = ({ pages, size }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -144,11 +145,12 @@ const Navbar = ({ pages, size }) => {
             <Tooltip>
               <IconButton>
                 <NavLink to="/cart">
-                  <ShoppingCartIcon
-                    sx={{ color: "var(--yellow)", fontSize: "2rem" }}
-                  />
+                  <Badge badgeContent={size} color="primary">
+                    <ShoppingCartIcon
+                      sx={{ color: "var(--yellow)", fontSize: "2rem" }}
+                    />
+                  </Badge>
                 </NavLink>
-                <span style={{ color: "white" }}>{size}</span>
               </IconButton>
             </Tooltip>
           </Box>
