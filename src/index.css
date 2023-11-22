@@ -315,7 +315,6 @@ span,
 /* === CART PAGE === */
 
 .empty-cart-container {
-  padding: 1.5rem 0;
   background-image: linear-gradient(
     to bottom,
     #ffd700 1%,
@@ -336,7 +335,7 @@ span,
   align-items: center;
 }
 .empty-cart-img > img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 

@@ -35,11 +35,11 @@ const Cart = ({ cart, setCart, handleChange }) => {
     <div className="empty-cart-container">
       {price <= 0 ? (
         <div className="empty-cart-img">
+          <h4>Your cart is empty</h4>
           <img
             src="./src/assets/img/products/empty-cart.png"
             alt="An empty cart with several bees around"
           />
-          <h4>Your cart is empty</h4>
         </div>
       ) : (
         <div>

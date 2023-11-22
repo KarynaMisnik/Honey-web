@@ -23,7 +23,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-function ProductDetails() {
+const ProductDetails = (handleClick) => {
   const { valuesId } = useParams();
   const product = productData.find(
     (product) => product.id === parseInt(valuesId)
@@ -75,14 +75,11 @@ function ProductDetails() {
               Amount:
               <span> {product.amount}</span>
             </p>
-            <div className="product-details-add-btn">
-              <CustomButton>ADD TO CART</CustomButton>
-            </div>
           </div>
         </Grid>
       </Grid>
     </>
   );
-}
+};
 
 export default ProductDetails;
