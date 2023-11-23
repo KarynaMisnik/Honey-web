@@ -92,13 +92,7 @@ const ProductList = ({ index, handleClick }) => {
     }
   };
   return (
-    <div
-      className="bg-container"
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom,  #FFD700 1%, #FFEC89, #FFEC89, #FFF0A3, #FFF1AA, #FFDAF5, #FDE2F6, #FFFFF0 )",
-      }}
-    >
+    <div>
       <Grid container justifyContent="space-evenly" padding={2}>
         {hexagonItems.map((item) => (
           <HexagonItem

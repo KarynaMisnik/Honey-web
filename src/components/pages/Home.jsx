@@ -7,12 +7,7 @@ import shopSectionData from "../Shop/shopSectionData.json";
 
 function Home() {
   return (
-    <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, #FFD700 2%, #ffec89, #ffec89, #fff0a3, #fff1aa, #fbeda8, #fffff0, #fbc6ed, #fccbef, #fffff0)",
-      }}
-    >
+    <div>
       <Hero />
       <AboutSection />
       <ShopSection data={shopSectionData} />

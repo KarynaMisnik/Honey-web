@@ -36,12 +36,7 @@ export default function ContactDetails() {
   ];
 
   return (
-    <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, #FFD700 1%, #FFEC89, #FFEC89, #FFF0A3, #FFF1AA, #FFDAF5, #FDE2F6, #FFFFF0)",
-      }}
-    >
+    <div>
       <div className="contact-details-text contact-details-textOnTop">
         <h2>Contact Us</h2>
         <h2>We love hearing from our customers.</h2>

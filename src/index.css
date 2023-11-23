@@ -60,6 +60,18 @@ body {
   min-height: 100vh;
   font-family: var(--main-font);
   overflow-y: scroll;
+
+  background-image: linear-gradient(
+    to bottom,
+    #ffd700 1%,
+    #ffec89,
+    #ffec89,
+    #fff0a3,
+    #fff1aa,
+    #ffdaf5,
+    #fde2f6,
+    #fffff0
+  );
 }
 
 body::-webkit-scrollbar {
@@ -314,20 +326,6 @@ span,
 
 /* === CART PAGE === */
 
-.empty-cart-container {
-  background-image: linear-gradient(
-    to bottom,
-    #ffd700 1%,
-    #ffec89,
-    #ffec89,
-    #fff0a3,
-    #fff1aa,
-    #ffdaf5,
-    #fde2f6,
-    #fffff0
-  );
-}
-
 .empty-cart-img {
   display: flex;
   flex-direction: column;
@@ -421,11 +419,6 @@ span {
 /* === CART PAGE ENDS === */
 
 /* === PAGE ERROR === */
-.error-container {
-  display: flex;
-  background: var(--light-yellow);
-  justify-content: center;
-}
 
 .error-text-container > span {
   font-family: var(--abrilFatface-font);
@@ -460,9 +453,4 @@ span {
   padding: 1rem;
 }
 
-@media screen and (max-width: 600px) {
-  .error-container {
-    flex-direction: column;
-  }
-}
 /* === PAGE ERROR ENDS === */

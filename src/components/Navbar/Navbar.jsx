@@ -33,10 +33,13 @@ const Navbar = ({ pages, size }) => {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
         backgroundColor: "var(--black)",
         borderBottom: "4px solid var(--gray)",
+        top: 0,
+        width: "100%",
+        zIndex: 1000,
       }}
     >
       <Container maxWidth="xxl">

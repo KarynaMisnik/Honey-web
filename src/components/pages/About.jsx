@@ -20,12 +20,7 @@ const Title = styled(Typography)(({ theme }) => ({
 
 function About() {
   return (
-    <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom,  #FFD700 1%, #FFEC89, #FFEC89, #FFF0A3, #FFF1AA, #FFDAF5, #FDE2F6, #FFFFF0 )",
-      }}
-    >
+    <div>
       <Title>
         Welcome to the enchanting world of the Doe family beekeepers!
       </Title>
