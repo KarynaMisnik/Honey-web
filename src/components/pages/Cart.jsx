@@ -5,11 +5,14 @@ import { styled } from "@mui/material";
 
 const CustomButton = styled(Button)(({ theme }) => ({
   padding: ".5rem",
+  backgroundColor: "var(--black)",
   color: "var(--white)",
   fontWeight: "bold",
+  outline: "none",
+
   "&:hover": {
-    backgroundColor: "var(--light-yellow)",
-    color: "var(--black)",
+    backgroundColor: "var(--black)",
+    color: "var(--yellow)",
   },
 }));
 
@@ -53,11 +56,8 @@ const Cart = ({ cart, setCart, handleChange }) => {
                 </div>
                 <div className="all-btn-wrapper">
                   <div>
-                    <ButtonGroup variant="contained">
-                      <CustomButton
-                        onClick={() => handleChange(item, +1)}
-                        sx={{ background: "var(--green)" }}
-                      >
+                    <ButtonGroup variant="outlained">
+                      <CustomButton onClick={() => handleChange(item, +1)}>
                         +
                       </CustomButton>
                       <CustomButton
@@ -67,10 +67,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
                       >
                         {item.count}
                       </CustomButton>
-                      <CustomButton
-                        onClick={() => handleChange(item, -1)}
-                        sx={{ background: "var(--negative)" }}
-                      >
+                      <CustomButton onClick={() => handleChange(item, -1)}>
                         -
                       </CustomButton>
                     </ButtonGroup>
@@ -81,7 +78,6 @@ const Cart = ({ cart, setCart, handleChange }) => {
                       className="btn-remove"
                       variant="contained"
                       onClick={() => handleRemove(item.id)}
-                      sx={{ background: "var(--negative)" }}
                     >
                       Remove
                     </CustomButton>
