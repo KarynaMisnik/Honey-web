@@ -137,13 +137,15 @@ export default function Contact() {
         background: "var( --black)",
         color: "var(--white)",
         borderTop: "4px solid var(--gray)",
-        overflow: "auto",
+        overflow: "hidden",
       }}
     >
       <Box
         sx={{
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",
+          justifyContent: "center",
+
           "@media (max-width: 960px)": {
             gridTemplateColumns: "1fr",
           },
