@@ -2,7 +2,7 @@ import ProductList from "./ProductList";
 
 const Shop = ({ handleClick }) => {
   return (
-    <div>
+    <div style={{ paddingTop: "6rem" }}>
       <ProductList handleClick={handleClick} />
     </div>
   );

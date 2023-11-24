@@ -326,6 +326,10 @@ span,
 
 /* === CART PAGE === */
 
+.empty-cart-container {
+  padding-top: 6rem;
+}
+
 .empty-cart-img {
   display: flex;
   flex-direction: column;

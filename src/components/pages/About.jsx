@@ -20,7 +20,7 @@ const Title = styled(Typography)(({ theme }) => ({
 
 function About() {
   return (
-    <div>
+    <div style={{ paddingTop: "6rem" }}>
       <Title>
         Welcome to the enchanting world of the Doe family beekeepers!
       </Title>

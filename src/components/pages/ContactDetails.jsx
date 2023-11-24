@@ -36,7 +36,7 @@ export default function ContactDetails() {
   ];
 
   return (
-    <div>
+    <div style={{ paddingTop: "6rem" }}>
       <div className="contact-details-text contact-details-textOnTop">
         <h2>Contact Us</h2>
         <h2>We love hearing from our customers.</h2>

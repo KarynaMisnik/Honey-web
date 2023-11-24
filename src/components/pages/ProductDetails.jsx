@@ -34,7 +34,7 @@ const ProductDetails = (handleClick) => {
   }
 
   return (
-    <>
+    <div style={{ paddingTop: "6rem" }}>
       <Grid
         container
         sx={{
@@ -76,7 +76,7 @@ const ProductDetails = (handleClick) => {
           </div>
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 
