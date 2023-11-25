@@ -41,7 +41,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
           <h4>Your cart is empty</h4>
           <img
             src="./src/assets/img/products/empty-cart.png"
-            alt="An empty cart with several bees around"
+            alt="An empty shopping cart with several bees around"
           />
         </div>
       ) : (
