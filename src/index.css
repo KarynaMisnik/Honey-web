@@ -15,8 +15,6 @@
   --red: #ec0606;
   --anthracite: #292c33;
   --rich-gray: #1f2022;
-  --green: #539213;
-  --negative: #c52918;
 
   --main-font: "Montserrat", sans-serif;
   --mosaic-font: "Palette Mosaic", cursive;
@@ -241,7 +239,6 @@ span,
     padding: 1rem;
   }
 }
-
 /* === PAGE PRODUCT LIST ENDS === */
 
 /*  === PAGE CONTACTDETAILS === */
