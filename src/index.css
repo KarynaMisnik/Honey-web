@@ -253,7 +253,7 @@ span,
   font-family: var(--main-font);
   letter-spacing: 2px;
 }
-/*! removes extra space between cards and top text */
+/** removes extra space between cards and top text **/
 .contact-details-textOnTop {
   padding-bottom: 0;
 }
@@ -261,7 +261,7 @@ span,
 .contact-details-text > h2 {
   padding-bottom: 1rem;
 }
-/* PAGE CONTACTDETAILS ENDS */
+/* === PAGE CONTACTDETAILS ENDS === */
 
 /* === PAGE PRODUCT DETAILS === */
 .productDetails-img-container {
@@ -323,7 +323,6 @@ span,
 /* === PAGE PRODUCT DETAILS ENDS === */
 
 /* === CART PAGE === */
-
 .empty-cart-container {
   padding-top: 6rem;
 }
@@ -417,11 +416,9 @@ span {
     font-size: 1.5rem;
   }
 }
-
 /* === CART PAGE ENDS === */
 
 /* === PAGE ERROR === */
-
 .error-text-container > span {
   font-family: var(--abrilFatface-font);
   color: var(--red);
@@ -454,5 +451,4 @@ span {
   height: auto;
   padding: 1rem;
 }
-
 /* === PAGE ERROR ENDS === */
