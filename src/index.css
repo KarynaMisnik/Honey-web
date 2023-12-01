@@ -1,7 +1,7 @@
 /**TODO. write seperate rules for paragraph, h1, h2, h3, h4 and rules for their media queries  **/
 /**TODO: fix cart items grid, items cards have different sizes, why? **/
 /**TODO: chnage font-weight properties, use custom   **/
-/*custom properties */
+/* === custom properties === */
 :root {
   --dark-brown: #502414;
   --brown: #b87c34;
@@ -25,7 +25,7 @@
   --bolder: 700;
   --boldest: 900;
 
-  /* card box shadow */
+  /* === card box shadow === */
   --card-shadow: 1px 0px rgb(10, 10, 10), 1px 1px rgb(10, 10, 10),
     2px 1px rgb(9, 9, 9), 2px 2px rgb(9, 9, 9), 3px 2px rgb(8, 8, 8),
     3px 3px rgb(8, 8, 8), 4px 3px rgb(7, 7, 7), 4px 4px rgb(7, 7, 7),
@@ -34,13 +34,13 @@
     8px 7px rgb(3, 3, 3), 8px 8px rgb(3, 3, 3), 9px 8px rgb(2, 2, 2),
     9px 9px rgb(2, 2, 2), 10px 9px rgb(1, 1, 1), 10px 10px rgb(1, 1, 1);
 
-  /* warning box shadow */
+  /* === warning box shadow === */
   --warning-box: -15px -15px 2px -5px rgb(248, 179, 191, 0.5),
     -15px 15px 2px -5px rgb(146, 7, 146, 0.5),
     15px -15px 2px -5px rgba(255, 0, 0, 0.5),
     15px 15px 2px -5px rgba(198, 70, 2, 0.5);
 }
-/*custom properties */
+/* === custom properties end === */
 
 * {
   padding: 0;
