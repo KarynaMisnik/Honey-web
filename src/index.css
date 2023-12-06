@@ -34,7 +34,7 @@
     8px 7px rgb(3, 3, 3), 8px 8px rgb(3, 3, 3), 9px 8px rgb(2, 2, 2),
     9px 9px rgb(2, 2, 2), 10px 9px rgb(1, 1, 1), 10px 10px rgb(1, 1, 1);
 
-  /** === warning box shadow === **/
+  /*** === warning box shadow === ***/
   --warning-box: -15px -15px 2px -5px rgb(248, 179, 191, 0.5),
     -15px 15px 2px -5px rgb(146, 7, 146, 0.5),
     15px -15px 2px -5px rgba(255, 0, 0, 0.5),
