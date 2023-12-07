@@ -368,7 +368,8 @@ span,
 
 .cart-item-img > img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: var(--card-shadow);
 }
