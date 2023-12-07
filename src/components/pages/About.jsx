@@ -68,9 +68,6 @@ function About() {
       {/* Fifth section */}
       <div className="about-section text-only">
         <div className="about-text-container">
-          <p className="about-text">{aboutData[4].text}</p>
-        </div>
-        <div className="about-text-container">
           <p className="about-text">{aboutData[5].text}</p>
         </div>
 
