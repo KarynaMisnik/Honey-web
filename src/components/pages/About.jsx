@@ -9,13 +9,9 @@ const Title = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   padding: "1.5rem",
   fontFamily: "var(--abrilFatface-font)",
-  fontSize: "40px",
+  fontSize: "var(--h1)",
   fontWeight: "900",
   letterSpacing: "2px",
-
-  "@media (max-width: 900px)": {
-    fontSize: "20px",
-  },
 }));
 
 function About() {

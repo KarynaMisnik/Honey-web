@@ -17,10 +17,21 @@
   --anthracite: #292c33;
   --rich-gray: #1f2022;
 
+  /*** === font-family === ***/
   --main-font: "Montserrat", sans-serif;
   --mosaic-font: "Palette Mosaic", cursive;
   --abrilFatface-font: "Abril Fatface", cursive;
 
+  /*** === font-size === ***/
+  --h1: 3rem;
+  --h2: 2rem;
+  --h3: 1.75rem;
+  --h4: 1.5rem;
+  --h5: 1.25rem;
+  --h6: 1rem;
+  --p: 1.25rem;
+
+  /*** === font-weight === ***/
   --bold: 600;
   --bolder: 700;
   --boldest: 900;
@@ -41,6 +52,30 @@
     15px 15px 2px -5px rgba(198, 70, 2, 0.5);
 }
 /** === custom properties end === **/
+
+@media (min-width: 600px) {
+  :root {
+    --h1: 2rem;
+    --h2: 2.5rem;
+    --h3: 2rem;
+    --h4: 1.75rem;
+    --h5: 1.5rem;
+    --h6: 1.25rem;
+    --p: 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --h1: 2.25rem;
+    --h2: 3rem;
+    --h3: 2.5rem;
+    --h4: 2rem;
+    --h5: 1.75rem;
+    --h6: 1.5rem;
+    --p: 2rem;
+  }
+}
 
 * {
   padding: 0;
@@ -109,10 +144,11 @@ body {
 
 .about-text {
   text-align: justify;
-  font-size: 2rem;
+  font-size: var(--p);
   font-family: var(--main-font);
   color: var(--black);
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+
   margin: 0;
   line-height: 1.6;
 }
@@ -130,11 +166,6 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .about-text-container .about-text {
-    font-size: 1rem;
-  }
-}
 /* ====  PAGE ABOUT ENDS === */
 
 /* === PAGE ERROR === */
