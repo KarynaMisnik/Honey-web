@@ -91,7 +91,7 @@ const Navbar = ({ pages, size }) => {
                       sx={{
                         textAlign: "center",
                         fontFamily: "var(--main-font)",
-                        fontWeight: "900",
+                        fontWeight: "var(--boldest)",
                         color: "var(--black)",
                         backgroundColor: "var(--yellow)",
                         padding: ".5rem",
@@ -123,7 +123,7 @@ const Navbar = ({ pages, size }) => {
                 sx={{
                   color: "var(--light-yellow)",
                   display: "block",
-                  fontWeight: "700",
+                  fontWeight: "var(--bolder)",
                 }}
               >
                 <NavLink to={`/${page.toLowerCase()}`}>
@@ -131,7 +131,7 @@ const Navbar = ({ pages, size }) => {
                     sx={{
                       color: "var(--yellow)",
                       fontFamily: "var(--main-font)",
-                      fontWeight: "900",
+                      fontWeight: "var(--boldest)",
                     }}
                   >
                     {page}

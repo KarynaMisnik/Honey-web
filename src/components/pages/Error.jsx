@@ -4,9 +4,9 @@ export default function Error() {
   return (
     <div className="error-container">
       <div className="error-text-container">
+        <h3>Oh, bzzz!</h3>
+        <h3> You are totally lost</h3>
         <span>404</span>
-        <p>Oh, bzzz!</p>
-        <p> You are totally lost.</p>
       </div>
       <div className="error-img-container">
         <img

@@ -1,22 +1,13 @@
-import { Divider } from "@mui/material";
 import "./hero.css";
 
 const Hero = () => {
   return (
     <div className="banner-wrapper">
       <div className="bg-text">
-        <p>
+        <h1>
           HONEY & <br />
           HONEY PRODUCTS
-        </p>
-        <Divider
-          sx={{
-            maxWidth: "100%",
-            height: "7px",
-            backgroundColor: "var(--rich-gray)",
-            borderRadius: "50%",
-          }}
-        ></Divider>
+        </h1>
       </div>
     </div>
   );

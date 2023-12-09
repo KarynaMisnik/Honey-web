@@ -30,11 +30,11 @@ export default function Testimonials() {
               <div className="card-img-container">
                 <img src={cardItem.reviewerImg} />
               </div>
-              <h2>{cardItem.reviewer}</h2>
+              <h4>{cardItem.reviewer}</h4>
               <Rating name="read-only" value={cardItem.value} readOnly />
-              <h3>{cardItem.title}</h3>
+              <h5>{cardItem.title}</h5>
               <p>{cardItem.review}</p>
-              <h4>{cardItem.dateReview}</h4>
+              <h6>{cardItem.dateReview}</h6>
             </div>
           </div>
         ))}

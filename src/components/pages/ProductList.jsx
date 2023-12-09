@@ -148,7 +148,7 @@ const ProductList = ({ index, handleClick }) => {
                     loading="lazy"
                   />
 
-                  <div className="card-info-wrpper">
+                  <div className="card-info-wrapper">
                     <div className="rating">
                       <Rating
                         name="product-rating"
@@ -158,20 +158,20 @@ const ProductList = ({ index, handleClick }) => {
                       />
                     </div>
 
-                    <p className="product_list title">{values.title}</p>
+                    <h4 className="product_list title">{values.title}</h4>
                     <div className="product-amount-and-price">
-                      <p className="product_list amount">
+                      <h5 className="product_list amount">
                         Amount: <span>{values.amount}</span>
-                      </p>
-                      <p className="product_list price">
+                      </h5>
+                      <h5 className="product_list price">
                         Price:
                         <span>{values.price}&#x20AC;</span>
-                      </p>
+                      </h5>
                     </div>
 
                     <div className="product-details">
                       <NavLink to={`/values/${values.id}`}>
-                        <p className="product_list details">Details</p>
+                        <h5 className="product_list details">Details</h5>
                       </NavLink>
                     </div>
 

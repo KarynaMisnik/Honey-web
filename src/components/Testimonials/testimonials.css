@@ -3,7 +3,23 @@ h1 {
   padding: 1rem 0;
   font-family: var(--main-font);
   font-weight: var(--boldest);
-  font-size: 3rem;
+  font-size: var(--h1);
+}
+
+.card-content h4 {
+  font-size: var(--h4);
+}
+
+.card-content h5 {
+  font-size: var(--h5);
+}
+
+.card-content h6 {
+  font-size: var(--h6);
+}
+
+.card-content p {
+  font-size: 1rem;
 }
 
 .card-wrapper {

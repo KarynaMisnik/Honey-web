@@ -56,8 +56,8 @@
 @media (min-width: 300px) {
   :root {
     --h1: 1.5rem;
-    --h2: 2rem;
-    --h3: 1.5rem;
+    --h2: 1rem;
+    --h3: 1.75rem;
     --h4: 1.25rem;
     --h5: 1rem;
     --h6: 0.5rem;
@@ -67,7 +67,7 @@
 
 @media (min-width: 600px) {
   :root {
-    --h1: 2rem;
+    --h1: 3rem;
     --h2: 2.5rem;
     --h3: 2rem;
     --h4: 1.75rem;
@@ -79,7 +79,7 @@
 
 @media (min-width: 960px) {
   :root {
-    --h1: 3rem;
+    --h1: 4rem;
     --h2: 3rem;
     --h3: 2.5rem;
     --h4: 2rem;
@@ -180,17 +180,21 @@ body {
 /* ====  PAGE ABOUT ENDS === */
 
 /* === PAGE ERROR === */
+.error-container {
+  padding-top: 6rem;
+}
+
 .error-text-container {
-  padding: 1em;
+  padding-top: 1rem;
   text-align: center;
 }
 
-.error-text-container p {
+.error-text-container h3 {
   color: var(--black);
-  font-size: 40px;
+  font-size: var(--h3);
 }
 
-.error-text-container p span {
+.error-text-container span {
   text-align: center;
   color: var(--red);
   letter-spacing: 2rem;
@@ -200,12 +204,6 @@ body {
 @media screen and (min-width: 200px) and (max-width: 1000px) {
   .workingBee {
     width: 200px;
-  }
-  .error-text-container p span {
-    font-size: 30px;
-  }
-  .error-text-container p {
-    font-size: 20px;
   }
 }
 /* === PAGE ERROR ENDS === */
@@ -218,7 +216,7 @@ body {
   border-top-right-radius: 8px;
 }
 
-.card-info-wrpper {
+.card-info-wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -231,17 +229,26 @@ body {
 }
 
 .product_list {
-  font-family: var(--main-font);
-  font-size: 1.5rem;
   padding: 0.5rem 1rem;
   margin: 0px;
   color: var(--dark-brown);
+  font-family: var(--main-font);
+}
+
+.product_list .title {
+  font-size: var(--h4);
+}
+
+.product_list .amount,
+.product_list .price,
+.product_list .details {
+  font-size: var(--h5);
 }
 
 .title,
 span,
 .details {
-  font-weight: 900;
+  font-weight: var(--boldest);
 }
 
 .product-amount-and-price {
@@ -249,10 +256,10 @@ span,
   flex-wrap: wrap;
 }
 
-.product-amount-and-price > p {
+.product-amount-and-price > h5 {
   padding: 0 1rem;
 }
-.product-amount-and-price > p > span {
+.product-amount-and-price > h5 > span {
   padding-left: 0.5rem;
   font-size: 1.3rem;
 }
@@ -272,7 +279,7 @@ span,
   border-radius: 0 0 5px 5px;
   font-family: var(--main-font);
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: var(--boldest);
   box-shadow: var(--warning-box);
 }
 
@@ -302,6 +309,7 @@ span,
 
 .contact-details-text > h2 {
   padding-bottom: 1rem;
+  font-size: var(--h2);
 }
 /* === PAGE CONTACTDETAILS ENDS === */
 
@@ -332,12 +340,13 @@ span,
 .product-details-info,
 .product-details-price,
 .product-details-amount {
-  font-size: 1.5rem;
+  font-size: var(--p);
 }
 
 .product-details-title {
   font-family: var(--abrilFatface-font);
   padding-top: 1rem;
+  font-size: var(--h1);
 }
 
 .product-details-info {
@@ -349,18 +358,6 @@ span,
 .product-details-price > span,
 .product-details-amount > span {
   margin-left: 0.5rem;
-}
-
-@media screen and (max-width: 600px) {
-  .product-details-container {
-    font-size: 1rem;
-  }
-  .product-details-info {
-    font-size: 1rem;
-  }
-  .product-details-title {
-    font-size: 1.5rem;
-  }
 }
 /* === PAGE PRODUCT DETAILS ENDS === */
 
@@ -380,15 +377,9 @@ span,
   height: auto;
 }
 
-.empty-cart-img > h4 {
-  font-size: 5rem;
+.empty-cart-img > h1 {
+  font-size: var(--h1);
   font-family: var(--abrilFatface-font);
-}
-
-@media screen and (max-width: 600px) {
-  .empty-cart-img > h4 {
-    font-size: 1.5rem;
-  }
 }
 
 .cart-wrapper {
@@ -418,7 +409,7 @@ span,
 
 .cart-item-img > h4,
 span {
-  font-size: 2rem;
+  font-size: var(--h4);
   font-family: var(--abrilFatface-font);
 }
 
@@ -442,7 +433,7 @@ span {
 }
 
 .total-sum > span {
-  font-size: 3rem;
+  font-size: var(--h1);
 }
 
 @media only screen and (max-width: 768px) {
@@ -450,13 +441,6 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .total-sum > span {
-    font-size: 1.5rem;
-  }
-  .cart-item-img > h4,
-  span {
-    font-size: 1.5rem;
   }
 }
 /* === CART PAGE ENDS === */

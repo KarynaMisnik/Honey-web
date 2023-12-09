@@ -28,7 +28,7 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
   color: "var(--white)",
   marginBottom: "8px",
   fontFamily: "var(--main-font)",
-  fontWeight: 700,
+  fontWeight: "var(--bolder)",
   letterSpacing: "1px",
 }));
 
@@ -90,7 +90,7 @@ const contactInfo = [
 ];
 
 const listItemTextStyle = {
-  fontWeight: "700",
+  fontWeight: "var(--bolder)",
   fontFamily: "var(--main-font)",
 };
 
@@ -99,7 +99,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   backgroundColor: "var(--yellow)",
   borderRadius: "5px",
   color: "var(--black)",
-  fontWeight: 900,
+  fontWeight: "var(--boldest)",
   ":hover": {
     backgroundColor: "var(--yellow)",
   },
@@ -117,11 +117,12 @@ function Item(props) {
   return (
     <Box
       sx={{
-        p: 1,
+        p: 2,
         m: 1,
+        marginLeft: "1rem",
 
         fontSize: "0.875rem",
-        fontWeight: "700",
+        fontWeight: "var(--bolder)",
         ...sx,
       }}
       {...other}
@@ -156,7 +157,7 @@ export default function Contact() {
             <StyledTypography>About Us </StyledTypography>
           </NavLink>
           <StyledDivider></StyledDivider>
-          <StyledTypography sx={{ fontWeight: "500" }}>
+          <StyledTypography sx={{ fontWeight: "var(--bold)" }}>
             We are a family-owned business dedicated to producing high-quality
             honey and honey-related products. We organize educational events at
             our cozy farm where you can learn about hardworking creatures, their
@@ -265,7 +266,7 @@ export default function Contact() {
               <CustomTextField
                 required
                 fullWidth
-                label="Your Name"
+                label="Your name"
                 name="name"
                 autoComplete="name"
                 InputLabelProps={{ shrink: false }}
