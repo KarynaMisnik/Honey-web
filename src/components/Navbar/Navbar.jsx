@@ -65,6 +65,7 @@ const Navbar = ({ pages, size }) => {
               <MenuIcon sx={{ color: "var(--yellow)", fontSize: "2rem" }} />
             </IconButton>
             {/*  hamburger-menu content */}
+
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -86,7 +87,6 @@ const Navbar = ({ pages, size }) => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <NavLink to={`/${page.toLowerCase()}`}>
-                    {" "}
                     <Typography
                       sx={{
                         textAlign: "center",
@@ -115,7 +115,12 @@ const Navbar = ({ pages, size }) => {
             <img src={LogoBee} height="70" />
           </IconButton>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
