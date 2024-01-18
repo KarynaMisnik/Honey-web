@@ -1,10 +1,9 @@
-
 [
     {
-    "id": 1,
+        "id": 1,
         "category": "honey",
         "title": "Apple Blossom Honey",
-        "src": "/src/assets/img/products/honey/apple-honey.jpg",
+        "src": "./src/assets/img/products/honey/apple-honey.jpg",
         "alt": "jar with apple honey amber color",
         "price": 25,
         "amount": "900g",
@@ -49,7 +48,7 @@
         "info": "Introducing our exquisite Forest Honey - a rich and enchanting blend sourced from the heart of the pristine woodlands. Crafted by our diligent bees, this honey captures the essence of the diverse flora that thrives in the forest, offering you a taste of nature's hidden treasures. With its deep amber color and robust flavor, our Forest Honey is a true delight for the senses. Each spoonful carries the enchanting aroma of woodland blossoms and the earthy notes of nature's bounty. Whether drizzled over freshly baked bread, stirred into warm tea, or used as a natural sweetener in your favorite recipes, our Forest Honey promises to take your culinary experiences to new heights. Its complexity and unique taste profile make it a versatile companion to a wide array of dishes.",
         "inCart": false,
         "count": 1,
-        "total":0,
+        "total": 0,
         "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer2.png",
         "review": "Pure goodness in a jar! This honey has become a staple in my kitchen. From spreading it on toast to using it in recipes, its versatility shines through",
         "reviewer": "Anna Martinez",
@@ -57,7 +56,7 @@
         "dateReview": "11/02/2022",
         "img-source": "https://www.freepik.com/free-photo/delicious-bread-honey-wooden-plate_5223256.htm#&position=24&from_view=undefined"
     },
-        {
+    {
         "id": 4,
         "category": "honey",
         "title": "Light Wildflower Honey",
@@ -68,7 +67,7 @@
         "info": "Introducing our delightful Wildflower Honey - a pure and natural gem gathered from a tapestry of blooming wildflowers. Crafted by our industrious bees, this honey captures the essence of diverse floral meadows, offering you a taste of nature's bountiful beauty. With its light golden color and delicate flavor, our Wildflower Honey is a true delicacy for your taste buds. Each spoonful carries the enchanting aroma of a sunlit meadow and the subtle sweetness of a floral bouquet. Whether drizzled over warm scones, paired with artisanal cheeses, or used as a wholesome sweetener in your favorite recipes, our Wildflower Honey promises to elevate your culinary experiences. Its versatility and gentle taste make it a perfect addition to your daily rituals.",
         "inCart": false,
         "count": 1,
-        "total":0,
+        "total": 0,
         "reviewerImg": "/src/assets/img/reviewersImg/male-reviwer2.png",
         "review": "A taste of nature's sweetness. This honey's authenticity is evident with every spoonful. The way it enhances the flavor of my morning toast is pure bliss.",
         "reviewer": "Liam Anderson",
@@ -76,7 +75,7 @@
         "dateReview": "2/10/2023",
         "img-source": "https://www.freepik.com/free-photo/close-up-jar-with-homemade-honey_6265953.htm#&position=28&from_view=undefined"
     },
-        {
+    {
         "id": 5,
         "category": "honey",
         "title": "Dark Wildflower Honey",
@@ -87,7 +86,7 @@
         "info": "Introducing our captivating Dark Wildflower Honey - a truly exceptional creation derived from the vibrant blooms of diverse wildflowers. Crafted by our industrious bees, this honey captures the essence of rich and flavorful floral meadows, offering you a taste of nature's untamed beauty. With its deep amber hue and robust flavor, our Dark Wildflower Honey is a genuine delight for the palate. Each spoonful carries the enchanting aroma of wild blossoms and the complex sweetness of a diverse botanical tapestry. Whether drizzled over warm biscuits, infused into herbal teas, or used as a bold sweetener in your culinary masterpieces, our Dark Wildflower Honey promises to add depth and character to your dishes. Its distinct taste profile makes it an exquisite complement to a wide range of culinary creations.",
         "inCart": false,
         "count": 1,
-        "total":0,
+        "total": 0,
         "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer3.png",
         "review": "Savoring this honey is like indulging in a jar of sunshine. The way it harmonizes with a variety of foods is simply magical. A must-try for any honey enthusiast",
         "reviewer": "Emma Pattinson",
@@ -100,7 +99,7 @@
         "category": "sweets",
         "title": "Honey Bear Jelly Candies",
         "src": "/src/assets/img/products/sweets/honey-bear-candy.jpg",
-         "alt": "candy made from honey in form of a bear",
+        "alt": "candy made from honey in form of a bear",
         "price": 10,
         "amount": "500g",
         "info": "Introducing our delightful Honey Bear Jelly Candies - a sweet and playful treat that captures the essence of pure honey in the form of adorable bear-shaped candies. Crafted with the finest honey and natural ingredients, these jelly candies offer a whimsical twist to the classic honey flavor. Each bear-shaped candy is carefully crafted to perfection, making them a joy to behold and a delight to savor. With their soft and chewy texture, they are a delightful indulgence for kids and adults alike.",
@@ -108,13 +107,13 @@
         "count": 1,
         "total": 0,
         "reviewerImg": "/src/assets/img/reviewersImg/female-reviwer1.png",
-       "review": "These honey gummy bears are a true delight for the taste buds. The way they melt in your mouth, releasing a burst of honey goodness, is simply wonderful. A fantastic choice for a sweet snack that's both satisfying and flavorful.",
+        "review": "These honey gummy bears are a true delight for the taste buds. The way they melt in your mouth, releasing a burst of honey goodness, is simply wonderful. A fantastic choice for a sweet snack that's both satisfying and flavorful.",
         "reviewer": "Emily Johnson",
         "value": 5,
         "dateReview": "14/05/2021",
         "img-source": "https://www.freepik.com/free-photo/assortment-delicious-gummy-bears_34136278.htm#&position=10&from_view=undefined"
     },
-       {
+    {
         "id": 7,
         "category": "sweets",
         "title": "Honey Lollipop",
@@ -152,7 +151,7 @@
         "dateReview": "21/11/2022",
         "img-source": "https://www.freepik.com/free-photo/high-angle-spa-products-concept_5592868.htm#&position=34&from_view=undefined"
     },
-        {
+    {
         "id": 9,
         "category": "cosmetics",
         "title": "Clover Soap",
@@ -171,7 +170,7 @@
         "dateReview": "3/12/2022",
         "img-source": "https://www.freepik.com/free-photo/front-view-soap-made-from-green-plant_11741671.htm#&position=30&from_view=undefined"
     },
-        {
+    {
         "id": 10,
         "category": "cosmetics",
         "title": "Dark Honey Soap",
@@ -190,7 +189,7 @@
         "dateReview": "20/03/2023",
         "img-source": "https://www.freepik.com/free-photo/high-angle-homemade-soap-arrangement_13130865.htm#&position=36&from_view=undefined"
     },
-        {
+    {
         "id": 11,
         "category": "cosmetics",
         "title": "Honey Lip Balm",
@@ -209,7 +208,7 @@
         "dateReview": "13/10/2023",
         "img-source": "https://www.freepik.com/free-photo/arrangement-with-salt-soap-wooden-table_5566909.htm#&position=20&from_view=undefined"
     },
-        {
+    {
         "id": 12,
         "category": "cosmetics",
         "title": "Amber Honey Soap",
@@ -247,9 +246,9 @@
         "dateReview": "15/10/2023",
         "img-source": "https://www.freepik.com/free-photo/jar-crunchy-peanut-butter_41285327.htm#&position=0&from_view=undefined"
     },
-        {
+    {
         "id": 14,
-         "category": "food",
+        "category": "food",
         "title": "Honey Nougat Bar",
         "src": "/src/assets/img/products/food/honey-nougat.jpg",
         "alt": "White honey nougat bars and a jar of honey are on the table",
@@ -266,9 +265,9 @@
         "dateReview": "21/01/2021",
         "img-source": "https://www.freepik.com/free-photo/top-view-turron-dessert_29305536.htm#&position=4&from_view=undefined"
     },
-        {
+    {
         "id": 15,
-         "category": "food",
+        "category": "food",
         "title": "Honey Nut Bar",
         "src": "/src/assets/img/products/food/honey-nut-bars.jpg",
         "alt": "Honey nut bars are on the wooden chopping board and a small jar of honey is on the table",
@@ -285,11 +284,11 @@
         "dateReview": "25/07/2022",
         "img-source": "https://www.freepik.com/free-photo/delicious-mexican-sweets-arrangement_38171601.htm#&position=2&from_view=undefined"
     },
-        {
+    {
         "id": 16,
         "category": "food",
         "title": "Honey Waffle",
-        "src": "/src/assets/img/products/food/honey-waffle.jpg",
+        "src": "/src/assets/img/products/other/honey-waffle.jpg",
         "alt": "Honey waffles are on a towel and a jar of honey is next to them, they all are on the marble table",
         "price": 12,
         "amount": "80g",
@@ -323,7 +322,7 @@
         "dateReview": "7/08/2023",
         "img-source": "https://www.vecteezy.com/free-photos"
     },
-       {
+    {
         "id": 18,
         "category": "other",
         "title": "Lavender Beeswax Candle",
@@ -342,5 +341,4 @@
         "dateReview": "22/05/2022",
         "img-source": "https://www.vecteezy.com/free-photos"
     }
-  
-    ]
+]
