@@ -2,7 +2,7 @@
   "name": "bee_e-spa",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://KarynaMisnik.github.io/bee_e-spa",
+  "homepage": "https://KarynaMisnik.github.io/bee_e-spa/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
