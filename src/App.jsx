@@ -5,7 +5,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Shop from "./components/pages/Shop";
 import About from "./components/pages/About";
 import Contact from "./components/Contact/Contact";
-import Error from "./components/pages/Error";
+{
+  /*import Error from "./components/pages/Error";*/
+}
 import ContactDetails from "./components/pages/ContactDetails";
 import Cart from "./components/pages/Cart";
 import ProductDetails from "./components/pages/ProductDetails";
@@ -66,7 +68,7 @@ function App() {
           }
         />
         <Route path="/values/:valuesId" element={<ProductDetails />} />
-        <Route path="*" element={<Error />} />
+        {/*<Route path="*" element={<Error />} />*/}
       </Routes>
       {warning && <div className="warning">Item has already been added</div>}
       <Contact pages={pages} />
