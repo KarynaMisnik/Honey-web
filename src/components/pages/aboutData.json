@@ -2,19 +2,19 @@
   {
     "id": 1,
     "alt": "John Doe harvesting honey",
-    "src": "./src/assets/img/aboutPage/johnBeekeeper.jpg",
+    "src": "./src/assetsImg/img/aboutPage/johnBeekeeper.jpg",
     "text": "We are John Doe and Jane Doe, a  couple who have dedicated their lives to nurturing the buzzing wonders of the bee kingdom and crafting the finest honey delights. We live in the heart of central Finland, our charming honey business thrives in the quaint village of Lehtola."
   },
   {
     "id": 2,
     "alt": "Jane Doe beekeper owner",
-    "src": "./src/assets/img/aboutPage/janeDoe.jpg",
+    "src": "./src/assetsImg/img/aboutPage/janeDoe.jpg",
     "text": "In this picturesque setting, we tend to our beloved honeybees, ensuring they have access to the sweetest nectar from the nearby meadows and our own small fruit garden. The bees diligently gather a diverse array of nectar from blossoms like clover, willow, and wildflowers, resulting in a delightful variety of honey flavors that captivate the senses."
   },
   {
     "id": 3,
     "alt": "Bees around a blue hive",
-    "src": "./src/assets/img/aboutPage/beeshive.jpg",
+    "src": "./src/assetsImg/img/aboutPage/beeshive.jpg",
     "text": "Our expertise shines through in every jar of honey we lovingly produce. You'll find an array of options, from the pure and pristine mixed nectar honey to the delightful apple-infused golden elixir. Each jar is a testament to their commitment to eco-friendly practices, as we cherish the harmony between our honeybees and the natural environment."
   },
   {
@@ -24,7 +24,7 @@
   {
     "id": 5,
     "alt": "Products are made from honey",
-    "src": "./src/assets/img/aboutPage/honeyProducts.jpg",
+    "src": "./src/assetsImg/img/aboutPage/honeyProducts.jpg",
     "text": "We have exclusive line of beauty products, featuring sumptuous soaps and nourishing lip balms infused with the finest honey extracts. Our shelves contain a delightful assortment of sweets made from honey that will delight both young and old."
   },
   {
