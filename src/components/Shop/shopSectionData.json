@@ -2,7 +2,7 @@
     {
         "id": 1,
         "alt": "three jars with honey",
-        "src": "src/assets/img/ShopStepper/honey-category.jpg"
+        "src": "./honey-category.jpg"
     },
     {
         "id": 2,
