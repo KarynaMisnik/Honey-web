@@ -4,10 +4,10 @@ import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 /* import imgs */
-import Flower from "../../img/aboutSection/flower.png";
-import Hive from "../../img/aboutSection/hive.png";
-import HoneyJar from "../../img/aboutSection/honey-jar.png";
-import Beekeepers from "../../img/aboutSection/beekeepers-family.jpg";
+import Flower from "/img/aboutSection/flower.png";
+import Hive from "/img/aboutSection/hive.png";
+import HoneyJar from "/img/aboutSection/honey-jar.png";
+import Beekeepers from "/img/aboutSection/beekeepers-family.jpg";
 /* import css file */
 import "./about-section.css";
 

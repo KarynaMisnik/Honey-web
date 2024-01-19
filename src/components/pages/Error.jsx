@@ -10,7 +10,7 @@ export default function Error() {
       </div>
       <div className="error-img-container">
         <img
-          src="./src/assets/img/errorPage/bee-error.png"
+          src="/img/errorPage/bee-error.png"
           alt="a cute bee sitting in armchair and drinking tea"
         />
       </div>
