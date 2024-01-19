@@ -3,7 +3,7 @@
         "id": 1,
         "category": "honey",
         "title": "Apple Blossom Honey",
-        "src": "/assets/img/products/Honey/apple-honey.jpg",
+        "src": "assets/img/products/Honey/apple-honey.jpg",
         "alt": "jar with apple honey amber color",
         "price": 25,
         "amount": "900g",
