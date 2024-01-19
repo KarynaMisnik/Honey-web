@@ -1,6 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import LogoBee from "../../assets/img/logo.png"; /* logo */
+import LogoBee from "../../assetsImg/img/logo.png"; /* logo */
 /* mui components */
 import AppBar from "@mui/material/AppBar";
 /* MUI box & container */
