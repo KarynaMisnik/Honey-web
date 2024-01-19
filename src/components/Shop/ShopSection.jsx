@@ -22,7 +22,7 @@ export default function ShopSection({ data }) {
           return (
             <>
               <img
-                src={process.env.PUBLIC_URL + "/" + item.src}
+                src={"/home" + item.src}
                 alt={item.alt}
                 key={id}
                 className={slide === id ? "slide" : "slide slide-hidden"}
