@@ -2,6 +2,7 @@ import * as React from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { useState } from "react";
 import "./shop-section.css";
+import "./shopSectionData.json";
 
 export default function ShopSection({ data }) {
   const [slide, setSlide] = useState(0);
