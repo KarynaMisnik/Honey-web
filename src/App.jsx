@@ -7,7 +7,7 @@ import About from "./components/pages/About";
 import Contact from "./components/Contact/Contact";
 import Error from "./components/pages/Error";
 
-import ContactDetails from "./components/pages/ContactDetails";
+import ContactDetails from "./components/pages/ContactDetails/ContactDetails";
 import Cart from "./components/pages/Cart";
 import ProductDetails from "./components/pages/ProductDetails";
 

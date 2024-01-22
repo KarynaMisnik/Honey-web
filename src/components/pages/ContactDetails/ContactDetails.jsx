@@ -17,7 +17,7 @@ export default function ContactDetails() {
       title: "Work Together",
       content:
         "Are you interested in collaborating with our family Honey Business? Whether you are a local beekeeper, a distributor looking for unique honey products, or an artisan interested in partnering with us, we would love to explore opportunities to work together. Feel free to contact us with your ideas and proposals.",
-      imageUrl: "/img/contactImgs/workTogether.jpg",
+      imageUrl: "/Honey-web/img/contactImgs/workTogether.jpg",
     },
     {
       id: 2,
