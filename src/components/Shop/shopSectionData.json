@@ -2,26 +2,26 @@
     {
         "id": 1,
         "alt": "three jars with honey",
-        "src": "/img/ShopStepper/honey-category.jpg"
+        "src": "Honey-web/img/ShopStepper/honey-category.jpg"
     },
     {
         "id": 2,
         "alt": "a soap, towels, brushes and bottles with cosmetic products",
-        "src": "/img/ShopStepper/cosmetics-category.jpg"
+        "src": "Honey-web/img/ShopStepper/cosmetics-category.jpg"
     },
     {
         "id": 3,
         "alt": "a bowl with nuts, honey pie and juice in pitcher",
-        "src": "/img/ShopStepper/food-category.jpg"
+        "src": "Honey-web/img/ShopStepper/food-category.jpg"
     },
     {
         "id": 4,
         "alt": "yellow candles on blue background",
-        "src": "/img/ShopStepper/other-category.jpg"
+        "src": "Honey-web/img/ShopStepper/other-category.jpg"
     },
     {
         "id": 5,
         "alt": "a jar with honey on the wooden table",
-        "src": "/img/ShopStepper/sweets-category.jpg"
+        "src": "Honey-web/img/ShopStepper/sweets-category.jpg"
     }
 ]
