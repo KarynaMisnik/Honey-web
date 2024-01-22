@@ -40,7 +40,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
         <div className="empty-cart-img">
           <h1>Your cart is empty</h1>
           <img
-            src="./src/assets/img/products/empty-cart.png"
+            src="/Honey-web/img/products/empty-cart.png"
             alt="An empty shopping cart with several bees around"
           />
         </div>
