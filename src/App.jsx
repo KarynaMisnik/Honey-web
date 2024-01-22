@@ -53,7 +53,7 @@ function App() {
     <>
       <Navbar pages={pages} size={cart.length} />
 
-      <Routes>
+      <Routes basename="/honey-web">
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
