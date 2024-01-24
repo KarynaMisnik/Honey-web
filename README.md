@@ -1,7 +1,7 @@
 ## To-do:
 
--[] add gap in Shop categories for mobile;
-- [] icon in mobile should redirect to Home page
+- [ ] add gap in Shop categories for mobile;
+- [ ] icon in mobile should redirect to Home page
 
 # bee_e-spa
 
