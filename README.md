@@ -3,6 +3,13 @@
 - [ ] add gap in Shop categories for mobile;
 - [ ] icon in mobile should redirect to Home page
 
+<details>
+  <summary><h1>Preview</h1></summary>
+  
+![honey-and-products-preview](https://github.com/KarynaMisnik/Honey-web/assets/96831988/61fe6d26-0b0d-46b2-8cc5-2b7bd1ad2d8f)
+
+</details>
+
 
 ## Honey&Products
 
