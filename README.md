@@ -2,6 +2,7 @@
 
 - [ ] add gap in Shop categories for mobile;
 - [ ] icon in mobile should redirect to Home page
+- [ ] extra <b>'-' 9-AM</b> in footer, contact.
 
 <details>
   <summary><h1>Preview</h1></summary>
