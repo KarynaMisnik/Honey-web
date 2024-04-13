@@ -1,3 +1,6 @@
+<div id="user-content-toc"><img src='https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Honeybee.png' alt='flying bee' width='80px' height='auto' align='left' /> <ul><summary list-style-type: none;><h1>Web store "Honey&Products"</h1></summary></ul></div>
+
+
 ## To-do:
 
 - [ ] add gap in Shop categories for mobile;
