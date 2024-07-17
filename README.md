@@ -4,8 +4,9 @@
 ## To-do:
 
 - [ ] add gap in Shop categories for mobile;
-- [ ] icon in mobile should redirect to Home page
-- [ ] extra <b>'-' 9-AM</b> in footer, contact.
+- [ ] icon in mobile should redirect to Home page;
+- [ ] extra <b>'-' 9-AM</b> in footer, contact;
+- [ ] clicking on item card should open its detail page;
 
 <details>
   <summary><h1>Preview</h1></summary>
